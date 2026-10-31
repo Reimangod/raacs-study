@@ -1,0 +1,35 @@
+{
+  "cases": [
+    "FE2S2-40-P2",
+    "N2-32-R1p2-P2",
+    "N2-32-R2p4-P2",
+    "NAPH20-BLOCK-BOYS"
+  ],
+  "methods": [
+    "B4",
+    "LUCJ1",
+    "LUCJ2",
+    "LUCJ4",
+    "SqDRIFT20",
+    "SqDRIFT5",
+    "SqDRIFT50"
+  ],
+  "tables": {
+    "existing_85120shots_all_endpoints.csv": 468,
+    "existing_85120shots_group_summary.csv": 156,
+    "new_naphthalene_all_endpoints.csv": 213,
+    "new_naphthalene_group_summary.csv": 71,
+    "new_naphthalene_cost_components.csv": 21,
+    "existing_common_D_resource_points.csv": 24,
+    "existing_shot_sweep_sample_capacity.csv": 330
+  },
+  "endpoint_rows": 681,
+  "payload_files": 43364,
+  "raw_bytes": 433552111,
+  "missing_files": [],
+  "new_experiments": 0,
+  "source_data_changed": false,
+  "zip_bytes": 88772582,
+  "zip_SHA256": "03aedf8680ccb54a2d8aaaacf5eff88aacca94e66c95ff76a4610ed16baf43d0",
+  "all_payload_hashes_verified": true
+}

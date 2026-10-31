@@ -1,0 +1,634 @@
+[
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/matched-shot-D-v1/all-endpoints.csv",
+    "source_SHA256": "90eb1c2965718d853c6d852387fbaafd05a0ae280ee18d143684c089371b2b6d",
+    "export": "tables/existing_85120shots_all_endpoints.csv",
+    "operation": "row selection only; numbers and missingness unchanged",
+    "selected_rows": 468,
+    "original_rows": 546
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/matched-shot-D-v1/group-summary.csv",
+    "source_SHA256": "0b66885bbb5af5b1876efc7db721a33653c614af55e35254b739f096cdd3c6db",
+    "export": "tables/existing_85120shots_group_summary.csv",
+    "operation": "row selection only; numbers and missingness unchanged",
+    "selected_rows": 156,
+    "original_rows": 182
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/conference-delivery-final-v2/new-cohort-all-endpoints.csv",
+    "source_SHA256": "9efed626172f7cd9faa65837de0153e6e933e3fd805ccc0779ffebd91b57b93b",
+    "export": "tables/new_naphthalene_all_endpoints.csv",
+    "operation": "row selection only; numbers and missingness unchanged",
+    "selected_rows": 213,
+    "original_rows": 237
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/conference-delivery-final-v2/new-cohort-group-summary.csv",
+    "source_SHA256": "0a75b57f522e031d38ed66e96b655dab486abd1ccd3e6698b31bacaad97e16bf",
+    "export": "tables/new_naphthalene_group_summary.csv",
+    "operation": "row selection only; numbers and missingness unchanged",
+    "selected_rows": 71,
+    "original_rows": 79
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/conference-delivery-final-v2/cost-components.csv",
+    "source_SHA256": "bbf69b55d6548e93d35002f0adeaaf6cf483b4eda6f30a45868bb1df9b18834f",
+    "export": "tables/new_naphthalene_cost_components.csv",
+    "operation": "row selection only; numbers and missingness unchanged",
+    "selected_rows": 21,
+    "original_rows": 24
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/conference-delivery-final-v2/existing-resource-points-with-missing.csv",
+    "source_SHA256": "683534bf51470fa112bead9e823fb4cf80bc8fadd8b58558e253e0c37f66ed0d",
+    "export": "tables/existing_common_D_resource_points.csv",
+    "operation": "row selection only; numbers and missingness unchanged",
+    "selected_rows": 24,
+    "original_rows": 28
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/conference-delivery-final-v2/existing-sample-capacity-runs.csv",
+    "source_SHA256": "573b6c9e52bb8f3c5794c571e3f829b854bcfb4ef17ce4cc4b4e277f108501b5",
+    "export": "tables/existing_shot_sweep_sample_capacity.csv",
+    "operation": "row selection only; numbers and missingness unchanged",
+    "selected_rows": 330,
+    "original_rows": 390
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/matched-shot-D-v1/protocol.json",
+    "source_SHA256": "86f148ef74b3e92ebcab3845ea0d0fad924673907df7f93a01e8895c99a98bec",
+    "export": "conditions/existing_matched_shot_D_protocol_VIEW.json",
+    "operation": "selected-method export view, not a replacement frozen protocol"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/protocol.json",
+    "source_SHA256": "41e15a4560cbd9165b6114cedd9285a6101c393181b70b6f4d8f23a65df4fd08",
+    "export": "conditions/new_naphthalene_readout_protocol_VIEW.json",
+    "operation": "selected-method export view, not a replacement frozen protocol"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/protocol.json",
+    "source_SHA256": "a4f18a638a1c354a8a1c80b54c817cc5376fffcd2fd0da951461f69a91a7510f",
+    "export": "conditions/new_naphthalene_construction_protocol_VIEW.json",
+    "operation": "selected-method export view, not a replacement frozen protocol"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/common-resources-v2.json",
+    "source_SHA256": "59bcaad3be1640a585b5dacaeb9287a37e96b9fbfc6ebd7fdfb9a9bef4f11dab",
+    "export": "conditions/new_naphthalene_authoritative_resources_v2_VIEW.json",
+    "operation": "selected-method export view, not a replacement frozen protocol"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/protocol-v1.json",
+    "source_SHA256": "37574fe9c2e37be979056737cf77853e949d8af6c57d5cbb2600d5c11bb695ba",
+    "export": "conditions/existing_construction_protocol_VIEW.json",
+    "operation": "selected-method export view, not a replacement frozen protocol"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/data/evaluation-only/FE2S2-40-P2.json",
+    "source_SHA256": "461fa36a90318fca39cd66920b8dc5c9963fe64f5b965c5e0b6ba6dd3537598b",
+    "export": "views/outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/data/evaluation-only/FE2S2-40-P2.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/data/physical/FE2S2-40-P2/problem.json",
+    "source_SHA256": "d5819d3d79c07e1eb699304a9ec5517cf434f1dfc10ca5ac2596a4a9f45a8ee4",
+    "export": "views/outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/data/physical/FE2S2-40-P2/problem.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/protocol.json",
+    "source_SHA256": "a4f18a638a1c354a8a1c80b54c817cc5376fffcd2fd0da951461f69a91a7510f",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/protocol.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/counts/B4/280301.json",
+    "source_SHA256": "4eab27c56fdf5d7d2ced72880b7a35d0c048360b554384aa62c199e5a378bd98",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/counts/B4/280301.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/counts/B4/280302.json",
+    "source_SHA256": "edfbed52ea326b02740499c1b20fb9a2df6cda6b89bb4b241d86e98c7e56bcdd",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/counts/B4/280302.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/counts/B4/280303.json",
+    "source_SHA256": "5cffc624894f69412a38eae565229ea156510d846d9da4845e3179974bf1c845",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/counts/B4/280303.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/runs/N76-FIXED-CONFIRMATION-INVENTORY-v1/inventory.json",
+    "source_SHA256": "429370e78a5f9cc5badfd9ba6eb51f611eedc72dd965d6eb746ae1a3f9c48f1a",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/runs/N76-FIXED-CONFIRMATION-INVENTORY-v1/inventory.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/runs/B4/FE2S2-40-P2/74001/result.json",
+    "source_SHA256": "f2991ef73a4d897d680bc898ab798de66e408ac945c6469eef94ac810bcda581",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/runs/B4/FE2S2-40-P2/74001/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/runs/B4/N2-32-R1p2-P2/74001/result.json",
+    "source_SHA256": "1d8d542033cce1a4476bc332619120557f8a7db71850b8c82b13cd5acaab1a79",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/runs/B4/N2-32-R1p2-P2/74001/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/runs/B4/N2-32-R2p4-P2/74001/result.json",
+    "source_SHA256": "5352956293e3f254f0c70241e8eea62018f3ad6f74a40e7a98d2af827595886b",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/runs/B4/N2-32-R2p4-P2/74001/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/runs/B4/NAPH20-BLOCK-BOYS/74001/result.json",
+    "source_SHA256": "6dfa26f4b8ff20d7be3966e0fce146583183446dfaf5df09b9380aa79656ae0c",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/runs/B4/NAPH20-BLOCK-BOYS/74001/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/runs/N17-INDEPENDENT-PREFIX-PERFORMANCE-v1/protocol.json",
+    "source_SHA256": "e0f952725a74b790bf8da6bb3edeabd434c37f5169eefcbb509433ae37463b06",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/runs/N17-INDEPENDENT-PREFIX-PERFORMANCE-v1/protocol.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/runs/N4-NATIVE-HCI-PROPOSALS-v1/protocol.json",
+    "source_SHA256": "4ccce4f0bcfdee5328fac125190ffac32e74c147bd71fbbc2ab67831cf7e7b54",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/runs/N4-NATIVE-HCI-PROPOSALS-v1/protocol.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/runs/N65-ENSEMBLE-BREADTH30-v1/draws/53bcf9096d4734cbebedaf870fcce6ee23b93e6c4366f46e5da6503c66399d47/result.json",
+    "source_SHA256": "adce3ba3e81a9c5a27a7cafe07eef7f46531089b75af6a34c1ffa016ec5e451d",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/runs/N65-ENSEMBLE-BREADTH30-v1/draws/53bcf9096d4734cbebedaf870fcce6ee23b93e6c4366f46e5da6503c66399d47/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/runs/N65-ENSEMBLE-BREADTH30-v1/draws/597123847c8c44f237c37307ffe816dfc9475a159d1d72349bfe40f7f3f3e220/result.json",
+    "source_SHA256": "925cb997cec560cf8b35b3478c683c84163835a056b7ce06310e339587aa4763",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/runs/N65-ENSEMBLE-BREADTH30-v1/draws/597123847c8c44f237c37307ffe816dfc9475a159d1d72349bfe40f7f3f3e220/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/runs/N65-ENSEMBLE-BREADTH30-v1/draws/6dae2fd3e231e4a2fe089d0aec31fed43d36d2a3c123cee4e8a5be16946aad00/result.json",
+    "source_SHA256": "da5b0979e57b5a60eb453528d2bf3a5b764aad2c5336bc3d5f396a9a8343492d",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/runs/N65-ENSEMBLE-BREADTH30-v1/draws/6dae2fd3e231e4a2fe089d0aec31fed43d36d2a3c123cee4e8a5be16946aad00/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/runs/N65-ENSEMBLE-BREADTH30-v1/draws/ed0725e82efab68dc278778e74071dc00facd2d2710d581ee0ea7668c9b5701c/result.json",
+    "source_SHA256": "e40c7293e7a62a193e69074558493b53a667dadc725c71695b753d30c10e76ae",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/runs/N65-ENSEMBLE-BREADTH30-v1/draws/ed0725e82efab68dc278778e74071dc00facd2d2710d581ee0ea7668c9b5701c/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/runs/N66-FULL20-BREADTH30-v1/draws/a20948a2869e7e64b350680e9a20b4113ed92d540f067e6e5494367b7868673f/result.json",
+    "source_SHA256": "99f5a20b9e61935f79af9c1060923acb335149fdbe8a2d31481cf24701c32b1a",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/runs/N66-FULL20-BREADTH30-v1/draws/a20948a2869e7e64b350680e9a20b4113ed92d540f067e6e5494367b7868673f/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/runs/N66-FULL20-BREADTH30-v1/draws/a4d97a0d44b5243413821d1f9732b5c9f58fa7c28eca2b3a7f5a40e623139b29/result.json",
+    "source_SHA256": "e591de0f5e184d7a19740f6c3ba7d3dfb4a4d716736536a33c786612a49edbc5",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/runs/N66-FULL20-BREADTH30-v1/draws/a4d97a0d44b5243413821d1f9732b5c9f58fa7c28eca2b3a7f5a40e623139b29/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/runs/N66-FULL20-BREADTH30-v1/draws/d4bcc57976b425fedf35d4657818ac579f57aa08a88d906048f37967b9f5a522/result.json",
+    "source_SHA256": "e1a407cb782caee37e2edd7adb008a02d8490fe22241a95f43a2539f32df560c",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/runs/N66-FULL20-BREADTH30-v1/draws/d4bcc57976b425fedf35d4657818ac579f57aa08a88d906048f37967b9f5a522/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/runs/N66-FULL20-BREADTH30-v1/draws/fcec45d676be411827232d2687dbbab61786da92997df0f0900f7d135a1d1035/result.json",
+    "source_SHA256": "6e9030cda557ac56d99de785715a146c351706fa03511d9da61d54f311a30748",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/runs/N66-FULL20-BREADTH30-v1/draws/fcec45d676be411827232d2687dbbab61786da92997df0f0900f7d135a1d1035/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/runs/N72-STATE-ACTIVITY-PREFLIGHT-v1/terminal.json",
+    "source_SHA256": "1c469a213efe0a5d9576290044e03a67a8e1ed19b0e3dfe04ff2326dbc0f7ce9",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/runs/N72-STATE-ACTIVITY-PREFLIGHT-v1/terminal.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/runs/N73B-ACTIVITY-RESOURCE-PORTFOLIO-v1/terminal.json",
+    "source_SHA256": "f9e5e7770f16444776215db672561536416639ab756fd869969d7178fe5a5c4a",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/runs/N73B-ACTIVITY-RESOURCE-PORTFOLIO-v1/terminal.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/NAPH20-BLOCK-BOYS/280102/result.json",
+    "source_SHA256": "7da0df8693af047276a01a290a7128461d1c537f90ed03a42aa5b6219bec87f5",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/NAPH20-BLOCK-BOYS/280102/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/NAPH20-BLOCK-BOYS/280103/result.json",
+    "source_SHA256": "0201097d14e26fcfaceb2317141a146ba603fbbd9d3fd1b0d6d187e9de7694d4",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/NAPH20-BLOCK-BOYS/280103/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/N2-32-R1p2-P2/280101/result.json",
+    "source_SHA256": "b1900b0523f0713fd27f59a1b77504046206e7af33df5b67d42f334327add7b4",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/N2-32-R1p2-P2/280101/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/N2-32-R1p2-P2/280102/result.json",
+    "source_SHA256": "eae07afcb11c9a43b961faa7b66bcdb229a75cd121fa1d47728543a24b398ba1",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/N2-32-R1p2-P2/280102/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/N2-32-R1p2-P2/280103/result.json",
+    "source_SHA256": "ad72d3d710d0a27f1af5c1e0ddbc0c4447e074398963f0a337026194364c2a09",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/N2-32-R1p2-P2/280103/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/N2-32-R2p4-P2/280101/result.json",
+    "source_SHA256": "62270d79ebb38705b105a90a0e5d54df4576cae2d8b3be3c13c24f1127250a08",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/N2-32-R2p4-P2/280101/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/N2-32-R2p4-P2/280102/result.json",
+    "source_SHA256": "a808c608f5addd2f484c08eb5ff4c2bf4f77723db0554ca5373b13d264d4f91c",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/N2-32-R2p4-P2/280102/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/N2-32-R2p4-P2/280103/result.json",
+    "source_SHA256": "c8e9218446f53e41ea5471d9186d7bc8a07bede046bf8d13354729efd862d01f",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/N2-32-R2p4-P2/280103/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/FE2S2-40-P2/280101/result.json",
+    "source_SHA256": "c1f73f8e436f6048954abf139bc17e11a609005e393ee58f843529e5f771e4d5",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/FE2S2-40-P2/280101/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/FE2S2-40-P2/280102/result.json",
+    "source_SHA256": "c22553f6302df2286de83ab3c5b641a4a342705bb7863052694a0723c42ab1d3",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/FE2S2-40-P2/280102/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/FE2S2-40-P2/280103/result.json",
+    "source_SHA256": "c85891d82571a1743089e1f7f001eab69b24083bbc98ca1ad7be7533ed0f27a9",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/runs/B4-v2/FE2S2-40-P2/280103/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/sources/B4/280302/result.json",
+    "source_SHA256": "edfbed52ea326b02740499c1b20fb9a2df6cda6b89bb4b241d86e98c7e56bcdd",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/sources/B4/280302/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/sources/B4/280303/result.json",
+    "source_SHA256": "5cffc624894f69412a38eae565229ea156510d846d9da4845e3179974bf1c845",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/sources/B4/280303/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/sources/B4/280301/result.json",
+    "source_SHA256": "4eab27c56fdf5d7d2ced72880b7a35d0c048360b554384aa62c199e5a378bd98",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/sources/B4/280301/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/sources/LUCJ2/result.json",
+    "source_SHA256": "ce87ec06af7b095d9bcd0aefed38a6dd526df8d49d6c95fa7eddcb926593bc55",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/sources/LUCJ2/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/sources/LUCJ4/result.json",
+    "source_SHA256": "eb3ee149dbc2e3f9f314099a55456be6c03ec24eb9992e480dfd1601c119c8c1",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/sources/LUCJ4/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/781fe08213a62c61e83413e3b3e7b9b44ee3b4b9087b6e128607de374a20086c.json",
+    "source_SHA256": "a15d85196a88a502e69f435e8c3b1be0ee6e36e58d08e0e8926d31c2e7aa7ead",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/781fe08213a62c61e83413e3b3e7b9b44ee3b4b9087b6e128607de374a20086c.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/cb8f6774f33fb270a877ba454d5f58cb82e89cbab45676b3797328fe45c548a3.json",
+    "source_SHA256": "4bdeb5d31521fb7a5ec782de7bff8c96984568869e3e8c2e93c6e75a34f4f7bf",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/cb8f6774f33fb270a877ba454d5f58cb82e89cbab45676b3797328fe45c548a3.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/f419a8d9dc9044b1c6ca0da0eecf7bd67bec71bcb620dc63207080de8c24f547.json",
+    "source_SHA256": "49c6f7aa44796aa6564ec86d7245618ea3d885fe82d2431931fdad1bd0fca39f",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/f419a8d9dc9044b1c6ca0da0eecf7bd67bec71bcb620dc63207080de8c24f547.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/42ea4c2d6b1f1c8ca8d7693fe3d4280b2497480dbbabe8a88ed264ed6669343f.json",
+    "source_SHA256": "00ceeb03520c402305c30caf58f64f6186e8a490abaae81d12f4dd7ff4d17ad1",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/42ea4c2d6b1f1c8ca8d7693fe3d4280b2497480dbbabe8a88ed264ed6669343f.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/7bd1bcf830ca5caf521a7747abfc6f8f489cfcd9936f73f1c3f459c6b760293c.json",
+    "source_SHA256": "a4777f16ce578d276591c6b19a966db7fae6f6861e9b0be71f5a6b23b0b42ac5",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/7bd1bcf830ca5caf521a7747abfc6f8f489cfcd9936f73f1c3f459c6b760293c.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/0bfbad6aed60d25a2b7af9a9298e78b6245e2a1b07a241ca0efeea87642318ff.json",
+    "source_SHA256": "c66a54f6b90be7f8744c2834f3d6dd96a1ef7789b60749431cd6164c12a4a182",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/0bfbad6aed60d25a2b7af9a9298e78b6245e2a1b07a241ca0efeea87642318ff.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/0bb68daa9fceafb09461c8516a04298537f41cc97e98c05153197f3c2a277106.json",
+    "source_SHA256": "26ccb5ac9764e7d0b4310036bbe04120e4bc29e1a1a89f4a11ed5828f0228fea",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/0bb68daa9fceafb09461c8516a04298537f41cc97e98c05153197f3c2a277106.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/fdcf47e10b8a2be9078fb771b4dca4a2778aacc0933bbae9625a80458181b16b.json",
+    "source_SHA256": "00fef5807253b86859c02b43048aaf64a466598cc9d0cf4fcd86f162ce0511b9",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/fdcf47e10b8a2be9078fb771b4dca4a2778aacc0933bbae9625a80458181b16b.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/382f3b8b6136ec39310ccf05587ca128538f7a33cd52bc83c66a3248c9f7e6a1.json",
+    "source_SHA256": "8f43da02990ac83a86c134181d4a908ba289a6ff26fee4ec1de71f8d45f0f460",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/382f3b8b6136ec39310ccf05587ca128538f7a33cd52bc83c66a3248c9f7e6a1.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/315b7b22ac1caec9cb694f2ab4f1d8893cdd3067d43ea48d8a6db77a348dbde5.json",
+    "source_SHA256": "f0b288980df1bc923312b3c1efbd9d4b4c4ace02cc431217b2ec451007db8f86",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/315b7b22ac1caec9cb694f2ab4f1d8893cdd3067d43ea48d8a6db77a348dbde5.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/2d7846f87256e95c4bab9d52d82e8cdb090fd3273b1b359c4ddd31fca4728e41.json",
+    "source_SHA256": "74305554e595bcdc0b4b0488f34f805f16e7f47da679e4346174e5bbc45b6178",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/2d7846f87256e95c4bab9d52d82e8cdb090fd3273b1b359c4ddd31fca4728e41.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/05d6dd9ba6d1ece98643426bab3de828cc524f5442dbdde1512abfbd33bb9f2d.json",
+    "source_SHA256": "28220b747689ca1e86f86179f3e956651514c7d68cc1e780f26d27e15371b730",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/05d6dd9ba6d1ece98643426bab3de828cc524f5442dbdde1512abfbd33bb9f2d.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/e6a60f239e985b03f171db39f3b74f5f2da17e8801181e532a00afdf23cd5683.json",
+    "source_SHA256": "d2319546cd439199c660608c4dde56f5d6a95812cebb3dd63ae4b382acc4f439",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/e6a60f239e985b03f171db39f3b74f5f2da17e8801181e532a00afdf23cd5683.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/0637a4c79c12fcc5a80474f3c6f5d826f46cc5d2f5a482fcb9d24f70cffa5430.json",
+    "source_SHA256": "e6d580cd07a302f02705c325ff2d242f6ecfcd58127ad4f682795b73acde8fc8",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/0637a4c79c12fcc5a80474f3c6f5d826f46cc5d2f5a482fcb9d24f70cffa5430.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/88b0e1a76bfacf6c037aaf1b61d889b49c42cd4b1e645146c9c706af5d6e2fc6.json",
+    "source_SHA256": "8d1ff8675f370e5fa508534162284b32fc80204cdbc3671f4a12a02aa48f386a",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/88b0e1a76bfacf6c037aaf1b61d889b49c42cd4b1e645146c9c706af5d6e2fc6.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/26b5f4542335a3da7398c70acbc2d81df6981593665587db288ed425981fb377.json",
+    "source_SHA256": "d2ea9e01213a269e95ec3b67138f39ee36fd2224c5a5774632f319e3175fe10a",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/26b5f4542335a3da7398c70acbc2d81df6981593665587db288ed425981fb377.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/435c66530b624ea1fafef6681bd3e37d8f81ba0393e8159433a1ab60d75c1ffc.json",
+    "source_SHA256": "2022b004c7d2daec40debe88888451f49824ced9a7594211b907ff3e0bc1c3dc",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/435c66530b624ea1fafef6681bd3e37d8f81ba0393e8159433a1ab60d75c1ffc.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/f870707dada14d0c0625888a7da06082e61c7248729fbe6ffc248f07436fe280.json",
+    "source_SHA256": "26fb2b0a6cf7b994ee1beddb48bd7df298fb517708d15800d37f7bcfc2fd917a",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/f870707dada14d0c0625888a7da06082e61c7248729fbe6ffc248f07436fe280.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/77b61da6d7b990043fcec44490616b723cb62cf50a8f19dfa3e6723f979e3b01.json",
+    "source_SHA256": "4c2ea393ea353f997b20c1bcda37390efe550d1dc062d50bc9131ea6dcb59da8",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/77b61da6d7b990043fcec44490616b723cb62cf50a8f19dfa3e6723f979e3b01.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/7432f551c2e17b0680bf80bc0bac56c81c1117b34a1db1fe8a3f6fdb79a7d679.json",
+    "source_SHA256": "e32ea487e112034394a78747c887124154efde1c5e55c235bbcdfd8c88970a93",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/7432f551c2e17b0680bf80bc0bac56c81c1117b34a1db1fe8a3f6fdb79a7d679.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/36b873e683815287f49bf14cb78f39b8b02e42b0efe92d9747ec0a64eb176a2e.json",
+    "source_SHA256": "173a7f020de8c0090953968c924eee34c80a4fab1a18cc324608bddb7964e26f",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/36b873e683815287f49bf14cb78f39b8b02e42b0efe92d9747ec0a64eb176a2e.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/f3c02c3262fd19fd2fa1477d886bf9f8901e75de990d90e8fc7cf974ce3ef730.json",
+    "source_SHA256": "ea9db3993a5885fddb62082c82cc843425f9870aa1e9f0d13a97d05cdd7d6e47",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/f3c02c3262fd19fd2fa1477d886bf9f8901e75de990d90e8fc7cf974ce3ef730.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/894cdd4a906f70ad43aca21edd80006edaf32053ae8a55e75393fcb98dfb448b.json",
+    "source_SHA256": "a04ace77e7fff238049d86572bcd5d72c5f379a5b2c34b28f5bce1fcca1cf3a2",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/894cdd4a906f70ad43aca21edd80006edaf32053ae8a55e75393fcb98dfb448b.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/29c3204e530f2fd3869aa198566b55c4b9d1d53149ec25d63c67d4e271edd514.json",
+    "source_SHA256": "f306f6d1e37d8947aa606623cd4f2f9fe58f1cdbadc4ab97253e611e0eb3b75a",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/29c3204e530f2fd3869aa198566b55c4b9d1d53149ec25d63c67d4e271edd514.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/579991e27b86a1bf01f1237cbc72be5dd3d56f45f8d6c440c5ba6d15af3fea52.json",
+    "source_SHA256": "fb696e188b8cc95c94bfa073aec3bccbcfcc7075ac285995e75b97cc03465d7d",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/579991e27b86a1bf01f1237cbc72be5dd3d56f45f8d6c440c5ba6d15af3fea52.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/211662c6d87d05c93c22438486d92ce45dbd3ebcc1b485ebb2b619acc5fe97b8.json",
+    "source_SHA256": "2f3243d7f85bd60fb7d4dca171f815992f37107d620ce555f4ad58fa52d3f4a4",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/211662c6d87d05c93c22438486d92ce45dbd3ebcc1b485ebb2b619acc5fe97b8.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/f02c0215fcfe7c4ab5640d3cffcca6dd84c52ca35dc094142aac6fdd045f9e38.json",
+    "source_SHA256": "d22a1e670b338c27ed8cff95a207d94d05d1ca29506721eccce7b72f1cf71d3a",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/f02c0215fcfe7c4ab5640d3cffcca6dd84c52ca35dc094142aac6fdd045f9e38.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/f7ac3ec9c4f4f57ad5a277dfa5f457c13e7536cd9493c52151c3dc563c71857d.json",
+    "source_SHA256": "6270b15ab73f42f3a893932cb6a72d619648670ab388401dbe4044cc47216efd",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/f7ac3ec9c4f4f57ad5a277dfa5f457c13e7536cd9493c52151c3dc563c71857d.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/31ac5eed694f99205415c76b55dd1d2b932860e6b5c1fbcfac43569e1db785b2.json",
+    "source_SHA256": "e1748c23fe4db81811e8bea98ac7b9542dfd2c04227658dac1d266905dfdaae8",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/31ac5eed694f99205415c76b55dd1d2b932860e6b5c1fbcfac43569e1db785b2.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/d63ddded1fb8bfd15c600ff7bfb1d76da98504e05305a67daaa0a564125cdcf0.json",
+    "source_SHA256": "a9bd86ed53d8700ebcadcc2701a20507c53442a2fb253083d8cb09b75ddb3cd0",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/d63ddded1fb8bfd15c600ff7bfb1d76da98504e05305a67daaa0a564125cdcf0.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/bb6776f2b969ce6b13017fecd205087186c41bd0cfceb1dcd526cc6aeb40e117.json",
+    "source_SHA256": "0b119d9401318a19617c75a4b3b828b54dbe4460eb5cf879a4f857c674e22fbb",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/bb6776f2b969ce6b13017fecd205087186c41bd0cfceb1dcd526cc6aeb40e117.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/2addaca4d694732cf355b28bbf21a6f3a2549ee561119642dc851eb899838b46.json",
+    "source_SHA256": "b5b44ad73631d30f0835e8579ed0d48d6a1d25925558b854d53f4dfd7ffd6543",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/readouts/endpoints/2addaca4d694732cf355b28bbf21a6f3a2549ee561119642dc851eb899838b46.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/common-runs/S_ORBITAL_BASIS/NAPH20-BLOCK-BOYS/C_LUCJ_COMPRESSED_L1/100000-41001/result.json",
+    "source_SHA256": "ca844a2900f9923b8d10122eb6246d9d0741697304ec0cf886c41848697d3872",
+    "export": "views/outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/common-runs/S_ORBITAL_BASIS/NAPH20-BLOCK-BOYS/C_LUCJ_COMPRESSED_L1/100000-41001/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/common-runs/C_PRIMARY/N2-32-R1p2-P2/C_LUCJ_COMPRESSED_L1/100000-101/result.json",
+    "source_SHA256": "5889e11f5d73ecf99cb0a57e0a4a86179a808fbd1f7e10b4687503b70444e6a8",
+    "export": "views/outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/common-runs/C_PRIMARY/N2-32-R1p2-P2/C_LUCJ_COMPRESSED_L1/100000-101/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/common-runs/C_PRIMARY/N2-32-R2p4-P2/C_LUCJ_COMPRESSED_L1/100000-101/result.json",
+    "source_SHA256": "dc045a9bfb0468b45ca42ae76a0cececdf0dcac72327ab438680754c230b4004",
+    "export": "views/outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/common-runs/C_PRIMARY/N2-32-R2p4-P2/C_LUCJ_COMPRESSED_L1/100000-101/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/common-runs/C_PRIMARY/FE2S2-40-P2/C_LUCJ_COMPRESSED_L1/100000-101/result.json",
+    "source_SHA256": "7e7d310e6da1b2174a8e304de097d65349c17746be578923b8ef3653ef5c1a9d",
+    "export": "views/outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/common-runs/C_PRIMARY/FE2S2-40-P2/C_LUCJ_COMPRESSED_L1/100000-101/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/analysis/N25-lowshot-pair-summary.json",
+    "source_SHA256": "deca0ab1ced1b3dd494ef7aa3a961c8f7ff67cc938dc10b2e6fc0d9cbbeecd96",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/analysis/N25-lowshot-pair-summary.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/runs/N67-PAIR-GROUP-RESOURCE-PREFLIGHT-v1/terminal.json",
+    "source_SHA256": "f3b2d7d71e289d576eed1c1c0a59db775958cfff7885ca0535737170e111cfa7",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/runs/N67-PAIR-GROUP-RESOURCE-PREFLIGHT-v1/terminal.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/runs/N68-EXACT-GROUP-SYNTHESIS-v1/terminal.json",
+    "source_SHA256": "24bd5cf7f6eef8439a49f1d3823e25f87fd0aad4fc6cfe89c274f18f5d554961",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/runs/N68-EXACT-GROUP-SYNTHESIS-v1/terminal.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/runs/N69-CORRELATED-SOURCE-QUALIFICATION-v1/terminal.json",
+    "source_SHA256": "8ef63499557113de53bfc0df6ca33ea18581d1f5cf1568cef48ad0af1569a623",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/runs/N69-CORRELATED-SOURCE-QUALIFICATION-v1/terminal.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/analysis/N67-pair-group-resource-summary.json",
+    "source_SHA256": "8d2075dc8f57c39ee66a82b62b9263bd7ab5123d8ea0ced33a36a2071e2ee692",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/analysis/N67-pair-group-resource-summary.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/runs/N73-ACTIVITY-RESOURCE-v1/terminal.json",
+    "source_SHA256": "fab6d85b0bea94e29f3c3d4aad70d99f82aa86103874c20598c45edfb53cbae8",
+    "export": "views/outputs/raacs-frontier-research-loop-2026-10-25/runs/N73-ACTIVITY-RESOURCE-v1/terminal.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/gpu/collected/outputs/f1f81076afd4acb59f2d8eee9cd367471fa85ab7ad7d4eddc828eea78657ff8a/result.json",
+    "source_SHA256": "118371118f7adbef6eca0f59e629b7eb6e727283b218d9cfc8b97c265b81b07f",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/gpu/collected/outputs/f1f81076afd4acb59f2d8eee9cd367471fa85ab7ad7d4eddc828eea78657ff8a/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/gpu/collected/outputs/c7aa0825d099c86fc1657acd77a993892c3b78e6b7b4c2bfda21350914081e96/result.json",
+    "source_SHA256": "1c4c527437ed2f01ff250b5fccbfcaeff18447e1a1d3281780a8295e2673c2ea",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/gpu/collected/outputs/c7aa0825d099c86fc1657acd77a993892c3b78e6b7b4c2bfda21350914081e96/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/gpu/collected/outputs/d9a9d584344e5f48cacf8854ef7b69b0b1c362d1e6745e6b71071d9b0e0b61db/result.json",
+    "source_SHA256": "7a20d3587d05a3077720112334f4fc2b22113cb631a3be8f974503fbcde20c5d",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/gpu/collected/outputs/d9a9d584344e5f48cacf8854ef7b69b0b1c362d1e6745e6b71071d9b0e0b61db/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/gpu/collected/outputs/90d8d71e4b3326d800acba589ada5cb6c16e5507a43e91e8a45b7222842348a5/result.json",
+    "source_SHA256": "d53c1c08f5b02621ff80adf77c419171459496e26122867813decf45e5c84a59",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/gpu/collected/outputs/90d8d71e4b3326d800acba589ada5cb6c16e5507a43e91e8a45b7222842348a5/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/gpu/collected/outputs/6b069a08dbcc9a001a7f7084acdd4f72e229c9d95b1839508dbbd1f42ae86129/result.json",
+    "source_SHA256": "937b5c6ca3bd5b0a5595bac84d9c1843e1a5e9bec50de6d646dbf85c322343b1",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/gpu/collected/outputs/6b069a08dbcc9a001a7f7084acdd4f72e229c9d95b1839508dbbd1f42ae86129/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/gpu/collected/outputs/0f0939cd2fbae38b1327c08bf9c265057dd84f9e8417f9fcbdb7039fae1f819a/result.json",
+    "source_SHA256": "44bca9a583335adb5994e3781f3fd41be802df80266025f91e1ccb37f7e9fddf",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/gpu/collected/outputs/0f0939cd2fbae38b1327c08bf9c265057dd84f9e8417f9fcbdb7039fae1f819a/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/gpu/collected/outputs/f221427c5dba7561f96da9c44510a023bf9474a1f6fc24a8a76e8a452a509cd5/result.json",
+    "source_SHA256": "4dd427dce2155825f9aaab576a01e5afc0e24d9a1c9d867a6baa3d4be63f3041",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/gpu/collected/outputs/f221427c5dba7561f96da9c44510a023bf9474a1f6fc24a8a76e8a452a509cd5/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/gpu/collected/outputs/795c3b963eb9f7427fd4dbbc20a272ebd98df49be02d5dc47da1ab761c7ce2d2/result.json",
+    "source_SHA256": "413f1c5d356882ecc366c7cfd3a89fc8b92ce841b9d6cf64500acf1b5dce3941",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/gpu/collected/outputs/795c3b963eb9f7427fd4dbbc20a272ebd98df49be02d5dc47da1ab761c7ce2d2/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/gpu/collected/outputs/98654fd67be6a99e088f748a11f0a294eedd48e0c4a66f55650bc31818826ed9/result.json",
+    "source_SHA256": "023c91336d41977fa9af7a49f462c476435734e4364f8b9ca778ec6a936092c9",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/gpu/collected/outputs/98654fd67be6a99e088f748a11f0a294eedd48e0c4a66f55650bc31818826ed9/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  },
+  {
+    "source": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/gpu/collected/outputs/effdfded0775ffa13c9f739d16b5043276193643e70cfa2fbd67c7e403705fe5/result.json",
+    "source_SHA256": "8ff5ccfd4ddc41e50a3818246cb26eb532a843a16b3f94334e46f8403f663b05",
+    "export": "views/outputs/paper-aligned-confirmation-2026-10-28/gpu/collected/outputs/effdfded0775ffa13c9f739d16b5043276193643e70cfa2fbd67c7e403705fe5/result.json",
+    "operation": "mixed record filtered to requested methods/cases"
+  }
+]

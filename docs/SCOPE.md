@@ -31,5 +31,12 @@ relative paths. A path-normalized catalog is a derivative, not a replacement
 freeze. Historical numeric strings, IDs, statuses and missing values are retained
 in original tables or raw-row provenance. New names are aliases only.
 
+The earlier selected comparison ZIP is a redundant derived transport package,
+not another independent experiment. Its original packaging script, export report,
+and transformation records are preserved separately. The original export's
+outer ZIP digest remains recorded; it is not falsely claimed to be one of the
+new uploaded content-addressed archives. Core table rows from that export are
+retained byte-identically and the underlying broad raw study is archived.
+
 This packaging work authorizes no source search, extra seeds, sampling, FCI
 reference calculation, remote jobs or changes to existing protocols.

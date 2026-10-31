@@ -2,5 +2,5 @@
   "exit_code": 0,
   "scope": "new archive package tests only, not every historical study test",
   "stderr": "",
-  "stdout": "....................                                                     [100%]\n20 passed in 1.68s\n"
+  "stdout": "....................                                                     [100%]\n20 passed in 1.79s\n"
 }

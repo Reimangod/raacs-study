@@ -129,6 +129,11 @@ def collect_sources(workspace,source_entries):
         "paperstudy":workspace/"outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/paperstudy",
         "benchmark":workspace/"ceo-sampler-benchmark/benchmark",
     }
+    for rel,dest in(("package_b4_comparison.py","historical/packaging/package_b4_comparison.py"),
+                    ("exports/B4_paper_comparison_2026-10-28/PACKAGE_REPORT.json","data/parent-export-report.json"),
+                    ("exports/B4_paper_comparison_2026-10-28/README_JA.md","docs/PARENT_EXPORT_README_JA.md")):
+        source=workspace/rel
+        if source.exists():copy_original(workspace,source,REPO/dest,source_entries)
     # Byte-identical package snapshots, not an invented portable rewrite.
     for package,root in roots.items():
         for p in sorted(root.rglob("*.py")):
@@ -188,6 +193,8 @@ def build_tables(workspace,source_entries):
     old_archive=workspace/"exports/B4_vs_LUCJ_SqDRIFT_experiment_data_2026-10-28.zip"
     tables=[("small-exact-singlet","data/original-tables/small-all_CI_shot_results.csv",(small/"tables/all_CI_shot_results.csv").read_bytes())]
     with zipfile.ZipFile(old_archive)as archive:
+        if "provenance/EXPORT_TRANSFORMS.json"in archive.namelist():
+            (REPO/"data/parent-export-transformations.json").write_bytes(archive.read("provenance/EXPORT_TRANSFORMS.json"))
         for cohort,src,dest in (("large-85120","tables/existing_85120shots_all_endpoints.csv","large-all-endpoints.csv"),
                                 ("naphthalene-additional","tables/new_naphthalene_all_endpoints.csv","naphthalene-all-endpoints.csv")):
             tables.append((cohort,"data/original-tables/"+dest,archive.read(src)))

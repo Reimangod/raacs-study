@@ -21,9 +21,9 @@
       "sha256": "e4bc5066b5377a7451ac0c7671df2ce61c0a3991684e4cd302da74272dd3c6e1"
     },
     {
-      "bytes": 285124,
+      "bytes": 285972,
       "path": "data/copied-source-manifest.json",
-      "sha256": "75df339a1d350d5686d45a3f7fa30ed9dd555c43832055ccdd316e86cd50534c"
+      "sha256": "0e923e99d7f7223c5d573c4b7ffcd182d547eb0c29199f0d956a0f5adf4f6462"
     },
     {
       "bytes": 929,
@@ -164,6 +164,16 @@
       "bytes": 83229,
       "path": "data/original-tables/small-unique_CI_roots.csv",
       "sha256": "ade02cb3a912bd4ed8433ba9962e98f73c1461c5a6094ed016f3175a5570cd23"
+    },
+    {
+      "bytes": 883,
+      "path": "data/parent-export-report.json",
+      "sha256": "cbbf995e6f748d9683c5da3880acb0ae01a396d84302b94ae7eedc0b0f0db732"
+    },
+    {
+      "bytes": 54803,
+      "path": "data/parent-export-transformations.json",
+      "sha256": "026d04782fb90f5456d32b5dad837cbbad43514fa0490cc039bbfcd542433742"
     },
     {
       "bytes": 70225,
@@ -3939,6 +3949,11 @@
       "bytes": 3969,
       "path": "historical/frontierloop/verify_prefix_compiled20.py",
       "sha256": "e1ebe3f622eb93a489f51051c0f0bc419bf20e3b368243846831a471cc5182ae"
+    },
+    {
+      "bytes": 14882,
+      "path": "historical/packaging/package_b4_comparison.py",
+      "sha256": "cd70e24dd33109c72c227bcdb480f67454829bc99f64d157e82ebc20a45dc335"
     },
     {
       "bytes": 84,

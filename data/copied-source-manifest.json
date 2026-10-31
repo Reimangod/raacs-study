@@ -1,5 +1,26 @@
 [
   {
+    "bytes": 14882,
+    "destination": "historical/packaging/package_b4_comparison.py",
+    "kind": "byte-identical original",
+    "sha256": "cd70e24dd33109c72c227bcdb480f67454829bc99f64d157e82ebc20a45dc335",
+    "source_relative_path": "package_b4_comparison.py"
+  },
+  {
+    "bytes": 883,
+    "destination": "data/parent-export-report.json",
+    "kind": "byte-identical original",
+    "sha256": "cbbf995e6f748d9683c5da3880acb0ae01a396d84302b94ae7eedc0b0f0db732",
+    "source_relative_path": "exports/B4_paper_comparison_2026-10-28/PACKAGE_REPORT.json"
+  },
+  {
+    "bytes": 4014,
+    "destination": "docs/PARENT_EXPORT_README_JA.md",
+    "kind": "byte-identical original",
+    "sha256": "9fe9f3e6ee9a198516f2cfe08c4e57e9d18651227c0e2b0cfef707396b193920",
+    "source_relative_path": "exports/B4_paper_comparison_2026-10-28/README_JA.md"
+  },
+  {
     "bytes": 24,
     "destination": "historical/frontierloop/__init__.py",
     "kind": "byte-identical original",
