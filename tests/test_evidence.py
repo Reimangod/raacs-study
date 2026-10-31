@@ -78,3 +78,15 @@ def test_policy_sources_bound_to_recorded_protocol():
     freeze=json.loads((ROOT/"configs/original-B4/freeze-B4.json").read_text())
     for file in("beam.py","spin_beam.py","singlet_cache.py","singlet.py","journal.py","bank.py"):
         assert hashlib.sha256((ROOT/"historical/frontierloop"/file).read_bytes()).hexdigest()==freeze["files"][file]
+
+
+def test_reproduction_matches_committed_products(tmp_path):
+    reproduce(ROOT,tmp_path/"out")
+    assert (tmp_path/"out/endpoint-summary.csv").read_bytes()==(ROOT/"results/endpoint-summary.csv").read_bytes()
+
+
+def test_known_saved_lih_slice_not_relabelled_as_new_data():
+    rows=read_csv((ROOT/"data/catalog.csv").read_bytes())
+    chosen=[r for r in rows if r["cohort"]=="small-exact-singlet"and r["case"]=="LiH_R1.5"and r["historical_method_id"]=="B4"and r["context"]=="SAME_FINAL_SHOTS"and r["final_shots"]=="32768"and r["D_target"]=="16"]
+    assert len(chosen)==3 and all(r["D_actual"]=="16"for r in chosen)
+    assert abs(sum(float(r["energy_Ha"])for r in chosen)/3-(-7.881586431))<1e-9

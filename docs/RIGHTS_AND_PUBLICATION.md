@@ -24,6 +24,12 @@ Before public release:
 Zenodo access is not configured by this package. A private GitHub release is a
 working delivery, not a public long-term repository or DOI-backed publication.
 
+The broad private history includes one publisher supplementary PDF whose public
+redistribution permission was not established here, and legacy native binaries.
+These are identified in verification/rights-review.json. Do not switch this
+entire private backup public or feed it wholesale to Zenodo without addressing
+those items. They are not a blocker to saved-data use by the owner privately.
+
 References: https://help.zenodo.org/docs/github/ ;
 https://zenodo.org/help/versioning ;
 https://researcher-resources.acs.org/publish/author_guidelines?coden=jctcce

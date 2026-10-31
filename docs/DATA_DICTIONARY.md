@@ -4,6 +4,9 @@
 strings; the original tables and original-row JSONL are also available. Each row
 binds cohort, source table, row ordinal and original content into `record_id`.
 No old ID is changed. `historical_endpoint_id` can be absent in older small data.
+For the original small table (which has no per-row status column), normalized
+`COMPLETED` means a saved numerical readout row exists; it is not a newly
+inferred source-optimizer convergence or ground-state certification flag.
 
 | Field | Meaning |
 |---|---|

@@ -287,6 +287,7 @@ def main():
         all_inventory.extend({"archive":report["name"],**r}for r in inventory)
         write_json(REPO/"data/archive-manifest.json",{
             "schema":"raacs-research-archives-1","publication_status":"PRIVATE_GITHUB_DELIVERY_NO_ZENODO_DOI",
+            "original_workspace_prefix":str(workspace),
             "archives":archives,"original_file_count":sum(x["original_files"]for x in archives),
             "original_bytes":sum(x["original_bytes"]for x in archives),"archive_bytes":sum(x["bytes"]for x in archives),
             "source_files_modified":False,"new_molecular_sampling":False,

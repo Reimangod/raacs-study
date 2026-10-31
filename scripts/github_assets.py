@@ -13,6 +13,7 @@ import sys
 import time
 from pathlib import Path
 from urllib.parse import quote,urlsplit
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"src"))
@@ -60,7 +61,7 @@ def upload(repo,tag,path,part,release,token):
         raise RuntimeError("Existing asset mismatch; never clobber: "+part["name"])
     url=release["upload_url"].split("{")[0]+"?name="+quote(part["name"])
     parsed=urlsplit(url)
-    connection=http.client.HTTPSConnection(parsed.hostname,timeout=600)
+    connection=http.client.HTTPSConnection(parsed.hostname,timeout=600,blocksize=1024*1024)
     stream=Slice(path,part["offset"],part["bytes"])
     try:
         connection.request("POST",parsed.path+"?"+parsed.query,body=stream,headers={
@@ -84,6 +85,9 @@ def main():
     p.add_argument("--repo",default="Reimangod/raacs-study");p.add_argument("--tag",default="data-v0.1.0")
     p.add_argument("--directory",type=Path,default=ROOT/"artifacts")
     p.add_argument("--limit-bytes",type=int,default=1024**3)
+    p.add_argument("--only-asset",action="append",default=[])
+    p.add_argument("--workers",type=int,default=1)
+    p.add_argument("--receipts",type=Path,default=ROOT/"data/upload-receipts.json")
     a=p.parse_args();manifest_path=ROOT/"data/archive-manifest.json"
     manifest=json.loads(manifest_path.read_text())
     if a.mode=="plan":
@@ -95,18 +99,26 @@ def main():
         return
     details=gh_json("api",f"repos/{a.repo}")
     if not details["private"]:raise RuntimeError("Uploader is restricted to private delivery")
-    release=gh_json("api",f"repos/{a.repo}/releases/tags/{a.tag}")
+    releases=gh_json("api",f"repos/{a.repo}/releases?per_page=100")
+    release=next((r for r in releases if r["tag_name"]==a.tag),None)
+    if release is None:raise RuntimeError("Draft release not found; do not create duplicates")
     if not release["draft"]:raise RuntimeError("Use a mutable draft during upload, not an immutable final release")
     token=subprocess.run(["gh","auth","token"],check=True,capture_output=True,text=True).stdout.strip()
-    receipts=[]
+    receipts=[];tasks=[]
     for entry in manifest["archives"]:
         if not entry.get("parts"):raise ValueError("Plan parts before uploading")
+        wanted=[part for part in entry["parts"]if not a.only_asset or part["name"]in a.only_asset]
+        if not wanted:continue
         path=a.directory/entry["name"]
         if sha256_file(path)!=entry["sha256"]:raise ValueError("Changed archive")
-        for part in entry["parts"]:
-            asset=upload(a.repo,a.tag,path,part,release,token)
+        tasks.extend((path,part)for part in wanted)
+    if len({part["name"]for _,part in tasks})!=len(tasks):raise ValueError("Duplicate upload assignment")
+    with ThreadPoolExecutor(max_workers=max(1,min(3,a.workers)))as pool:
+        futures=[pool.submit(upload,a.repo,a.tag,path,part,release,token)for path,part in tasks]
+        for future in as_completed(futures):
+            asset=future.result()
             receipts.append({"name":asset["name"],"bytes":asset["size"],"server_digest":asset.get("digest"),"asset_id":asset["id"],"url":asset["browser_download_url"]})
-            write_json(ROOT/"data/upload-receipts.json",{"repository":a.repo,"release_tag":a.tag,"private":True,"assets":receipts})
+            write_json(a.receipts,{"repository":a.repo,"release_tag":a.tag,"private":True,"assets":receipts})
 
 
 if __name__=="__main__":main()

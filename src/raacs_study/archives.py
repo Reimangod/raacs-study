@@ -42,6 +42,50 @@ class JoinedParts(io.RawIOBase):
         super().close()
 
 
+def locate(repo:Path,name:str):
+    import gzip
+    manifest=json.loads((repo/"data/archive-manifest.json").read_text())
+    if name.startswith("/"):
+        prefix=manifest.get("original_workspace_prefix","")
+        if not prefix or not name.startswith(prefix+"/"):raise ValueError("Unknown absolute-path origin")
+        name=name[len(prefix)+1:]
+    if not safe_member_name(name):raise ValueError("Unsafe original path")
+    with gzip.open(repo/"data/source-inventory.jsonl.gz","rt")as stream:
+        for line in stream:
+            row=json.loads(line)
+            if row["source_relative_path"]==name:return row
+    raise FileNotFoundError("Original path not captured: "+name)
+
+
+def extract_original(repo:Path,directory:Path,name:str,output:Path):
+    """Read one verified blob; never execute it or overwrite an existing file."""
+    row=locate(repo,name)
+    manifest=json.loads((repo/"data/archive-manifest.json").read_text())
+    entry=next(x for x in manifest["archives"]if x["name"]==row["archive"])
+    file=directory/entry["name"];virtual=None
+    if file.is_file():source=file
+    elif entry.get("parts"):
+        paths=[directory/p["name"]for p in entry["parts"]]
+        if any(not p.is_file()for p in paths):raise FileNotFoundError("Download all parts first")
+        virtual=JoinedParts(paths);source=virtual
+    else:raise FileNotFoundError(file)
+    if output.exists():raise FileExistsError("Never overwrite: "+str(output))
+    output.parent.mkdir(parents=True,exist_ok=True)
+    pending=output.with_name(output.name+".pending")
+    try:
+        with zipfile.ZipFile(source)as archive,archive.open(row["blob"])as src,pending.open("xb")as dst:
+            hasher=hashlib.sha256();size=0
+            while raw:=src.read(1024**2):
+                hasher.update(raw);size+=len(raw);dst.write(raw)
+        if size!=row["bytes"]or hasher.hexdigest()!=row["sha256"]:raise ValueError("Original-blob digest mismatch")
+        # Link+unlink is no-clobber even if another process creates the target.
+        import os
+        os.link(pending,output);pending.unlink()
+    finally:
+        if virtual:virtual.close()
+    return {**row,"output":str(output),"verified":True}
+
+
 def verify_archives(repo:Path,directory:Path,full=False):
     manifest=json.loads((repo/"data/archive-manifest.json").read_text())
     errors=[];checked=[]

@@ -1,0 +1,42 @@
+{
+  "CPU_seconds": 0.026993000000000933,
+  "checks": [
+    {
+      "D": 1,
+      "absolute_error_Ha": 0.0,
+      "energy_Ha": -7.863357621535115,
+      "residual_norm": 0.0,
+      "saved_energy_Ha": -7.863357621535115,
+      "selected_spin_strings": [
+        1
+      ],
+      "singlet_dimension": 1
+    },
+    {
+      "D": 16,
+      "absolute_error_Ha": 0.0,
+      "energy_Ha": -7.881586430747888,
+      "residual_norm": 4.193819268152238e-16,
+      "saved_energy_Ha": -7.881586430747888,
+      "selected_spin_strings": [
+        1,
+        2,
+        4,
+        16
+      ],
+      "singlet_dimension": 10
+    }
+  ],
+  "input_sha256": {
+    "hamiltonian.npz": "b2bd807b2fb716900ee91d018f801ec144954564b3e9cf979cef4494371e9b69",
+    "lih15-saved-bases.json": "3a8ce9823d78d436e3b70c7407a304e6655af18903b5df1376230197dc9f0d62",
+    "reference.json": "c63680208421c6c29bd11131ee83692e25fd36206417460410b06c2bede00404",
+    "reference.npz": "2a74daccb4539b444a9f3af8893ba551c7abd38e2bf6aade85a259453f5c199c"
+  },
+  "new_FCI_reference_computations": 0,
+  "new_QPU_shots": 0,
+  "new_model_samples": 0,
+  "passed": true,
+  "saved_basis_CI_checks": 2,
+  "scope": "two saved LiH bases only; not full source regeneration or full-cohort CI verification"
+}

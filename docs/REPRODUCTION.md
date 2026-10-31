@@ -49,6 +49,17 @@ can be resolved against the source inventory without editing original JSON.
 Archived SQLite DB/WAL evidence is preserved as captured; use a writable copy
 for forensic reconstruction, not the original source file.
 
+Locate or extract just one original file without expanding all 7+GiB:
+
+```sh
+uv run raacs-study locate --repo . --path outputs/b4-small-molecule-comparison-2026-10-28-v1/protocol.json
+uv run raacs-study extract --repo . --directory data/downloads --path outputs/b4-small-molecule-comparison-2026-10-28-v1/protocol.json --output reproduced/original-small-protocol.json
+```
+
+Extraction verifies the original blob's size/hash and refuses existing targets.
+No extracted script is executed. The source inventory supports exact original
+relative paths (and the specifically recorded original absolute-path prefix).
+
 ## 4. Historical policy source, not an automatic production dispatch
 
 `uv run raacs-study policy --repo .` prints exact policy/source bindings.
