@@ -11,6 +11,8 @@ See [Japanese guide](docs/README_JA.md), [scope](docs/SCOPE.md),
 [reproduction](docs/REPRODUCTION.md), and [limitations](docs/LIMITATIONS.md).
 The [figure guide](results/README.md) lists all ten physical conditions without
 selecting only favorable examples.
+See [delivery status](docs/STATUS_JA.md) for the completed private archive and the
+remaining public/Zenodo publication boundary.
 
 ## Start here
 

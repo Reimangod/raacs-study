@@ -42,6 +42,10 @@ relative paths to exact-byte blobs. `data/source-inventory.jsonl.gz` is the
 cross-archive lookup. `data/archive-manifest.json` binds ZIP sizes and SHA-256.
 Repeated equal content occupies one blob, but all original path associations
 remain. Storage deduplication does not deduplicate scientific execution costs.
+Full download is about 4.4GiB. Restoring every original file would need about
+7.1GiB more; ordinary table reproduction does not require either operation.
+Multipart verification/extraction uses virtual concatenation to avoid another
+large reconstructed ZIP. Prefer one-file extraction for routine inspection.
 
 Archive extraction must validate paths and avoid overwrites. Do not extract
 untrusted pickle objects or execute binaries. Historical absolute references

@@ -1,0 +1,100 @@
+{
+  "assets": [
+    {
+      "asset": "raacs-frontier-research-loop-2026-10-25.zip",
+      "bytes": 735262144,
+      "expected_sha256": "42a2644c636d58cd40d777594f156ca544f3ef54e371a0dbd6cf7c07197fbe0b",
+      "passed": true,
+      "server_digest": "sha256:42a2644c636d58cd40d777594f156ca544f3ef54e371a0dbd6cf7c07197fbe0b",
+      "server_state": "uploaded"
+    },
+    {
+      "asset": "raacs-practical-frontier-v2-2026-10-25.zip",
+      "bytes": 19932336,
+      "expected_sha256": "70378374bacd49619a6dff69528cba6bc9f21bb22d34967eb80fe7ac2cfa9f1f",
+      "passed": true,
+      "server_digest": "sha256:70378374bacd49619a6dff69528cba6bc9f21bb22d34967eb80fe7ac2cfa9f1f",
+      "server_state": "uploaded"
+    },
+    {
+      "asset": "raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25.zip.part000",
+      "bytes": 1073741824,
+      "expected_sha256": "112c67e9ee85536272d0884b62671afc22030776daa81951076514ae10a10f27",
+      "passed": true,
+      "server_digest": "sha256:112c67e9ee85536272d0884b62671afc22030776daa81951076514ae10a10f27",
+      "server_state": "uploaded"
+    },
+    {
+      "asset": "raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25.zip.part001",
+      "bytes": 1073741824,
+      "expected_sha256": "fa4ba27cb6a6aa5f53c134b2e72e81ecf571cbce912ff9ed1b63cd3762315cae",
+      "passed": true,
+      "server_digest": "sha256:fa4ba27cb6a6aa5f53c134b2e72e81ecf571cbce912ff9ed1b63cd3762315cae",
+      "server_state": "uploaded"
+    },
+    {
+      "asset": "raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25.zip.part002",
+      "bytes": 1073741824,
+      "expected_sha256": "0e2c3e7de7a9bdac0489a9357d893a4c029e58d084e9185f1fa36987eb48cdc1",
+      "passed": true,
+      "server_digest": "sha256:0e2c3e7de7a9bdac0489a9357d893a4c029e58d084e9185f1fa36987eb48cdc1",
+      "server_state": "uploaded"
+    },
+    {
+      "asset": "raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25.zip.part003",
+      "bytes": 616655978,
+      "expected_sha256": "c46ea068e82988a841f220ea8e859902ac22f0fc38962317b76250ba7c653c41",
+      "passed": true,
+      "server_digest": "sha256:c46ea068e82988a841f220ea8e859902ac22f0fc38962317b76250ba7c653c41",
+      "server_state": "uploaded"
+    },
+    {
+      "asset": "paper-aligned-confirmation-2026-10-28.zip",
+      "bytes": 105664827,
+      "expected_sha256": "225812d5b76904e15e5c89ce3b938dd9cc2e4006bea1c6af16a0939311c8e026",
+      "passed": true,
+      "server_digest": "sha256:225812d5b76904e15e5c89ce3b938dd9cc2e4006bea1c6af16a0939311c8e026",
+      "server_state": "uploaded"
+    },
+    {
+      "asset": "b4-small-molecule-comparison-2026-10-28-v1.zip",
+      "bytes": 13541731,
+      "expected_sha256": "bae690323246265f168ca2825154f706598b4331002cf4237a8b8b465f32d6a9",
+      "passed": true,
+      "server_digest": "sha256:bae690323246265f168ca2825154f706598b4331002cf4237a8b8b465f32d6a9",
+      "server_state": "uploaded"
+    },
+    {
+      "asset": "b4-lih15-from-hf-2026-10-28-v1.zip",
+      "bytes": 1829332,
+      "expected_sha256": "0bb947f4176fd374f4e99e660801d3b3a2110f2eea026b8ce8dec3f847c7d883",
+      "passed": true,
+      "server_digest": "sha256:0bb947f4176fd374f4e99e660801d3b3a2110f2eea026b8ce8dec3f847c7d883",
+      "server_state": "uploaded"
+    },
+    {
+      "asset": "raacs-comparison-expanded-2026-10-25.zip",
+      "bytes": 14112,
+      "expected_sha256": "2b17a3e501f0a9569265a7a4ab465321fe4804bdc1887e189f62d3de75a453e1",
+      "passed": true,
+      "server_digest": "sha256:2b17a3e501f0a9569265a7a4ab465321fe4804bdc1887e189f62d3de75a453e1",
+      "server_state": "uploaded"
+    },
+    {
+      "asset": "small-reference-inputs.zip",
+      "bytes": 1936494,
+      "expected_sha256": "4a204d41f70b2aee595dc4dd6750f39215c23d6b3408117888f0cdf7d78d5d11",
+      "passed": true,
+      "server_digest": "sha256:4a204d41f70b2aee595dc4dd6750f39215c23d6b3408117888f0cdf7d78d5d11",
+      "server_state": "uploaded"
+    }
+  ],
+  "expected_assets": 11,
+  "matching_uploaded_assets": 11,
+  "passed": true,
+  "private": true,
+  "release_id": 429939226,
+  "release_tag": "data-v0.1.0",
+  "repository": "Reimangod/raacs-study",
+  "scope": "GitHub server size/digest reconciliation; not a full remote re-download or scientific validation"
+}

@@ -1,0 +1,84 @@
+{
+  "assets": [
+    {
+      "asset_id": 695395078,
+      "bytes": 735262144,
+      "name": "raacs-frontier-research-loop-2026-10-25.zip",
+      "server_digest": "sha256:42a2644c636d58cd40d777594f156ca544f3ef54e371a0dbd6cf7c07197fbe0b",
+      "url": "https://github.com/Reimangod/raacs-study/releases/download/untagged-273c7bab07fa0b69d675/raacs-frontier-research-loop-2026-10-25.zip"
+    },
+    {
+      "asset_id": 695409273,
+      "bytes": 19932336,
+      "name": "raacs-practical-frontier-v2-2026-10-25.zip",
+      "server_digest": "sha256:70378374bacd49619a6dff69528cba6bc9f21bb22d34967eb80fe7ac2cfa9f1f",
+      "url": "https://github.com/Reimangod/raacs-study/releases/download/untagged-273c7bab07fa0b69d675/raacs-practical-frontier-v2-2026-10-25.zip"
+    },
+    {
+      "asset_id": 695410149,
+      "bytes": 1073741824,
+      "name": "raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25.zip.part000",
+      "server_digest": "sha256:112c67e9ee85536272d0884b62671afc22030776daa81951076514ae10a10f27",
+      "url": "https://github.com/Reimangod/raacs-study/releases/download/untagged-273c7bab07fa0b69d675/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25.zip.part000"
+    },
+    {
+      "asset_id": 695405814,
+      "bytes": 1073741824,
+      "name": "raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25.zip.part001",
+      "server_digest": "sha256:fa4ba27cb6a6aa5f53c134b2e72e81ecf571cbce912ff9ed1b63cd3762315cae",
+      "url": "https://github.com/Reimangod/raacs-study/releases/download/untagged-273c7bab07fa0b69d675/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25.zip.part001"
+    },
+    {
+      "asset_id": 695405813,
+      "bytes": 1073741824,
+      "name": "raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25.zip.part002",
+      "server_digest": "sha256:0e2c3e7de7a9bdac0489a9357d893a4c029e58d084e9185f1fa36987eb48cdc1",
+      "url": "https://github.com/Reimangod/raacs-study/releases/download/untagged-273c7bab07fa0b69d675/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25.zip.part002"
+    },
+    {
+      "asset_id": 695405811,
+      "bytes": 616655978,
+      "name": "raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25.zip.part003",
+      "server_digest": "sha256:c46ea068e82988a841f220ea8e859902ac22f0fc38962317b76250ba7c653c41",
+      "url": "https://github.com/Reimangod/raacs-study/releases/download/untagged-273c7bab07fa0b69d675/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25.zip.part003"
+    },
+    {
+      "asset_id": 695449090,
+      "bytes": 105664827,
+      "name": "paper-aligned-confirmation-2026-10-28.zip",
+      "server_digest": "sha256:225812d5b76904e15e5c89ce3b938dd9cc2e4006bea1c6af16a0939311c8e026",
+      "url": "https://github.com/Reimangod/raacs-study/releases/download/untagged-273c7bab07fa0b69d675/paper-aligned-confirmation-2026-10-28.zip"
+    },
+    {
+      "asset_id": 695449093,
+      "bytes": 13541731,
+      "name": "b4-small-molecule-comparison-2026-10-28-v1.zip",
+      "server_digest": "sha256:bae690323246265f168ca2825154f706598b4331002cf4237a8b8b465f32d6a9",
+      "url": "https://github.com/Reimangod/raacs-study/releases/download/untagged-273c7bab07fa0b69d675/b4-small-molecule-comparison-2026-10-28-v1.zip"
+    },
+    {
+      "asset_id": 695449094,
+      "bytes": 1829332,
+      "name": "b4-lih15-from-hf-2026-10-28-v1.zip",
+      "server_digest": "sha256:0bb947f4176fd374f4e99e660801d3b3a2110f2eea026b8ce8dec3f847c7d883",
+      "url": "https://github.com/Reimangod/raacs-study/releases/download/untagged-273c7bab07fa0b69d675/b4-lih15-from-hf-2026-10-28-v1.zip"
+    },
+    {
+      "asset_id": 695449378,
+      "bytes": 14112,
+      "name": "raacs-comparison-expanded-2026-10-25.zip",
+      "server_digest": "sha256:2b17a3e501f0a9569265a7a4ab465321fe4804bdc1887e189f62d3de75a453e1",
+      "url": "https://github.com/Reimangod/raacs-study/releases/download/untagged-273c7bab07fa0b69d675/raacs-comparison-expanded-2026-10-25.zip"
+    },
+    {
+      "asset_id": 695449448,
+      "bytes": 1936494,
+      "name": "small-reference-inputs.zip",
+      "server_digest": "sha256:4a204d41f70b2aee595dc4dd6750f39215c23d6b3408117888f0cdf7d78d5d11",
+      "url": "https://github.com/Reimangod/raacs-study/releases/download/untagged-273c7bab07fa0b69d675/small-reference-inputs.zip"
+    }
+  ],
+  "private": true,
+  "release_tag": "data-v0.1.0",
+  "repository": "Reimangod/raacs-study"
+}
