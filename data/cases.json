@@ -1,0 +1,863 @@
+[
+  {
+    "case": "LiH_R1.5",
+    "cohort": "small-exact-singlet",
+    "n_qubits": 10,
+    "physical_metadata": {
+      "artifact_sha256": {
+        "determinants.csv": "1071235c02d51f2de3b36a51a0d19a0d3df1901895cb437b2bd5ddaeb78f276f",
+        "determinants.parquet": "c1c0873746ead4de955dfcc393e3c3dd1c0f671c562bd5111d21f4f15d1afdd7",
+        "hamiltonian.npz": "b2bd807b2fb716900ee91d018f801ec144954564b3e9cf979cef4494371e9b69",
+        "reference.npz": "2a74daccb4539b444a9f3af8893ba551c7abd38e2bf6aade85a259453f5c199c"
+      },
+      "case": {
+        "basis": "sto-3g",
+        "charge": 0,
+        "distance": 1.5,
+        "frozen_core_spatial": 1,
+        "geometry": [
+          [
+            "Li",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              1.5
+            ]
+          ]
+        ],
+        "mapping": "Jordan-Wigner",
+        "molecule": "LiH",
+        "orbital_order": "interleaved alpha0,beta0,alpha1,beta1,...",
+        "orbitals": "RHF canonical, ascending MO energy",
+        "spin": 0,
+        "state_index": "OpenFermion big endian; logical q -> Qiskit wire n-1-q"
+      },
+      "correlation_energy": -0.01878233870020285,
+      "fci_converged": true,
+      "fci_energy": -7.882139960235316,
+      "fci_residual": 9.528845491580322e-16,
+      "fci_weight_sum": 1.0,
+      "hf_id": 768,
+      "hf_weight_fci": 0.9774486769779263,
+      "n_electrons": 2,
+      "n_orbitals": 5,
+      "n_qubits": 10,
+      "nalpha": 1,
+      "nbeta": 1,
+      "pyscf": "2.14.0",
+      "request_digest": "1b6ce2cc0c6500d042d44a9ceaf509fa18607820aa6f97a34088b7c94039a412",
+      "rhf_energy": -7.863357621535113,
+      "scf_converged": true,
+      "scf_solver": "DIIS_RHF",
+      "schema": "reference-1",
+      "seconds": 0.2101239999756217
+    },
+    "reference_scope": "saved FCI metadata; this packaging does not calculate new FCI",
+    "source_relative_path": "ceo-sampler-benchmark/results/standard-v1/references/LiH_R1.5/reference.json",
+    "source_sha256": "c63680208421c6c29bd11131ee83692e25fd36206417460410b06c2bede00404"
+  },
+  {
+    "case": "LiH_R3.0",
+    "cohort": "small-exact-singlet",
+    "n_qubits": 10,
+    "physical_metadata": {
+      "artifact_sha256": {
+        "determinants.csv": "121da68514ff20d6490b845b087dd0d325f3a7e8589b54f7cfcbd21d26b1a9b0",
+        "determinants.parquet": "041cc323c559a3c72b364acd0ac6e2c89b8a9b8eb1cd9287fe0d9b47fb120564",
+        "hamiltonian.npz": "d86f3ab788631f1f07e8da3ddd4bd8eff09705a61954c653383e5331fb6d97d9",
+        "reference.npz": "99cdcf453492d4b28ac486e3442bc6b3f809a1700b04d1c60e721af78ba90462"
+      },
+      "case": {
+        "basis": "sto-3g",
+        "charge": 0,
+        "distance": 3.0,
+        "frozen_core_spatial": 1,
+        "geometry": [
+          [
+            "Li",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              3.0
+            ]
+          ]
+        ],
+        "mapping": "Jordan-Wigner",
+        "molecule": "LiH",
+        "orbital_order": "interleaved alpha0,beta0,alpha1,beta1,...",
+        "orbitals": "RHF canonical, ascending MO energy",
+        "spin": 0,
+        "state_index": "OpenFermion big endian; logical q -> Qiskit wire n-1-q"
+      },
+      "correlation_energy": -0.08767432235613448,
+      "fci_converged": true,
+      "fci_energy": -7.798504222573353,
+      "fci_residual": 6.569489829949622e-16,
+      "fci_weight_sum": 1.0,
+      "hf_id": 768,
+      "hf_weight_fci": 0.720853832042598,
+      "n_electrons": 2,
+      "n_orbitals": 5,
+      "n_qubits": 10,
+      "nalpha": 1,
+      "nbeta": 1,
+      "pyscf": "2.14.0",
+      "request_digest": "40a3094f778f6cd053b6707cdd62a6936d7a7d17af54dc1f4658504ae978988b",
+      "rhf_energy": -7.7108299002172185,
+      "scf_converged": true,
+      "scf_solver": "DIIS_RHF",
+      "schema": "reference-1",
+      "seconds": 0.23003883380442858
+    },
+    "reference_scope": "saved FCI metadata; this packaging does not calculate new FCI",
+    "source_relative_path": "ceo-sampler-benchmark/results/standard-v1/references/LiH_R3.0/reference.json",
+    "source_sha256": "38b9ffe7ea269fcaf80ebd813b870bdd9ae5e5f595dd90da9cf57635a6c2d12e"
+  },
+  {
+    "case": "BeH2_R1.3",
+    "cohort": "small-exact-singlet",
+    "n_qubits": 12,
+    "physical_metadata": {
+      "artifact_sha256": {
+        "determinants.csv": "16276694c663df7927be7a007b9fe9d474abcacb7311285b838c77b890326483",
+        "determinants.parquet": "d3947dfa8c4966963a4d5eb3b978f738f135681fbc2eb7628d05db3c74d66276",
+        "hamiltonian.npz": "19e0fec5becbd13d157856c2f051d1872551adb46315b99837e8e619eb7b1648",
+        "reference.npz": "fbf3d5722661c9b1fd316fb1561464b2cbb57aa5054409e2438c1385ee9e13a0"
+      },
+      "case": {
+        "basis": "sto-3g",
+        "charge": 0,
+        "distance": 1.3,
+        "frozen_core_spatial": 1,
+        "geometry": [
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              -1.3
+            ]
+          ],
+          [
+            "Be",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              1.3
+            ]
+          ]
+        ],
+        "mapping": "Jordan-Wigner",
+        "molecule": "BeH2",
+        "orbital_order": "interleaved alpha0,beta0,alpha1,beta1,...",
+        "orbitals": "RHF canonical, ascending MO energy",
+        "spin": 0,
+        "state_index": "OpenFermion big endian; logical q -> Qiskit wire n-1-q"
+      },
+      "correlation_energy": -0.0334321248448326,
+      "fci_converged": true,
+      "fci_energy": -15.594710157152925,
+      "fci_residual": 3.699140389399294e-15,
+      "fci_weight_sum": 1.0,
+      "hf_id": 3840,
+      "hf_weight_fci": 0.973775916432716,
+      "n_electrons": 4,
+      "n_orbitals": 6,
+      "n_qubits": 12,
+      "nalpha": 2,
+      "nbeta": 2,
+      "pyscf": "2.14.0",
+      "request_digest": "3f13c38d8c08cbdef5ee9f3b4aa65d6dae22e578597c56170b52e2cfb09dffbc",
+      "rhf_energy": -15.561278032308092,
+      "scf_converged": true,
+      "scf_solver": "DIIS_RHF",
+      "schema": "reference-1",
+      "seconds": 0.2603950418997556
+    },
+    "reference_scope": "saved FCI metadata; this packaging does not calculate new FCI",
+    "source_relative_path": "ceo-sampler-benchmark/results/standard-v1/references/BeH2_R1.3/reference.json",
+    "source_sha256": "324b6de07e81cb7d039ffbd37de371e530ea0ec64f1b61b6475006779d8c54de"
+  },
+  {
+    "case": "BeH2_R2.5",
+    "cohort": "small-exact-singlet",
+    "n_qubits": 12,
+    "physical_metadata": {
+      "artifact_sha256": {
+        "determinants.csv": "7b210c6613757370011f4b03d6725c63e47f43e56023853e34da38178236cc66",
+        "determinants.parquet": "536d28421141fb964727f7da5a6960776408affe000d525176905ba87056cb1b",
+        "hamiltonian.npz": "8f629b6fcf7230c7b36b704474bd7104740829156130d508cdabbfc95afad5f8",
+        "reference.npz": "50deb04c74ca5eba8fcdd7154210f187b2ebe7cdbf3a3471ffb0ddc0376fb7ef"
+      },
+      "case": {
+        "basis": "sto-3g",
+        "charge": 0,
+        "distance": 2.5,
+        "frozen_core_spatial": 1,
+        "geometry": [
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              -2.5
+            ]
+          ],
+          [
+            "Be",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              2.5
+            ]
+          ]
+        ],
+        "mapping": "Jordan-Wigner",
+        "molecule": "BeH2",
+        "orbital_order": "interleaved alpha0,beta0,alpha1,beta1,...",
+        "orbitals": "RHF canonical, ascending MO energy",
+        "spin": 0,
+        "state_index": "OpenFermion big endian; logical q -> Qiskit wire n-1-q"
+      },
+      "correlation_energy": -0.18842209687490374,
+      "fci_converged": true,
+      "fci_energy": -15.351491075116638,
+      "fci_residual": 2.836999218069062e-15,
+      "fci_weight_sum": 1.0000000000000002,
+      "hf_id": 3840,
+      "hf_weight_fci": 0.5430155217025571,
+      "n_electrons": 4,
+      "n_orbitals": 6,
+      "n_qubits": 12,
+      "nalpha": 2,
+      "nbeta": 2,
+      "pyscf": "2.14.0",
+      "request_digest": "83f0884c2d80621299095df8ef71b299f82c1939c0293aecd054fcbf6efd4f5c",
+      "rhf_energy": -15.163068978241734,
+      "scf_converged": true,
+      "scf_solver": "DIIS_RHF",
+      "schema": "reference-1",
+      "seconds": 0.2861615421716124
+    },
+    "reference_scope": "saved FCI metadata; this packaging does not calculate new FCI",
+    "source_relative_path": "ceo-sampler-benchmark/results/standard-v1/references/BeH2_R2.5/reference.json",
+    "source_sha256": "bdebd0b4789351de204206efc59672d76756557526feea5b7496dd73e8166180"
+  },
+  {
+    "case": "H6_R1.4",
+    "cohort": "small-exact-singlet",
+    "n_qubits": 12,
+    "physical_metadata": {
+      "artifact_sha256": {
+        "determinants.csv": "08c91229adfc4a7bd05762dd32884e085f66c970df89a181f4a1d9248dfab883",
+        "determinants.parquet": "d0e13c51537385c3e037f4427d9377997d8be7ef25c925204b17cdea091c21ad",
+        "hamiltonian.npz": "3549d7d9e6131495cec62af359a0db1597ff363208911b384bdaa875d93578c4",
+        "reference.npz": "149d539a8fdba067c06386021b0997f20c4af6e707b1d46ca7fb620c924dac7b"
+      },
+      "case": {
+        "basis": "sto-3g",
+        "charge": 0,
+        "distance": 1.4,
+        "frozen_core_spatial": 0,
+        "geometry": [
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              1.4
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              2.8
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              4.199999999999999
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              5.6
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              7.0
+            ]
+          ]
+        ],
+        "mapping": "Jordan-Wigner",
+        "molecule": "H6",
+        "orbital_order": "interleaved alpha0,beta0,alpha1,beta1,...",
+        "orbitals": "RHF canonical, ascending MO energy",
+        "spin": 0,
+        "state_index": "OpenFermion big endian; logical q -> Qiskit wire n-1-q"
+      },
+      "correlation_energy": -0.2072845198621236,
+      "fci_converged": true,
+      "fci_energy": -3.044600244086701,
+      "fci_residual": 3.4060297666666934e-15,
+      "fci_weight_sum": 1.0000000000000004,
+      "hf_id": 4032,
+      "hf_weight_fci": 0.7063204490133441,
+      "n_electrons": 6,
+      "n_orbitals": 6,
+      "n_qubits": 12,
+      "nalpha": 3,
+      "nbeta": 3,
+      "pyscf": "2.14.0",
+      "request_digest": "e60766e61cf20a7b079eb77200434dad138ec65c2c42ce5679e37f1d8bd6231d",
+      "rhf_energy": -2.8373157242245775,
+      "scf_converged": true,
+      "scf_solver": "DIIS_RHF",
+      "schema": "reference-1",
+      "seconds": 0.6770513749215752
+    },
+    "reference_scope": "saved FCI metadata; this packaging does not calculate new FCI",
+    "source_relative_path": "ceo-sampler-benchmark/results/standard-v1/references/H6_R1.4/reference.json",
+    "source_sha256": "45c843a7023652e56562767f0f4d05de48a47578b271be30377fd50e05a93735"
+  },
+  {
+    "case": "H6_R2.2",
+    "cohort": "small-exact-singlet",
+    "n_qubits": 12,
+    "physical_metadata": {
+      "artifact_sha256": {
+        "determinants.csv": "06b2ebdfe1a39a6c29b33101b457f13da713b79340f303d81968f8bb7de29548",
+        "determinants.parquet": "ecc4ba6d1d753fb8b5534d3998e1913f3f94149db8e9d5fca21ecc8048bfca36",
+        "hamiltonian.npz": "dd45e53ff46bbbee0bccf33e80a69d32d344120f25426166ef32334e95c40ef3",
+        "reference.npz": "ed3c9a78200c293d1fc27da59e909f0588b93ca2937c165e37a71c09969ef187"
+      },
+      "case": {
+        "basis": "sto-3g",
+        "charge": 0,
+        "distance": 2.2,
+        "frozen_core_spatial": 0,
+        "geometry": [
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              2.2
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              4.4
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              6.6000000000000005
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              8.8
+            ]
+          ],
+          [
+            "H",
+            [
+              0.0,
+              0.0,
+              11.0
+            ]
+          ]
+        ],
+        "mapping": "Jordan-Wigner",
+        "molecule": "H6",
+        "orbital_order": "interleaved alpha0,beta0,alpha1,beta1,...",
+        "orbitals": "RHF canonical, ascending MO energy",
+        "spin": 0,
+        "state_index": "OpenFermion big endian; logical q -> Qiskit wire n-1-q"
+      },
+      "correlation_energy": -0.5718747317498858,
+      "fci_converged": true,
+      "fci_energy": -2.8243416519132167,
+      "fci_residual": 4.039174592820516e-15,
+      "fci_weight_sum": 1.0000000000000004,
+      "hf_id": 4032,
+      "hf_weight_fci": 0.2444608335821564,
+      "n_electrons": 6,
+      "n_orbitals": 6,
+      "n_qubits": 12,
+      "nalpha": 3,
+      "nbeta": 3,
+      "pyscf": "2.14.0",
+      "request_digest": "2467c6d48e3ac3c0e1bfdbd22819176dd66efa41ae625ef128135475372fe8da",
+      "rhf_energy": -2.252466920163331,
+      "scf_converged": true,
+      "scf_solver": "DIIS_RHF",
+      "schema": "reference-1",
+      "seconds": 0.8185926249716431
+    },
+    "reference_scope": "saved FCI metadata; this packaging does not calculate new FCI",
+    "source_relative_path": "ceo-sampler-benchmark/results/standard-v1/references/H6_R2.2/reference.json",
+    "source_sha256": "3ea10ac07aa8c2e97aea13cf97cbd6a3c0b866811c9a5713dc534e742e6913f0"
+  },
+  {
+    "case": "NAPH20-BLOCK-BOYS",
+    "cohort": "large-85120; additional naphthalene separate readout cohort when applicable",
+    "physical_metadata": {
+      "basis": "cc-pvdz",
+      "case_id": "NAPH20-BLOCK-BOYS",
+      "core_energy": -369.7444420304756,
+      "geometry": [
+        [
+          "C",
+          [
+            -1.244593,
+            1.402439,
+            0.0
+          ]
+        ],
+        [
+          "C",
+          [
+            -2.433051,
+            0.708272,
+            0.0
+          ]
+        ],
+        [
+          "C",
+          [
+            -2.433051,
+            -0.708272,
+            0.0
+          ]
+        ],
+        [
+          "C",
+          [
+            -1.244593,
+            -1.402439,
+            0.0
+          ]
+        ],
+        [
+          "C",
+          [
+            0.0,
+            -0.716921,
+            0.0
+          ]
+        ],
+        [
+          "C",
+          [
+            0.0,
+            0.716921,
+            0.0
+          ]
+        ],
+        [
+          "H",
+          [
+            -1.242226,
+            2.48945,
+            0.0
+          ]
+        ],
+        [
+          "H",
+          [
+            -3.377109,
+            1.245176,
+            0.0
+          ]
+        ],
+        [
+          "H",
+          [
+            -3.377109,
+            -1.245176,
+            0.0
+          ]
+        ],
+        [
+          "H",
+          [
+            -1.242226,
+            -2.48945,
+            0.0
+          ]
+        ],
+        [
+          "C",
+          [
+            1.244593,
+            1.402439,
+            0.0
+          ]
+        ],
+        [
+          "C",
+          [
+            2.433051,
+            0.708272,
+            0.0
+          ]
+        ],
+        [
+          "H",
+          [
+            3.377109,
+            1.245176,
+            0.0
+          ]
+        ],
+        [
+          "C",
+          [
+            2.433051,
+            -0.708272,
+            0.0
+          ]
+        ],
+        [
+          "H",
+          [
+            3.377109,
+            -1.245176,
+            0.0
+          ]
+        ],
+        [
+          "C",
+          [
+            1.244593,
+            -1.402439,
+            0.0
+          ]
+        ],
+        [
+          "H",
+          [
+            1.242226,
+            -2.48945,
+            0.0
+          ]
+        ],
+        [
+          "H",
+          [
+            1.242226,
+            2.48945,
+            0.0
+          ]
+        ]
+      ],
+      "hf_energy_Ha": -383.38368180345446,
+      "hf_id": 1047552,
+      "mapping": "Jordan-Wigner",
+      "n_qubits": 20,
+      "nalpha": 5,
+      "nbeta": 5,
+      "norb": 10,
+      "orbital_order": "interleaved alpha/beta, orbital0 at most-significant logical bit",
+      "physical_arrays_sha256": {
+        "eri": "b530e156eeb8151f2b3dbe3b207be5f3641eb00bc803263e119d94113d2b3e35",
+        "h1": "cf55ce576fdc290fd78f3e5d98f94b89c586117842a7724d10cd374e9889ce00"
+      },
+      "problem_id": "c575a5c20f37d42532c028fb43abd9f4010dac0fcff36410c9b572f07390b4f4",
+      "qualification": {
+        "CCSD_correlation_energy_covariance_difference_Ha": 8.049116928532385e-16,
+        "HF_absolute_difference_Ha": 1.6484591469634324e-12,
+        "inverse_tensor_transform_errors": {
+          "eri": 2.9181776408152105e-14,
+          "h1": 2.5119341356649654e-13,
+          "t1": 3.9291675556106615e-16,
+          "t2": 6.040535006440669e-15
+        },
+        "occupied_subspace_projector_max_difference": 4.4202922572234016e-15,
+        "orthogonality_max_error": 2.990005131256543e-14,
+        "same_physical_reference_determinant": true
+      },
+      "schema": "paper-physical-input-1",
+      "source": {
+        "Boys_full_occ_vir_mixing_performed": false,
+        "kind": "REGISTERED_OCC_VIR_BLOCK_BOYS_STRATUM",
+        "localization": [
+          {
+            "conv_tol": 1e-08,
+            "group": [
+              0,
+              5
+            ],
+            "initial_guess": "atomic deterministic current PySCF",
+            "max_cycle": 1000
+          },
+          {
+            "conv_tol": 1e-08,
+            "group": [
+              5,
+              10
+            ],
+            "initial_guess": "atomic deterministic current PySCF",
+            "max_cycle": 1000
+          }
+        ],
+        "original_P1_LO_byte_identity_verified": false,
+        "parent_case": "NAPH20-P1",
+        "parent_problem_id": "02a4e4d929e081d4e04c8338a38be2768bc78ddf0922785440f33535ab8e5382"
+      }
+    },
+    "reference_scope": "registered reference; independent reference certification is not implied",
+    "source_relative_path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/data/physical/NAPH20-BLOCK-BOYS/problem.json",
+    "source_sha256": "2a1157be948a2cc1d855fd5f3f56d69e71f9f8d6a1be3d569c6d26a1a3b397da"
+  },
+  {
+    "case": "N2-32-R1p2-P2",
+    "cohort": "large-85120; additional naphthalene separate readout cohort when applicable",
+    "physical_metadata": {
+      "basis": "6-31g",
+      "case_id": "N2-32-R1p2-P2",
+      "core_energy": -78.4355900070619,
+      "geometry": [
+        [
+          "N",
+          [
+            -0.6000000000000001,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            0.6000000000000001,
+            0,
+            0
+          ]
+        ]
+      ],
+      "hf_energy_Ha": -108.83577420992889,
+      "hf_id": 4290772992,
+      "mapping": "Jordan-Wigner",
+      "n_qubits": 32,
+      "nalpha": 5,
+      "nbeta": 5,
+      "norb": 16,
+      "orbital_order": "interleaved alpha/beta, orbital0 at most-significant logical bit",
+      "physical_arrays_sha256": {
+        "eri": "07d2abdfb4b6191d39faffc6259850fc9097f43705711ec31ddb5d09eb6652bd",
+        "h1": "2612a2d0ef374130f4fee4135c4c14a19aeb316b5b78d4be8018de33eb86d546"
+      },
+      "problem_id": "9c4a5f4d301ee38a01312992a7c79c9d59ceb70e99a8f07aa935e2e3426f7a39",
+      "qualification": {
+        "HF_absolute_difference_Ha": 9.947598300641403e-14,
+        "HF_reconstructed_Ha": -108.83577420992899,
+        "integral_symmetry_max_errors": [
+          1.5654144647214707e-14,
+          0.0,
+          2.5818431574157878e-14
+        ],
+        "no_SCF_or_FCI_run": true,
+        "orbital_conversion": {
+          "kind": "NONE",
+          "source_integrals_HF_determinant_energy_Ha": -108.83577420992899
+        }
+      },
+      "schema": "paper-physical-input-1",
+      "source": {
+        "archive_sha256": "b69176c16e80169c6f01eeee28e78513c916f512ff9e83858f8e0056ffe28b89",
+        "commit": "b52bca05650e60d890b06ac0a3b6d167303d0a90",
+        "path": "molecules-catalog/data/molecular_data/n2_6-31g_10e16o_d-1.20000.json.xz",
+        "repository": "kevinsung/lucj"
+      }
+    },
+    "reference_scope": "registered reference; independent reference certification is not implied",
+    "source_relative_path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/data/physical/N2-32-R1p2-P2/problem.json",
+    "source_sha256": "445f1cb5d95a33f0eaf82b391e3fecb25c67faf604e4d0019a76d09610a34601"
+  },
+  {
+    "case": "N2-32-R2p4-P2",
+    "cohort": "large-85120; additional naphthalene separate readout cohort when applicable",
+    "physical_metadata": {
+      "basis": "6-31g",
+      "case_id": "N2-32-R2p4-P2",
+      "core_energy": -83.94775513177127,
+      "geometry": [
+        [
+          "N",
+          [
+            -1.2000000000000002,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            1.2000000000000002,
+            0,
+            0
+          ]
+        ]
+      ],
+      "hf_energy_Ha": -108.13952718684536,
+      "hf_id": 4290772992,
+      "mapping": "Jordan-Wigner",
+      "n_qubits": 32,
+      "nalpha": 5,
+      "nbeta": 5,
+      "norb": 16,
+      "orbital_order": "interleaved alpha/beta, orbital0 at most-significant logical bit",
+      "physical_arrays_sha256": {
+        "eri": "982f352e3d34432d1ba126abe2d02024e5c1b63b850dff5d5c7888febdf1cb1c",
+        "h1": "d40204115ae8cbcae988e9bb4062bf9dc988dceb4bc5dcaefcb295211e39d6fa"
+      },
+      "problem_id": "eab165e629033b6b81f961d7ffe564dd7726afd08ac5103bcf31f1017febda90",
+      "qualification": {
+        "HF_absolute_difference_Ha": 7.105427357601002e-14,
+        "HF_reconstructed_Ha": -108.13952718684543,
+        "integral_symmetry_max_errors": [
+          1.27675647831893e-15,
+          0.0,
+          4.440892098500626e-16
+        ],
+        "no_SCF_or_FCI_run": true,
+        "orbital_conversion": {
+          "kind": "NONE",
+          "source_integrals_HF_determinant_energy_Ha": -108.13952718684543
+        }
+      },
+      "schema": "paper-physical-input-1",
+      "source": {
+        "archive_sha256": "8848ad7bf6d18aac310e5a4695f613292ee6356152520418be7f657f61a33b1b",
+        "commit": "b52bca05650e60d890b06ac0a3b6d167303d0a90",
+        "path": "molecules-catalog/data/molecular_data/n2_6-31g_10e16o_d-2.40000.json.xz",
+        "repository": "kevinsung/lucj"
+      }
+    },
+    "reference_scope": "registered reference; independent reference certification is not implied",
+    "source_relative_path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/data/physical/N2-32-R2p4-P2/problem.json",
+    "source_sha256": "600fda4d40edded29c15cab52a42cac5433df1d8b7897d65b1068ba64364db84"
+  },
+  {
+    "case": "FE2S2-40-P2",
+    "cohort": "large-85120; additional naphthalene separate readout cohort when applicable",
+    "physical_metadata": {
+      "basis": null,
+      "case_id": "FE2S2-40-P2",
+      "core_energy": 0.0,
+      "geometry": null,
+      "hf_energy_Ha": -116.20581611506098,
+      "hf_id": 1099511626752,
+      "mapping": "Jordan-Wigner",
+      "n_qubits": 40,
+      "nalpha": 15,
+      "nbeta": 15,
+      "norb": 20,
+      "orbital_order": "interleaved alpha/beta, orbital0 at most-significant logical bit",
+      "physical_arrays_sha256": {
+        "eri": "9bcfbe7b4ba64d588144b61d9fcf48455acd199947398b9ea1a0646d0b9dbf0f",
+        "h1": "a7a8e3fd3adf4109cd59e5ee4503fad0f40c49f8025fb60e8e8122f1859d5e17"
+      },
+      "problem_id": "9ea4b7acce1f3f129daaf96505a43e6c99452ecf8dc967694955240e51d6ccaa",
+      "qualification": {
+        "HF_absolute_difference_Ha": 2.842170943040401e-14,
+        "HF_reconstructed_Ha": -116.20581611506101,
+        "integral_symmetry_max_errors": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "no_SCF_or_FCI_run": true,
+        "orbital_conversion": {
+          "all_comparison_methods_use_same_transformed_integrals": true,
+          "kind": "SOURCE_MO_COEFF_ORTHOGONAL_TRANSFORM",
+          "matrix_sha256": "73577dccaf6fbae5d8dc58af6ea33250d53a1706d73021a40d4d0c9f6c2bcfe7",
+          "orthogonality_error": 1.3322676295501878e-15,
+          "raw_paper_script_reproduction_is_separate": true,
+          "source_integrals_HF_determinant_energy_Ha": -107.10843910577711
+        }
+      },
+      "schema": "paper-physical-input-1",
+      "source": {
+        "archive_sha256": "80da3b1d9515c6755f9ef271cfd30368e48d3ac34ff91f3c304edcb1aca99c0e",
+        "commit": "b52bca05650e60d890b06ac0a3b6d167303d0a90",
+        "path": "molecules-catalog/data/molecular_data/fe2s2_30e20o.json.xz",
+        "repository": "kevinsung/lucj"
+      }
+    },
+    "reference_scope": "registered reference; independent reference certification is not implied",
+    "source_relative_path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/data/physical/FE2S2-40-P2/problem.json",
+    "source_sha256": "d5819d3d79c07e1eb699304a9ec5517cf434f1dfc10ca5ac2596a4a9f45a8ee4"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "cohort": "small-exact-singlet",
+    "origin": "saved original table",
+    "path": "data/original-tables/small-all_CI_shot_results.csv",
+    "rows": 5580,
+    "sha256": "be4a079935ab63717372c5aa6f0e022952b6df1a94015cf6ac2bfcf8ce25c584"
+  },
+  {
+    "cohort": "large-85120",
+    "origin": "preserved prior export view; numeric rows unchanged",
+    "path": "data/original-tables/large-all-endpoints.csv",
+    "rows": 468,
+    "sha256": "3dc7968c0d381ceaf35a330c666c43b16627cd1a69639d27ac441e4a5b6f6499"
+  },
+  {
+    "cohort": "naphthalene-additional",
+    "origin": "preserved prior export view; numeric rows unchanged",
+    "path": "data/original-tables/naphthalene-all-endpoints.csv",
+    "rows": 213,
+    "sha256": "bc89851972e6cf7021f5d8a0ef7f2e4f82e938db508cb8f67f2197ec4d6d6850"
+  }
+]

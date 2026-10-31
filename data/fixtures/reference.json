@@ -1,0 +1,57 @@
+{
+  "request_digest": "1b6ce2cc0c6500d042d44a9ceaf509fa18607820aa6f97a34088b7c94039a412",
+  "schema": "reference-1",
+  "case": {
+    "molecule": "LiH",
+    "distance": 1.5,
+    "basis": "sto-3g",
+    "charge": 0,
+    "spin": 0,
+    "geometry": [
+      [
+        "Li",
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        "H",
+        [
+          0.0,
+          0.0,
+          1.5
+        ]
+      ]
+    ],
+    "frozen_core_spatial": 1,
+    "orbitals": "RHF canonical, ascending MO energy",
+    "mapping": "Jordan-Wigner",
+    "orbital_order": "interleaved alpha0,beta0,alpha1,beta1,...",
+    "state_index": "OpenFermion big endian; logical q -> Qiskit wire n-1-q"
+  },
+  "pyscf": "2.14.0",
+  "n_orbitals": 5,
+  "n_qubits": 10,
+  "n_electrons": 2,
+  "nalpha": 1,
+  "nbeta": 1,
+  "hf_id": 768,
+  "rhf_energy": -7.863357621535113,
+  "fci_energy": -7.882139960235316,
+  "hf_weight_fci": 0.9774486769779263,
+  "correlation_energy": -0.01878233870020285,
+  "fci_residual": 9.528845491580322e-16,
+  "fci_weight_sum": 1.0,
+  "scf_solver": "DIIS_RHF",
+  "scf_converged": true,
+  "fci_converged": true,
+  "seconds": 0.2101239999756217,
+  "artifact_sha256": {
+    "hamiltonian.npz": "b2bd807b2fb716900ee91d018f801ec144954564b3e9cf979cef4494371e9b69",
+    "reference.npz": "2a74daccb4539b444a9f3af8893ba551c7abd38e2bf6aade85a259453f5c199c",
+    "determinants.csv": "1071235c02d51f2de3b36a51a0d19a0d3df1901895cb437b2bd5ddaeb78f276f",
+    "determinants.parquet": "c1c0873746ead4de955dfcc393e3c3dd1c0f671c562bd5111d21f4f15d1afdd7"
+  }
+}

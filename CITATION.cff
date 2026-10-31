@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "This is a private preparation snapshot. Cite a specific archived release when available; no publication DOI has been assigned."
+title: "RAACS: policy and research-data archive"
+type: software
+authors:
+  - family-names: Watanabe
+    given-names: Rei
+version: 0.1.0
+date-released: '2026-10-31'
+repository-code: 'https://github.com/Reimangod/raacs-study'
+abstract: >-
+  Code snapshots, policy definitions, simulation samples and selected-CI results
+  for the RAACS study, including LUCJ and SqDRIFT comparisons. Numerical claims
+  are conditional on the registered cohorts, spin conventions and cost budgets.

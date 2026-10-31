@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="450" viewBox="0 0 1000 450">
+<rect width="1000" height="450" fill="white"/>
+<g font-family="Arial,sans-serif" font-size="13" fill="black">
+<text x="90" y="24">small-exact-singlet / BeH2_R1.3 / SAME_TOTAL_100000 / 85120</text>
+<text x="90" y="46">Physical CI energy; mean of 3 recorded D-matched readout replicates</text>
+<path d="M90 80 V355 H650" fill="none" stroke="black"/>
+<text x="280" y="413">Actual determinant dimension D</text>
+<text x="16" y="245" transform="rotate(-90 16 245)">Energy [Ha]</text>
+<text x="90.00" y="377" text-anchor="middle">1</text>
+<text x="82" y="359.00" text-anchor="end">-15.580493</text>
+<text x="230.00" y="377" text-anchor="middle">9.75</text>
+<text x="82" y="290.25" text-anchor="end">-15.575418</text>
+<text x="370.00" y="377" text-anchor="middle">18.5</text>
+<text x="82" y="221.50" text-anchor="end">-15.570342</text>
+<text x="510.00" y="377" text-anchor="middle">27.25</text>
+<text x="82" y="152.75" text-anchor="end">-15.565266</text>
+<text x="650.00" y="377" text-anchor="middle">36</text>
+<text x="82" y="84.00" text-anchor="end">-15.560190</text>
+<polyline points="90.00,94.73 138.00,161.61 218.00,196.33 330.00,202.47 474.00,338.28 650.00,340.27" fill="none" stroke="#0072B2" stroke-width="1.5"/>
+<circle cx="90.00" cy="94.73" r="2.5" fill="#0072B2"/>
+<circle cx="138.00" cy="161.61" r="2.5" fill="#0072B2"/>
+<circle cx="218.00" cy="196.33" r="2.5" fill="#0072B2"/>
+<circle cx="330.00" cy="202.47" r="2.5" fill="#0072B2"/>
+<circle cx="474.00" cy="338.28" r="2.5" fill="#0072B2"/>
+<circle cx="650.00" cy="340.27" r="2.5" fill="#0072B2"/>
+<text x="680" y="88" fill="#0072B2">RAACS</text>
+<text x="90" y="440">Saved-data derivative, not new sampling. Missing sources are listed separately.</text>
+</g></svg>

@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "raacs-study"
+version = "0.1.0"
+description = "Policy, data provenance and saved-result reproduction for the RAACS study"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "Rei Watanabe"}]
+license = "MIT"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8.3,<10"]
+science = ["numpy==2.4.6", "scipy==1.17.1", "pyscf==2.14.0", "threadpoolctl==3.7.0"]
+historical-policy = ["numpy==2.4.6", "scipy==1.17.1", "pyscf==2.14.0", "threadpoolctl==3.7.0", "qiskit==2.6.0", "ffsim==0.0.84", "jax==0.10.2", "openfermion==1.8.1", "quimb==1.15.0", "sympy==1.14.0", "networkx==3.6.1"]
+
+[project.urls]
+Repository = "https://github.com/Reimangod/raacs-study"
+
+[project.scripts]
+raacs-study = "raacs_study.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/raacs_study"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

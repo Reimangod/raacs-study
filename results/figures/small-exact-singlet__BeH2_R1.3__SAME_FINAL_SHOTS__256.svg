@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="450" viewBox="0 0 1000 450">
+<rect width="1000" height="450" fill="white"/>
+<g font-family="Arial,sans-serif" font-size="13" fill="black">
+<text x="90" y="24">small-exact-singlet / BeH2_R1.3 / SAME_FINAL_SHOTS / 256</text>
+<text x="90" y="46">Physical CI energy; mean of 3 recorded D-matched readout replicates</text>
+<path d="M90 80 V355 H650" fill="none" stroke="black"/>
+<text x="280" y="413">Actual determinant dimension D</text>
+<text x="16" y="245" transform="rotate(-90 16 245)">Energy [Ha]</text>
+<text x="90.00" y="377" text-anchor="middle">1</text>
+<text x="82" y="359.00" text-anchor="end">-15.585595</text>
+<text x="230.00" y="377" text-anchor="middle">9.75</text>
+<text x="82" y="290.25" text-anchor="end">-15.579171</text>
+<text x="370.00" y="377" text-anchor="middle">18.5</text>
+<text x="82" y="221.50" text-anchor="end">-15.572748</text>
+<text x="510.00" y="377" text-anchor="middle">27.25</text>
+<text x="82" y="152.75" text-anchor="end">-15.566325</text>
+<text x="650.00" y="377" text-anchor="middle">36</text>
+<text x="82" y="84.00" text-anchor="end">-15.559902</text>
+<polyline points="90.00,94.73 138.00,157.12" fill="none" stroke="#0072B2" stroke-width="1.5"/>
+<circle cx="90.00" cy="94.73" r="2.5" fill="#0072B2"/>
+<circle cx="138.00" cy="157.12" r="2.5" fill="#0072B2"/>
+<text x="680" y="88" fill="#0072B2">Compressed_LUCJ_CCSD_L2</text>
+<polyline points="90.00,94.73" fill="none" stroke="#D55E00" stroke-width="1.5"/>
+<circle cx="90.00" cy="94.73" r="2.5" fill="#D55E00"/>
+<text x="680" y="113" fill="#D55E00">LUCJ_CCSD_L1</text>
+<polyline points="90.00,94.73 138.00,120.77" fill="none" stroke="#009E73" stroke-width="1.5"/>
+<circle cx="90.00" cy="94.73" r="2.5" fill="#009E73"/>
+<circle cx="138.00" cy="120.77" r="2.5" fill="#009E73"/>
+<text x="680" y="138" fill="#009E73">LUCJ_CCSD_L2</text>
+<polyline points="90.00,94.73" fill="none" stroke="#CC79A7" stroke-width="1.5"/>
+<circle cx="90.00" cy="94.73" r="2.5" fill="#CC79A7"/>
+<text x="680" y="163" fill="#CC79A7">LUCJ_CCSD_L4</text>
+<polyline points="90.00,94.73" fill="none" stroke="#E69F00" stroke-width="1.5"/>
+<circle cx="90.00" cy="94.73" r="2.5" fill="#E69F00"/>
+<text x="680" y="188" fill="#E69F00">LUCJ_MP2_L2</text>
+<polyline points="90.00,94.73 138.00,147.58 218.00,177.07 330.00,202.40 474.00,300.48 650.00,340.27" fill="none" stroke="#56B4E9" stroke-width="1.5"/>
+<circle cx="90.00" cy="94.73" r="2.5" fill="#56B4E9"/>
+<circle cx="138.00" cy="147.58" r="2.5" fill="#56B4E9"/>
+<circle cx="218.00" cy="177.07" r="2.5" fill="#56B4E9"/>
+<circle cx="330.00" cy="202.40" r="2.5" fill="#56B4E9"/>
+<circle cx="474.00" cy="300.48" r="2.5" fill="#56B4E9"/>
+<circle cx="650.00" cy="340.27" r="2.5" fill="#56B4E9"/>
+<text x="680" y="213" fill="#56B4E9">RAACS</text>
+<polyline points="90.00,94.73 138.00,123.52 218.00,161.11 330.00,180.87" fill="none" stroke="#333333" stroke-width="1.5"/>
+<circle cx="90.00" cy="94.73" r="2.5" fill="#333333"/>
+<circle cx="138.00" cy="123.52" r="2.5" fill="#333333"/>
+<circle cx="218.00" cy="161.11" r="2.5" fill="#333333"/>
+<circle cx="330.00" cy="180.87" r="2.5" fill="#333333"/>
+<text x="680" y="238" fill="#333333">SqDRIFT20</text>
+<polyline points="90.00,94.73" fill="none" stroke="#777777" stroke-width="1.5"/>
+<circle cx="90.00" cy="94.73" r="2.5" fill="#777777"/>
+<text x="680" y="263" fill="#777777">SqDRIFT5</text>
+<text x="90" y="440">Saved-data derivative, not new sampling. Missing sources are listed separately.</text>
+</g></svg>

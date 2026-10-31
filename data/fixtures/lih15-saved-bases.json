@@ -1,0 +1,24 @@
+[
+  {
+    "CI_CPU_seconds_first_solve": "0.0004199999999998649",
+    "CI_wall_seconds_first_solve": "0.0006243340030778199",
+    "basis_id": "f2aafd67b19a7bb30bf840cbffea1d6aa95c26a69f5826800b41a08c9f2eb1b3",
+    "case": "LiH_R1.5",
+    "energy_Ha": "-7.863357621535115",
+    "residual_norm": "0.0",
+    "selected_spin_strings": "[1]",
+    "singlet_dimension": "1",
+    "spin_square": "0.0"
+  },
+  {
+    "CI_CPU_seconds_first_solve": "0.00028600000000000847",
+    "CI_wall_seconds_first_solve": "0.00028570901486091316",
+    "basis_id": "65c4b34885739072f88210fd71f057ff8cd0475a1e36d38c2de422781dc04b1e",
+    "case": "LiH_R1.5",
+    "energy_Ha": "-7.881586430747888",
+    "residual_norm": "2.1173790391453886e-16",
+    "selected_spin_strings": "[1, 2, 4, 16]",
+    "singlet_dimension": "10",
+    "spin_square": "0.0"
+  }
+]

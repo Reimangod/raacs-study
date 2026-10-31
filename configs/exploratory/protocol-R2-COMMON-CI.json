@@ -1,0 +1,22 @@
+{
+  "cycle": "R2-COMMON-CI-v1",
+  "purpose": "Apply the same R128/no-OO C3 readout to every available C5 source, both RAACS versions and both classical CISD selectors; no favorable-source filtering",
+  "cases": ["NAPH20-BLOCK-BOYS", "N2-32-R1p2-P2", "N2-32-R2p4-P2", "FE2S2-40-P2"],
+  "source_families": ["ALL_C5_FROZEN_MANIFEST_CELLS", "RAACS_B3_SEED73001", "RAACS_B4_SEED74001", "C6_DETERMINISTIC_CISD_MARGINAL", "C6_CLASSICAL_CISD_100K_DRAWS"],
+  "expected_available_sources": 49,
+  "expected_missing_same_problem_sources": 7,
+  "source_selection": "All C5 entries including missingness; fixed B3/B4 seeds, no outcome or energy ranking",
+  "r_cap": 128,
+  "orbital_optimization": "NONE, unchanged original physical basis",
+  "spin": "C3 finite0.1Ha projected S2 penalty, physical energy separate, not an exact singlet certificate",
+  "numerical_backend": "Same qualified C7/R1 SA-k2 reader, exact particle-hole backend, deterministic seed20261025",
+  "per_CI_wall_cap_seconds": 60,
+  "configuration_selection": "HF plus frequency/numeric order, or exact CISD coefficient marginal/numeric order; never reference/FCI coefficients",
+  "RAACS_budget": "100k includes original pilot; use original independent final counts only, retain pilot and construction cost",
+  "classical_baselines": "CISD selectors have no quantum sampling circuit; do not report their correlated states as prepared with zero gates",
+  "resources": "Keep original common logical resources and optional Rustiq resources separate; no hardware comparison claim",
+  "source_cost_scope": "Existing counts are reused, not remeasured; retain all historical initialization/construction/shot costs outside new incremental CI cost",
+  "new_model_shots": 0,
+  "actual_QPU_shots": 0,
+  "goal_complete": false
+}

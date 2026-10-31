@@ -1,0 +1,176 @@
+{
+  "canonical_implementation": "historical/frontierloop/spin_beam.py:SpinBeamEngine",
+  "cohort_protocols": [
+    "configs/small-original-protocol.json",
+    "configs/large-original-protocol.json",
+    "configs/additional-naphthalene-original-protocol.json"
+  ],
+  "display_alias": {
+    "B4": "RAACS"
+  },
+  "entrypoint_warning": "Snapshots are for exact source lineage. Historical paths/runners are not the portable CLI.",
+  "exploratory_configurations": [
+    {
+      "historical_configuration": "protocol-B1.json",
+      "path": "configs/exploratory/protocol-B1.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "f9975f3a942b0ad045af0abbd60002cf74c620081e3b4a7eac57b58475ef2e0f"
+    },
+    {
+      "historical_configuration": "protocol-B2.json",
+      "path": "configs/exploratory/protocol-B2.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "68f4ea00bf532778b9b70cf6a31a8151565e6a3fb009bdcbcfccf49ac14d3d22"
+    },
+    {
+      "historical_configuration": "protocol-B3.json",
+      "path": "configs/exploratory/protocol-B3.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "b7dc36c75f373a52d5b43184dd956d7a9b072e2e26839a6db59533a68b5b6829"
+    },
+    {
+      "historical_configuration": "protocol-B4.json",
+      "path": "configs/exploratory/protocol-B4.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "4a400bba067cf7575ada9c6f4b9c2faedf9c24c51062f67815463f48b9f87dae"
+    },
+    {
+      "historical_configuration": "protocol-C2-OO.json",
+      "path": "configs/exploratory/protocol-C2-OO.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "ee896d96f6eefd5683e847004cdc648fb5e0686d8df853c6420657a0f89f442f"
+    },
+    {
+      "historical_configuration": "protocol-C3-SPIN-OO.json",
+      "path": "configs/exploratory/protocol-C3-SPIN-OO.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "cf803d92ed5238812afb4905d63d56afed5b1165ed43c8407f1865887067a1e7"
+    },
+    {
+      "historical_configuration": "protocol-C4-SINGLET-OO.json",
+      "path": "configs/exploratory/protocol-C4-SINGLET-OO.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "be59764b5175a3c6854ba33a15b609f548b3e8202144cd1ddc206a3d2a77b4a0"
+    },
+    {
+      "historical_configuration": "protocol-C5-CONTROLS.json",
+      "path": "configs/exploratory/protocol-C5-CONTROLS.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "77e6481e7d300b57a153d6d241848ca9adb1671022f754dc594f85d05fffa73c"
+    },
+    {
+      "historical_configuration": "protocol-C6-CLASSICAL-CISD.json",
+      "path": "configs/exploratory/protocol-C6-CLASSICAL-CISD.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "49f8bcfbe4921b47d14b1ce49274ccb3fe25bd42091a7a731d181ea64df8605b"
+    },
+    {
+      "historical_configuration": "protocol-C7-LOWEST-ROOT.json",
+      "path": "configs/exploratory/protocol-C7-LOWEST-ROOT.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "83b1a91ed74104cba889e0e12693f8eb6a849b7a471cd57c490f14e838c83854"
+    },
+    {
+      "historical_configuration": "protocol-D0-NATIVE-RESOURCE.json",
+      "path": "configs/exploratory/protocol-D0-NATIVE-RESOURCE.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "7cef81e2938b62ad36918f57830c278d57bac552936edb0667ffe49b908a9d0a"
+    },
+    {
+      "historical_configuration": "protocol-D1-MERGED-RESOURCE.json",
+      "path": "configs/exploratory/protocol-D1-MERGED-RESOURCE.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "4ee16a2fdb7912e13f378801842144db049a67f1033baee9615158bb46236553"
+    },
+    {
+      "historical_configuration": "protocol-D2-COMPRESSION-SCREEN.json",
+      "path": "configs/exploratory/protocol-D2-COMPRESSION-SCREEN.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "fed0265d2b96f316c9cda1877297be34a185411f0a81f7a0bc4bcfb59fe7b59a"
+    },
+    {
+      "historical_configuration": "protocol-F2-POSITIVE-MARGINAL.json",
+      "path": "configs/exploratory/protocol-F2-POSITIVE-MARGINAL.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "54c8d2d58e2c6c8fd1a24c51565a02c573ea0f6db5c64c3c8da88867e9336d9e"
+    },
+    {
+      "historical_configuration": "protocol-G2-FROZEN-OCCUPATION.json",
+      "path": "configs/exploratory/protocol-G2-FROZEN-OCCUPATION.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "dd770fbbadf9a6893a18406019babe959b3d13bc24324e45de834d2086ab209b"
+    },
+    {
+      "historical_configuration": "protocol-G3-FULLBANK-PROJECTION.json",
+      "path": "configs/exploratory/protocol-G3-FULLBANK-PROJECTION.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "3f3b513cd56b17ce7e9660bc66ecd8769e376907c8ca3ff54dca90847f822270"
+    },
+    {
+      "historical_configuration": "protocol-G4-STRONG-PROJECTION.json",
+      "path": "configs/exploratory/protocol-G4-STRONG-PROJECTION.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "2cbdb6d4f7df7dbdeab307a7ff6231efd9599e47f1d4d81d4724fa6530b55d67"
+    },
+    {
+      "historical_configuration": "protocol-G5-WHOLE-N20.json",
+      "path": "configs/exploratory/protocol-G5-WHOLE-N20.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "5ab901f5d8312dade2a440ca18e7ab66956737bf76082331fc4fa6934acf4ee0"
+    },
+    {
+      "historical_configuration": "protocol-G6-OPT3-PREFIX.json",
+      "path": "configs/exploratory/protocol-G6-OPT3-PREFIX.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "0dbbb3285a963f9f1862b25e9444fcf911558bcecfe9c604a8a99518ed57c6a4"
+    },
+    {
+      "historical_configuration": "protocol-H1-HALF-REMAP.json",
+      "path": "configs/exploratory/protocol-H1-HALF-REMAP.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "e4848eec67d9c926ea20632315aba12282b871bf4524630eb46ad1d38436ed96"
+    },
+    {
+      "historical_configuration": "protocol-R1-CI-CAP-SCREEN.json",
+      "path": "configs/exploratory/protocol-R1-CI-CAP-SCREEN.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "221b2d30e9d1790ed2ed74402295ee661cb5ca555b68f0f8fd5449931ab83061"
+    },
+    {
+      "historical_configuration": "protocol-R2-COMMON-CI.json",
+      "path": "configs/exploratory/protocol-R2-COMMON-CI.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "d8fe8c0611a319b893ad0a4430b3249b1a69211ac7fa696a265b5a2d2fd4b632"
+    },
+    {
+      "historical_configuration": "protocol-T1-NATIVE-TRIM.json",
+      "path": "configs/exploratory/protocol-T1-NATIVE-TRIM.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "97ad0416645b36dc32c714a1e98bead121d3f6c12f41df8c71fb4d92d84e001a"
+    },
+    {
+      "historical_configuration": "protocol-T2-POOLED-SELECTION.json",
+      "path": "configs/exploratory/protocol-T2-POOLED-SELECTION.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "2366adebefdba1002d1c64369c433e2cd67a22696d2d544e7e06d7e0b25d598d"
+    },
+    {
+      "historical_configuration": "protocol-T3-READOUT-SEEDS.json",
+      "path": "configs/exploratory/protocol-T3-READOUT-SEEDS.json",
+      "role": "exploratory; not fresh independent confirmation",
+      "sha256": "52472b1bf254229dfd84b775d496c2da42926d12f5429070a973192db90678cf"
+    }
+  ],
+  "inherited_search": "historical/frontierloop/beam.py:BeamEngine",
+  "not_aliases": [
+    "ACTIVE",
+    "earlier RAACS variants"
+  ],
+  "schema": "policy-registry-1",
+  "support_packages": [
+    "historical/frontierloop",
+    "historical/raacsnext",
+    "historical/paperstudy",
+    "historical/benchmark"
+  ]
+}

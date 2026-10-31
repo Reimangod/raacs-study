@@ -1,0 +1,18 @@
+{
+  "cycle": "D0-NATIVE-RESOURCE",
+  "stage": "outcome-free compiler resource preflight, not sampler performance",
+  "cases": ["NAPH20-BLOCK-BOYS", "N2-32-R1p2-P2", "N2-32-R2p4-P2", "FE2S2-40-P2"],
+  "source": "existing same-problem author-compressed LUCJ L1 operator, fixed before D0 outcomes; not a RAACS policy input",
+  "layer_fractions": [0.25, 0.5, 0.75],
+  "native_optimizer": {"method": "L-BFGS-B", "options": {"maxiter": 25, "maxfun": 300}},
+  "source_selection_uses_energy": false,
+  "molecular_energy_evaluations": 0,
+  "model_shots": 0,
+  "actual_QPU_shots": 0,
+  "resources": "same all-to-all CX basis, optimization 1, seed 8137; exact comparator uses PRE_INIT; approximation materialized before counters",
+  "simulator_qualification": "independent small Qiskit full-Fock state and ffsim primitive-sector evolution; never high-level capped UCJ shortcut",
+  "paper_compression_baseline": "native ffsim Hilbert-Schmidt orbital compression, not claimed new",
+  "limit": "single-particle orbital matrix error is not whole-state or Z-distribution fidelity; no energy/Recovery inferred",
+  "postprocessing": "no CI/OO in D0",
+  "goal_complete": false
+}

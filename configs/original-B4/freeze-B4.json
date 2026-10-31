@@ -1,0 +1,44 @@
+{
+  "files": {
+    "bank.py": "3feb49ff00cae00f7da04c21b6fe9e1ea38e318356895a5a1340dcb0d385d1a1",
+    "beam.py": "08574d5c7b057df7c6ce365cd91fc411330c63b0650b473a1e24b3bd6515417b",
+    "journal.py": "50901b23d0a6ac46523be5158e03a828adc37bf8c7b7f242bb787762a569e94b",
+    "run_b4.py": "0a8e9c1552abc1a2b0287b965e9d589cff84f9d213a204c8698adac849a63da8",
+    "singlet.py": "e7726fde1a5a907e15c15ee4192133eade3a6c71902009e0c7b6954ad5dda8a2",
+    "singlet_cache.py": "164048df73ebc96b1ee697e6bb0d447d2350b446f921e08b3c9971553010c0a7",
+    "spin_beam.py": "88ae24648b5302e15b62303579bf96a17f6fca4e12a5b22e5b21cf2f65ef4d04"
+  },
+  "final_OO_protocol_SHA256": "be59764b5175a3c6854ba33a15b609f548b3e8202144cd1ddc206a3d2a77b4a0",
+  "protocol_SHA256": "4a400bba067cf7575ada9c6f4b9c2faedf9c24c51062f67815463f48b9f87dae",
+  "qualification_test_SHA256": "ea43d9bac90467d64a3b61555df6035924f774c9a84be03301cc0ef01e0fcf91",
+  "readout_dependencies": {
+    "C3_frozen_dependencies": {
+      "files": {
+        "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/ceo-sampler-benchmark/.venv/lib/python3.11/site-packages/ffsim/variational/orbital_optimization.py": "d5bdfb9798dcaf8aa1eb831feaef26d7f5c3d2c56118751f82ff33a735db9602",
+        "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/ceo-sampler-benchmark/.venv/lib/python3.11/site-packages/pyscf/fci/addons.py": "a317adbe693172d8006bd4ded4355a1cfe004018d4dd9061e9b28f211e989517",
+        "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/ceo-sampler-benchmark/.venv/lib/python3.11/site-packages/pyscf/fci/selected_ci.py": "47c19aaa0d3d2413100fbf41d71c8f7955901da121afc65402f11c8cd62efda2",
+        "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/frontierloop/run_orbital.py": "ccbf7e07a3dfd85d5a367490472f7caa4549bd04588d7db440a553181efbb65b",
+        "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/frontierloop/run_spin_orbital.py": "df9fe9c191b0e2e0ce1097d8a1da7d2222c5bb34fb299bd32379d29b1aeb2d1f",
+        "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/frontierloop/spin_orbital.py": "8d5648567e863d243bc07b46d922432bc6940b69a77edddb1d8791cd738e5bb5",
+        "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/protocol-C3-SPIN-OO.json": "cf803d92ed5238812afb4905d63d56afed5b1165ed43c8407f1865887067a1e7",
+        "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/test_spin_orbital.py": "2aeea414bf6a2ad8879116bdeaf00bed777740314caea8c0a90173b556e2256b"
+      },
+      "new_model_shots_authorized": 0,
+      "runtime": {
+        "ffsim": "0.0.84",
+        "jax": "0.10.2",
+        "numpy": "2.4.6",
+        "pyscf": "2.14.0",
+        "scipy": "1.17.1"
+      },
+      "world_best_claim_authorized": false
+    },
+    "files": {
+      "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/frontierloop/run_singlet_orbital.py": "7a597c85a9ab0465201c450792123634d8ae3471443611ac22b3cda6a1e0000f",
+      "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/frontierloop/singlet.py": "e7726fde1a5a907e15c15ee4192133eade3a6c71902009e0c7b6954ad5dda8a2",
+      "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/protocol-C4-SINGLET-OO.json": "be59764b5175a3c6854ba33a15b609f548b3e8202144cd1ddc206a3d2a77b4a0",
+      "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-frontier-research-loop-2026-10-25/test_singlet.py": "80229e9fe65697a9f8b5201026aa6f1aa224b4e3b384c433933ece73e4f6cf84"
+    },
+    "new_quantum_model_shots": 0
+  }
+}

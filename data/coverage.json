@@ -1,0 +1,34 @@
+{
+  "endpoint_rows": 6261,
+  "endpoint_rows_by_cohort": {
+    "large-85120": 468,
+    "naphthalene-additional": 213,
+    "small-exact-singlet": 5580
+  },
+  "missingness_warning": "small missing source replicates are listed separately, not invented as zero-energy endpoints",
+  "new_FCI_reference_computations": 0,
+  "new_QPU_shots": 0,
+  "new_model_samples": 0,
+  "physical_conditions": 10,
+  "recorded_replicate_labels_by_cohort": {
+    "large-85120": [
+      "280101",
+      "280102",
+      "280103"
+    ],
+    "naphthalene-additional": [
+      "280301",
+      "280302",
+      "280303"
+    ],
+    "small-exact-singlet": [
+      "281601",
+      "281602",
+      "281603"
+    ]
+  },
+  "small_available_source_replicates": 132,
+  "small_missing_source_replicates": 12,
+  "small_planned_source_replicates": 144,
+  "units_warning": "Endpoint rows, seed labels, distinct structures, model samples and CI roots are different units."
+}

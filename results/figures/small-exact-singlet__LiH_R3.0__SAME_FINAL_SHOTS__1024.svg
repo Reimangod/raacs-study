@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="450" viewBox="0 0 1000 450">
+<rect width="1000" height="450" fill="white"/>
+<g font-family="Arial,sans-serif" font-size="13" fill="black">
+<text x="90" y="24">small-exact-singlet / LiH_R3.0 / SAME_FINAL_SHOTS / 1024</text>
+<text x="90" y="46">Physical CI energy; mean of 3 recorded D-matched readout replicates</text>
+<path d="M90 80 V355 H650" fill="none" stroke="black"/>
+<text x="280" y="413">Actual determinant dimension D</text>
+<text x="16" y="245" transform="rotate(-90 16 245)">Energy [Ha]</text>
+<text x="90.00" y="377" text-anchor="middle">1</text>
+<text x="82" y="359.00" text-anchor="end">-7.803765</text>
+<text x="230.00" y="377" text-anchor="middle">7</text>
+<text x="82" y="290.25" text-anchor="end">-7.779216</text>
+<text x="370.00" y="377" text-anchor="middle">13</text>
+<text x="82" y="221.50" text-anchor="end">-7.754667</text>
+<text x="510.00" y="377" text-anchor="middle">19</text>
+<text x="82" y="152.75" text-anchor="end">-7.730118</text>
+<text x="650.00" y="377" text-anchor="middle">25</text>
+<text x="82" y="84.00" text-anchor="end">-7.705569</text>
+<polyline points="90.00,94.73 160.00,138.42 276.67,339.87" fill="none" stroke="#0072B2" stroke-width="1.5"/>
+<circle cx="90.00" cy="94.73" r="2.5" fill="#0072B2"/>
+<circle cx="160.00" cy="138.42" r="2.5" fill="#0072B2"/>
+<circle cx="276.67" cy="339.87" r="2.5" fill="#0072B2"/>
+<text x="680" y="88" fill="#0072B2">Compressed_LUCJ_CCSD_L2</text>
+<polyline points="90.00,94.73 160.00,138.42 276.67,339.87" fill="none" stroke="#D55E00" stroke-width="1.5"/>
+<circle cx="90.00" cy="94.73" r="2.5" fill="#D55E00"/>
+<circle cx="160.00" cy="138.42" r="2.5" fill="#D55E00"/>
+<circle cx="276.67" cy="339.87" r="2.5" fill="#D55E00"/>
+<text x="680" y="113" fill="#D55E00">LUCJ_CCSD_L1</text>
+<polyline points="90.00,94.73 160.00,138.42 276.67,339.87" fill="none" stroke="#009E73" stroke-width="1.5"/>
+<circle cx="90.00" cy="94.73" r="2.5" fill="#009E73"/>
+<circle cx="160.00" cy="138.42" r="2.5" fill="#009E73"/>
+<circle cx="276.67" cy="339.87" r="2.5" fill="#009E73"/>
+<text x="680" y="138" fill="#009E73">LUCJ_CCSD_L2</text>
+<polyline points="90.00,94.73 160.00,138.42 276.67,339.87" fill="none" stroke="#CC79A7" stroke-width="1.5"/>
+<circle cx="90.00" cy="94.73" r="2.5" fill="#CC79A7"/>
+<circle cx="160.00" cy="138.42" r="2.5" fill="#CC79A7"/>
+<circle cx="276.67" cy="339.87" r="2.5" fill="#CC79A7"/>
+<text x="680" y="163" fill="#CC79A7">LUCJ_CCSD_L4</text>
+<polyline points="90.00,94.73 160.00,156.30 276.67,339.87" fill="none" stroke="#E69F00" stroke-width="1.5"/>
+<circle cx="90.00" cy="94.73" r="2.5" fill="#E69F00"/>
+<circle cx="160.00" cy="156.30" r="2.5" fill="#E69F00"/>
+<circle cx="276.67" cy="339.87" r="2.5" fill="#E69F00"/>
+<text x="680" y="188" fill="#E69F00">LUCJ_MP2_L2</text>
+<polyline points="90.00,94.73 160.00,97.16 276.67,140.28 440.00,340.07 650.00,340.27" fill="none" stroke="#56B4E9" stroke-width="1.5"/>
+<circle cx="90.00" cy="94.73" r="2.5" fill="#56B4E9"/>
+<circle cx="160.00" cy="97.16" r="2.5" fill="#56B4E9"/>
+<circle cx="276.67" cy="140.28" r="2.5" fill="#56B4E9"/>
+<circle cx="440.00" cy="340.07" r="2.5" fill="#56B4E9"/>
+<circle cx="650.00" cy="340.27" r="2.5" fill="#56B4E9"/>
+<text x="680" y="213" fill="#56B4E9">RAACS</text>
+<polyline points="90.00,94.73 160.00,156.30 276.67,291.10 440.00,340.07" fill="none" stroke="#333333" stroke-width="1.5"/>
+<circle cx="90.00" cy="94.73" r="2.5" fill="#333333"/>
+<circle cx="160.00" cy="156.30" r="2.5" fill="#333333"/>
+<circle cx="276.67" cy="291.10" r="2.5" fill="#333333"/>
+<circle cx="440.00" cy="340.07" r="2.5" fill="#333333"/>
+<text x="680" y="238" fill="#333333">SqDRIFT20</text>
+<polyline points="90.00,94.73 160.00,156.30" fill="none" stroke="#777777" stroke-width="1.5"/>
+<circle cx="90.00" cy="94.73" r="2.5" fill="#777777"/>
+<circle cx="160.00" cy="156.30" r="2.5" fill="#777777"/>
+<text x="680" y="263" fill="#777777">SqDRIFT5</text>
+<text x="90" y="440">Saved-data derivative, not new sampling. Missing sources are listed separately.</text>
+</g></svg>

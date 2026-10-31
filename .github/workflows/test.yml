@@ -1,0 +1,26 @@
+name: archive-tests
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  saved-results:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --locked --extra test
+      - run: uv run raacs-study verify --repo .
+      - run: uv run pytest -q
+      - run: uv run raacs-study reproduce --repo . --output reproduced
+  small-saved-ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --locked --extra science
+      - run: uv run raacs-study ci-check --repo . --output reproduced/saved-ci-check.json

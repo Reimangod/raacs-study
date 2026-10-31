@@ -1,0 +1,83 @@
+{
+  "ACTIVE_deterministic_construction_reused": true,
+  "B4_CPU_cap_seconds": 60,
+  "B4_fresh_construction": true,
+  "B4_pilot_in_total_budget": true,
+  "D_selection": "HF_FIRST_COMBINED_SPIN_FREQUENCY_INTEGER_TIEBREAK",
+  "LUCJ1_initialization_reused": true,
+  "LUCJ_fits": {
+    "begin_reps": 20,
+    "energy_used": false,
+    "layers": [
+      2,
+      4
+    ],
+    "optimizer_settings": "UNMODIFIED_PINNED_AUTHOR_LBFGSB",
+    "regularization": false,
+    "step": 2,
+    "wall_seconds_each": 600
+  },
+  "R_grid": [
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    192,
+    252
+  ],
+  "SqDRIFT_lengths": [
+    5,
+    20,
+    50
+  ],
+  "SqDRIFT_randomizations_per_time": 500,
+  "SqDRIFT_samples_per_circuit": 512,
+  "SqDRIFT_times": [
+    1,
+    2,
+    3
+  ],
+  "actual_QPU_shots": 0,
+  "bindings": {
+    "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/naphthalene_extension.py": "608aa93f21ff81aa3de501fb430f4fe7134ad64c6e48f2830902df29a43aaf7d",
+    "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/paper-aligned-confirmation-2026-10-28/sdk_readout_v2.py": "45f54960cbd449b710213621aa3baf4668ae97c91c2bce287080446c50cf6cbd",
+    "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/data/initialization-fresh/NAPH20-BLOCK-BOYS/amplitudes.npz": "e899b414df837c76e79f566e47ecc4c4da6fce3d8be06dfe5e95c95084b1ff8d",
+    "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/data/physical/NAPH20-BLOCK-BOYS/integrals.npz": "0405d06f8266ca74dd1f878dc68c90299a10c6600abfb5b8b26f5fb3f94acd2b",
+    "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/data/physical/NAPH20-BLOCK-BOYS/problem.json": "2a1157be948a2cc1d855fd5f3f56d69e71f9f8d6a1be3d569c6d26a1a3b397da",
+    "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/paperstudy/lucj.py": "8e6c9c9a4b1d19e0e493cad899a33a1d4c74ea3819a05d5788aae98a88607c53",
+    "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/paperstudy/sqdrift_execution.py": "2e3c5a03fbfb079b7d51372d915db30622540b5182ef20e87dd62e7cbb42e10f",
+    "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/paperstudy/sqdrift_native_worker.py": "ee9a19c4b01d322057bfbc4ef929044fada01f470f8f816e617f3f7367fd529b",
+    "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe/outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/vendor/C1/src/lucj/operator_task/lucj_compressed_t2_task_ffsim/compressed_t2.py": "50e7e29fe8c8e08c461ce2f4227a1dd9c6d02606069087a1e3e8ba20013ca67a"
+  },
+  "case": "NAPH20-BLOCK-BOYS",
+  "full_paper_reproduction": false,
+  "matched_final_shots": "MIN_FINAL_AVAILABLE_OVER_ALL_AVAILABLE_METHODS_AND_RUNS_BEFORE_CI_ENERGY",
+  "max_A100_jobs": 2,
+  "maximum_samples": 18432000,
+  "methods": [
+    "ACTIVE",
+    "B4",
+    "LUCJ1",
+    "LUCJ2",
+    "LUCJ4",
+    "SqDRIFT5",
+    "SqDRIFT20",
+    "SqDRIFT50"
+  ],
+  "new_output_cap_bytes": 536870912,
+  "orbital_scope": "REGISTERED_OCCUPIED_VIRTUAL_BLOCK_BOYS_NOT_BYTE_IDENTICAL_PAPER_LO",
+  "preexisting_outcomes_known_exploratory_extension_not_independent_method_validation": true,
+  "report_physical_H": true,
+  "reuse_old_counts_in_fresh_cohort": false,
+  "root_wall_seconds": 120,
+  "seeds": [
+    280301,
+    280302,
+    280303
+  ],
+  "spin_penalty": 0.1,
+  "strict_singlet_projection": false,
+  "total_model_samples_per_method_run": 768000
+}

@@ -1,0 +1,446 @@
+[
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/.mpl-cache",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runtime",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/frontierloop/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B1/FE2S2-40-P2/71001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B1/FE2S2-40-P2/71011/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B1/FE2S2-40-P2/71019/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B1/N2-32-R1p2-P2/71001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B1/N2-32-R1p2-P2/71011/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B1/N2-32-R1p2-P2/71019/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B1/N2-32-R2p4-P2/71001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B1/N2-32-R2p4-P2/71011/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B1/N2-32-R2p4-P2/71019/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B1/NAPH20-BLOCK-BOYS/71001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B1/NAPH20-BLOCK-BOYS/71011/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B1/NAPH20-BLOCK-BOYS/71019/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B2/FE2S2-40-P2/ALIGNED_BANK/72001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B2/FE2S2-40-P2/ALIGNED_SINGLE/72001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B2/FE2S2-40-P2/TIME_BANK/72001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B2/N2-32-R1p2-P2/ALIGNED_BANK/72001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B2/N2-32-R1p2-P2/ALIGNED_SINGLE/72001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B2/N2-32-R1p2-P2/TIME_BANK/72001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B2/N2-32-R2p4-P2/ALIGNED_BANK/72001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B2/N2-32-R2p4-P2/ALIGNED_SINGLE/72001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B2/N2-32-R2p4-P2/TIME_BANK/72001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B2/NAPH20-BLOCK-BOYS/ALIGNED_BANK/72001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B2/NAPH20-BLOCK-BOYS/ALIGNED_SINGLE/72001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B2/NAPH20-BLOCK-BOYS/TIME_BANK/72001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B3/FE2S2-40-P2/73001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B3/N2-32-R1p2-P2/73001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B3/N2-32-R2p4-P2/73001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B3/NAPH20-BLOCK-BOYS/73001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B4/FE2S2-40-P2/74001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B4/N2-32-R1p2-P2/74001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B4/N2-32-R2p4-P2/74001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/B4/NAPH20-BLOCK-BOYS/74001/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/F2-POSITIVE-MARGINAL-v1/remote-output/frontierloop/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/F2-POSITIVE-MARGINAL-v1/remote-output/paperstudy/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/G3-FULLBANK-PROJECTION-v1/compiled-members.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/G4-STRONG-PROJECTION-v1/compiled-members.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/G5-WHOLE-N20-v1/compiled-members.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/H1-HALF-REMAP-v1/remote-output/frontierloop/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/H1-HALF-REMAP-v1/remote-output/paperstudy/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/N57-FILTERED-SQDRIFT-PAIRED-v1/shots.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/N62-FILTER-ONLY-N20-v1/shots.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/N63-FULL-N5-COMMON-BUDGET-v1/shots.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/N65-ENSEMBLE-BREADTH30-v1/shots.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/N66-FULL20-BREADTH30-v1/shots.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/runs/T3-READOUT-SEEDS-v1/evaluations.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-frontier-research-loop-2026-10-25/tests/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-practical-frontier-v2-2026-10-25/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-practical-frontier-v2-2026-10-25/shots.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-practical-frontier-v2-2026-10-25/raacsnext/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-practical-frontier-v2-2026-10-25/runs/DEVELOPMENT/FE2S2-40-P2/D0/100000-51001/native/events.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-practical-frontier-v2-2026-10-25/runs/DEVELOPMENT/FE2S2-40-P2/D0/100000-51011/native/events.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-practical-frontier-v2-2026-10-25/runs/DEVELOPMENT/FE2S2-40-P2/D0/100000-51019/native/events.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-practical-frontier-v2-2026-10-25/runs/DEVELOPMENT/N2-32-R1p2-P2/D0/100000-51001/native/events.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-practical-frontier-v2-2026-10-25/runs/DEVELOPMENT/N2-32-R1p2-P2/D0/100000-51011/native/events.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-practical-frontier-v2-2026-10-25/runs/DEVELOPMENT/N2-32-R1p2-P2/D0/100000-51019/native/events.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-practical-frontier-v2-2026-10-25/runs/DEVELOPMENT/N2-32-R2p4-P2/D0/100000-51001/native/events.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-practical-frontier-v2-2026-10-25/runs/DEVELOPMENT/N2-32-R2p4-P2/D0/100000-51011/native/events.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-practical-frontier-v2-2026-10-25/runs/DEVELOPMENT/N2-32-R2p4-P2/D0/100000-51019/native/events.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-practical-frontier-v2-2026-10-25/runs/DEVELOPMENT/NAPH20-BLOCK-BOYS/D0/100000-51001/native/events.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-practical-frontier-v2-2026-10-25/runs/DEVELOPMENT/NAPH20-BLOCK-BOYS/D0/100000-51011/native/events.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-practical-frontier-v2-2026-10-25/runs/DEVELOPMENT/NAPH20-BLOCK-BOYS/D0/100000-51019/native/events.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/runtime",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/TN-controls-v1/FE2S2-40-P2/terminal-evidence-v1/remote/paperstudy/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/TN-controls-v1/N2-32-R1p2-P2/terminal-evidence-v1/remote/paperstudy/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/TN-controls-v1/N2-32-R2p4-P2/terminal-evidence-v1/remote/paperstudy/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/TN-controls-v1/NAPH20-P1/terminal-evidence-v1/remote/paperstudy/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/TN-controls-v2/FE2S2-40-P2/terminal-evidence/remote/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/TN-controls-v2/FE2S2-40-P2/terminal-evidence/remote/paperstudy/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/TN-controls-v2/N2-32-R1p2-P2/terminal-evidence/remote/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/TN-controls-v2/N2-32-R1p2-P2/terminal-evidence/remote/paperstudy/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/TN-controls-v2/N2-32-R2p4-P2/terminal-evidence/remote/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/TN-controls-v2/N2-32-R2p4-P2/terminal-evidence/remote/paperstudy/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/paperstudy/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/raw-archives-v1/path-index.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/table-comparison-v2/.pytest_cache",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/table-comparison-v2/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/tests/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/vendor/C1/src/lucj/operator_task/lucj_compressed_t2_task_ffsim/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/paper-aligned-confirmation-2026-10-28/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/paper-aligned-confirmation-2026-10-28/.DS_Store",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/paper-aligned-confirmation-2026-10-28/model-shots.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/paper-aligned-confirmation-2026-10-28/naphthalene-extension-v1/.DS_Store",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/B4_small_molecule_comparison.zip",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/gpu-inputs.tar.gz",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/gpu-results.tar.gz",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/sources/BeH2_R1.3/B4/281601/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/sources/BeH2_R1.3/B4/281602/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/sources/BeH2_R1.3/B4/281603/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/sources/BeH2_R2.5/B4/281601/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/sources/BeH2_R2.5/B4/281602/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/sources/BeH2_R2.5/B4/281603/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/sources/H6_R1.4/B4/281601/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/sources/H6_R1.4/B4/281602/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/sources/H6_R1.4/B4/281603/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/sources/H6_R2.2/B4/281601/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/sources/H6_R2.2/B4/281602/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/sources/H6_R2.2/B4/281603/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/sources/LiH_R1.5/B4/281601/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/sources/LiH_R1.5/B4/281602/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/sources/LiH_R1.5/B4/281603/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/sources/LiH_R3.0/B4/281601/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/sources/LiH_R3.0/B4/281602/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-small-molecule-comparison-2026-10-28-v1/sources/LiH_R3.0/B4/281603/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-lih15-from-hf-2026-10-28-v1/__pycache__",
+    "reason": "environment/cache/git or symlink directory"
+  },
+  {
+    "path": "outputs/b4-lih15-from-hf-2026-10-28-v1/run/draws.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  },
+  {
+    "path": "outputs/b4-lih15-from-hf-2026-10-28-v1/run/model-shots.sqlite-shm",
+    "reason": "cache/transport copy/credential-shaped file/symlink"
+  }
+]
