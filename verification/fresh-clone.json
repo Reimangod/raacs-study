@@ -1,0 +1,12 @@
+{
+  "commit": "2da826a6bf7f55185fa533b6ec17a9ff0e820cef",
+  "fresh_remote_clone": true,
+  "tests_passed": 20,
+  "saved_basis_CI_checks": 2,
+  "max_CI_energy_difference_Ha": 0.0,
+  "table_summary_rows": 2092,
+  "SVG_figures": 40,
+  "new_model_samples": 0,
+  "new_FCI_reference_computations": 0,
+  "limitations": "Does not regenerate the full molecular source campaign; import check uses available historical dependencies"
+}

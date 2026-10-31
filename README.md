@@ -9,6 +9,8 @@ current display name, not a rename of ACTIVE or every earlier policy.
 See [Japanese guide](docs/README_JA.md), [scope](docs/SCOPE.md),
 [method](docs/METHOD.md), [data definitions](docs/DATA_DICTIONARY.md),
 [reproduction](docs/REPRODUCTION.md), and [limitations](docs/LIMITATIONS.md).
+The [figure guide](results/README.md) lists all ten physical conditions without
+selecting only favorable examples.
 
 ## Start here
 
@@ -55,3 +57,7 @@ paths and side effects: do not invoke them as the portable API.
 Original-data hash checks establish integrity, not scientific correctness or
 independent peer review. See the machine-readable verification reports for the
 layers actually exercised by this release.
+
+Recorded cohort code/input bindings were checked: 451/451 match captured bytes.
+The separately cloned saved-result package passes 20 tests and two tiny saved-
+basis CI checks. These checks do not certify full fresh molecular regeneration.

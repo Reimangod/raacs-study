@@ -1,9 +1,9 @@
 {
   "files": [
     {
-      "bytes": 7867,
+      "bytes": 7973,
       "path": "data/archive-manifest.json",
-      "sha256": "40051e02fe9cba0ec43166f659cb80775fe6ed958a8a59ed2c7f110edc58ca02"
+      "sha256": "418be26ddb2ec8a29dd6d68d0707b860e2c286a6f271a6b911167f8221a1174f"
     },
     {
       "bytes": 20957,
@@ -76,6 +76,46 @@
       "sha256": "bc89851972e6cf7021f5d8a0ef7f2e4f82e938db508cb8f67f2197ec4d6d6850"
     },
     {
+      "bytes": 292846,
+      "path": "data/original-tables/prior-export-START_HERE_all_endpoint_index.csv",
+      "sha256": "c5c2ace363eda93952637343fca6b76719a460a59aceab1b38e288ae682fc253"
+    },
+    {
+      "bytes": 407109,
+      "path": "data/original-tables/prior-export-existing_85120shots_all_endpoints.csv",
+      "sha256": "3dc7968c0d381ceaf35a330c666c43b16627cd1a69639d27ac441e4a5b6f6499"
+    },
+    {
+      "bytes": 30949,
+      "path": "data/original-tables/prior-export-existing_85120shots_group_summary.csv",
+      "sha256": "dbaacc3fa13a6dd8c1ee4109797506526bd258a7efb9e6dc537da6c1bcd8b943"
+    },
+    {
+      "bytes": 4839,
+      "path": "data/original-tables/prior-export-existing_common_D_resource_points.csv",
+      "sha256": "e1a419781f2f9f2cd3d8edb4a88b4c6f8cc894804d63bf7adffd6835fb795eb8"
+    },
+    {
+      "bytes": 50880,
+      "path": "data/original-tables/prior-export-existing_shot_sweep_sample_capacity.csv",
+      "sha256": "4fbaefe2ce64a548a88cfc01754883eedbe8d2a29acbca026f5f03a8a5278019"
+    },
+    {
+      "bytes": 107942,
+      "path": "data/original-tables/prior-export-new_naphthalene_all_endpoints.csv",
+      "sha256": "bc89851972e6cf7021f5d8a0ef7f2e4f82e938db508cb8f67f2197ec4d6d6850"
+    },
+    {
+      "bytes": 1908,
+      "path": "data/original-tables/prior-export-new_naphthalene_cost_components.csv",
+      "sha256": "51dd85b152cb1549226b9373ea55c89bbea65b9d3b7d746d5ad37b64692ba124"
+    },
+    {
+      "bytes": 12794,
+      "path": "data/original-tables/prior-export-new_naphthalene_group_summary.csv",
+      "sha256": "9a0834d2160f1b40c348591162fda3a69800b3eb74f5ae4fd428a8ba70f6833f"
+    },
+    {
       "bytes": 127585,
       "path": "data/original-tables/small-B4_final_operations_with_reasons.csv",
       "sha256": "5f144a04edd348c269374046f8098f1e5da4dad5b4f916faa753f72bdb8b86d8"
@@ -124,6 +164,11 @@
       "bytes": 83229,
       "path": "data/original-tables/small-unique_CI_roots.csv",
       "sha256": "ade02cb3a912bd4ed8433ba9962e98f73c1461c5a6094ed016f3175a5570cd23"
+    },
+    {
+      "bytes": 70225,
+      "path": "data/policy-records.csv",
+      "sha256": "1c787ca1459ab1a93279b76557e5bba0849a6fe03d7153195a5936441ba18eeb"
     },
     {
       "bytes": 9342167,
@@ -291,9 +336,9 @@
       "sha256": "4a400bba067cf7575ada9c6f4b9c2faedf9c24c51062f67815463f48b9f87dae"
     },
     {
-      "bytes": 8068,
+      "bytes": 8172,
       "path": "configs/policy-registry.json",
-      "sha256": "bbc67c7fe3c0a2d117485f0391281329006cc9a36e1ee2806998c192e6206a3b"
+      "sha256": "adbe61095c06c8afe87f54b04b161f93c77dd559b071016482ccbbb418616976"
     },
     {
       "bytes": 10346,
@@ -4489,6 +4534,11 @@
       "bytes": 16814,
       "path": "historical/vendor/ceo/adaptvqe/utils.py",
       "sha256": "9a37cc1a7349956c3b957ed0d30b0565759e88b668af46e99c4d1eeb69e093d5"
+    },
+    {
+      "bytes": 2448,
+      "path": "results/README.md",
+      "sha256": "e8986429440e7f48de9ed08c34fea064c7267c265a3edfc79060b9d95d2f5634"
     },
     {
       "bytes": 532484,

@@ -199,6 +199,7 @@
   "new_molecular_sampling": false,
   "original_bytes": 7587293111,
   "original_file_count": 153794,
+  "original_workspace_prefix": "/Users/rei/Documents/Codex/2026-07-13/users-rei-documents-ceo-adapt-vqe",
   "publication_status": "PRIVATE_GITHUB_DELIVERY_NO_ZENODO_DOI",
   "remote_download_command_template": "gh release download data-v0.1.0 --repo Reimangod/raacs-study --dir data/downloads",
   "schema": "raacs-research-archives-1",

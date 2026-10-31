@@ -1,10 +1,12 @@
 {
+  "all_captured_configuration_records": "data/policy-records.csv",
   "canonical_implementation": "historical/frontierloop/spin_beam.py:SpinBeamEngine",
   "cohort_protocols": [
     "configs/small-original-protocol.json",
     "configs/large-original-protocol.json",
     "configs/additional-naphthalene-original-protocol.json"
   ],
+  "configuration_record_count": 187,
   "display_alias": {
     "B4": "RAACS"
   },

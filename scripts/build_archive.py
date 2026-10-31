@@ -191,6 +191,10 @@ def build_tables(workspace,source_entries):
         for cohort,src,dest in (("large-85120","tables/existing_85120shots_all_endpoints.csv","large-all-endpoints.csv"),
                                 ("naphthalene-additional","tables/new_naphthalene_all_endpoints.csv","naphthalene-all-endpoints.csv")):
             tables.append((cohort,"data/original-tables/"+dest,archive.read(src)))
+        for name in sorted(archive.namelist()):
+            if name.startswith("tables/")and name.endswith(".csv"):
+                target=REPO/"data/original-tables"/("prior-export-"+Path(name).name)
+                target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(archive.read(name))
     rows=[];original=[];lineage=[]
     for cohort,name,payload in tables:
         p=REPO/name;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(payload)
