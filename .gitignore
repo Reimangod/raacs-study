@@ -12,3 +12,4 @@ artifacts/
 *.pending
 .env
 .env.*
+.ci-reports/

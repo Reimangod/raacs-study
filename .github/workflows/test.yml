@@ -1,26 +1,137 @@
-name: archive-tests
+name: Study verification
 on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
+concurrency:
+  group: verification-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+env:
+  UV_VERSION: '0.9.8'
+  PYTHONUNBUFFERED: '1'
 jobs:
   saved-results:
-    runs-on: ubuntu-latest
+    name: Core and reproduction / Python ${{ matrix.python }}
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.11', '3.12', '3.13']
     steps:
-      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
-      - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6
-      - run: uv sync --locked --extra test
-      - run: uv run raacs-study verify --repo .
-      - run: uv run pytest -q
-      - run: uv run raacs-study reproduce --repo . --output reproduced
+      - name: Check out source without persisted credentials
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Set up pinned uv and Python
+        uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6
+        with:
+          version: ${{ env.UV_VERSION }}
+          python-version: ${{ matrix.python }}
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+      - name: Install locked test dependencies
+        run: uv sync --locked --extra test
+      - name: Prepare report directory
+        run: mkdir -p .ci-reports
+      - name: Run regression tests
+        run: uv run --no-sync pytest -q --junitxml=.ci-reports/pytest.xml
+      - name: Verify included evidence and original numerical strings
+        run: uv run --no-sync raacs-study verify --repo . > .ci-reports/integrity.json
+      - name: Compare all regenerated products without changing results
+        run: uv run --no-sync python scripts/check_reproduction.py --repo . --output .ci-reports/reproduction.json
+      - name: Retain small diagnostic reports
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: core-python-${{ matrix.python }}
+          path: .ci-reports/
+          retention-days: 7
+          include-hidden-files: true
   small-saved-ci:
-    runs-on: ubuntu-latest
+    name: Numerical parity / two saved LiH bases
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     env:
       OPENBLAS_NUM_THREADS: '1'
       OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
       - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6
-      - run: uv sync --locked --extra science
-      - run: uv run raacs-study ci-check --repo . --output reproduced/saved-ci-check.json
+        with:
+          version: ${{ env.UV_VERSION }}
+          python-version: '3.12'
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+      - name: Install locked numerical dependencies
+        run: uv sync --locked --extra science
+      - name: Check two bounded saved bases without new sampling
+        run: uv run --no-sync raacs-study ci-check --repo . --output .ci-reports/saved-ci.json
+      - name: Retain numerical report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: saved-basis-ci
+          path: .ci-reports/
+          retention-days: 7
+          include-hidden-files: true
+  documentation:
+    name: English documentation and local links
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6
+        with:
+          version: ${{ env.UV_VERSION }}
+          python-version: '3.12'
+      - run: uv sync --locked
+      - name: Check documentation without external network requests
+        run: uv run --no-sync python scripts/check_docs.py --repo . --output .ci-reports/docs.json
+      - name: Retain documentation report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: documentation
+          path: .ci-reports/
+          retention-days: 7
+          include-hidden-files: true
+  installed-wheel:
+    name: Installed wheel and CLI
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6
+        with:
+          version: ${{ env.UV_VERSION }}
+          python-version: '3.12'
+      - name: Build the portable package
+        run: uv build --wheel --no-sources --python 3.12
+      - name: Create a clean install environment
+        run: uv venv .venv-wheel --python 3.12
+      - name: Install only the built wheel
+        run: uv pip install --python .venv-wheel/bin/python --no-deps dist/*.whl
+      - name: Confirm import comes from the installed wheel
+        run: .venv-wheel/bin/python -c 'import raacs_study; assert ".venv-wheel" in raacs_study.__file__'
+      - name: Exercise packaged CLI help
+        run: .venv-wheel/bin/raacs-study --help
+      - run: mkdir -p .ci-reports
+      - name: Verify repository using the installed CLI
+        run: .venv-wheel/bin/raacs-study verify --repo . > .ci-reports/installed-wheel.json
+      - name: Retain wheel and smoke-test report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: installed-wheel
+          path: |
+            dist/*.whl
+            .ci-reports/
+          retention-days: 7
+          include-hidden-files: true

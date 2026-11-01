@@ -1,38 +1,5 @@
-# B4と既存論文手法の比較データ
+# Earlier selected comparison export
 
-## 対象
-- ナフタレン：20 qubit。
-- N₂：32 qubit、結合長1.2 Åと2.4 Å。
-- Fe₂S₂：40 qubit。
-- B4、LUCJ 1/2/4層、SqDRIFT 5/20/50。SqDRIFT50は新ナフタレン群のみ。
-
-小規模分子、別の提案手法、過去のCEO圧縮・Transformer実験は収録しません。直近の比較で使用した保存済みの表、生サンプル、選択配置、CI結果、回路、構築記録、物理問題、計数規則を収録しています。全ての旧探索版・未採用分岐の総バックアップではありません。
-
-## 最初に開くファイル
-tables/START_HERE_all_endpoint_index.csv：条件・手法・seed・Shot・D・Energy・Recovery・回路資源・CI CPU秒をまとめた一覧。
-tables/new_naphthalene_group_summary.csv：新ナフタレン3回の集計。
-tables/existing_85120shots_group_summary.csv：既存4条件の集計。
-tables/new_naphthalene_cost_components.csv：探索・最終測定・古典CPUの費用。
-
-## データを混同しないための注意
-1. 既存群の最終85,120 model Shotと、新ナフタレン群の最終753,120 model Shotは別の実験群です。contextがPREFIX_CRNの行はさらに別の測定量の系列です。母数は各行に記録しています。
-2. Shotは無雑音モデルからのサンプル数で、実QPU shotは0です。
-3. Energyは測定回路のVQE期待値ではなく、サンプル由来の空間で計算したCI後の物理Hの値です。共通最終CIはH+0.1S²を解いて物理Hを評価し、厳密S=0射影とは区別します。
-4. Recoveryは相関エネルギー回収率です。配置回復処理の成功率ではありません。Fe₂S₂の参照値は未認証であり、そのRecoveryを認証済みの値として扱わないでください。
-5. 本実験のRはスピン別文字列数、D=R²です。原著によってRの意味が異なります。
-6. 未到達、欠測、失敗はそのまま残しています。D未到達を0 Energyや成功回だけの平均で補っていません。
-7. 最終Shot/Dが同じでも、構築・初期化・pilot・古典計算まで全て同じ費用とは限りません。LUCJはcompressed-t2初期化を基本とする登録実装で、最強のVQE/TN最適化版を再現したという意味ではありません。
-8. 新ナフタレンのLUCJ資源はauthor-native simplificationを適用したresource v2（1/2/4層のCNOT=322/544/988）を採用します。raw内の古い一般コンパイラー値や取得時メタデータを、最新の資源表へ上書きして混ぜないでください。既存群は当時の登録資源値を保持しています。
-9. 数値は我々の条件で行ったシミュレーション結果で、原著論文の数値の転記や完全なbyte-identical再現ではありません。
-
-## フォルダー
-- tables/：指定手法の行だけを抜き出したCSV。数値は変更していません。
-- conditions/：元の条件ファイルから指定手法だけを取り出した閲覧用VIEW。新しいfreezeや元プロトコルの改変ではありません。予算・閾値は元のままです。
-- raw/：選択した実験の元ファイルをbyte-identicalで格納。
-- views/：複数手法を含む元記録から対象外レコードを除いた派生ビュー。
-- provenance/：元ファイルのハッシュ、抽出操作、元パスとZIP内パスの対応。
-- MANIFEST.csv：ZIP内ファイルのサイズとSHA-256。
-
-元の絶対パスがJSON内に残っている場合は、provenance/SOURCE_PATH_MAP.csvでZIP内の場所を確認してください。未保存のCIベクトルや係数を捏造して補ってはいません。元のvector_SHA256だけが残る記録は、その状態で収録します。
-
-元データの変更・削除や、新規の実験・最適化は行っていません。未公開のデータを含むので外部共有前に内容を確認してください。
+The English guide is [PARENT_EXPORT.md](PARENT_EXPORT.md).
+This legacy path is retained for existing links. The original text remains in
+the immutable `data-v0.1.0` Git history.

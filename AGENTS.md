@@ -20,5 +20,10 @@ Read README.md and docs/SCOPE.md before changes. Shell commands use `rtk`.
 - Never run archived scripts indiscriminately: some submit jobs or write to old
   absolute paths. Use the documented safe reproduction entrypoints.
 - Core tests must be CPU-only and small. Full archive verification is separate.
+- Keep maintained documentation and new diagrams in English. Original-language
+  historical evidence is exempt and must retain its exact captured bytes.
+- For documentation/CI edits, run the tests plus scripts/check_docs.py and
+  scripts/check_reproduction.py. Write transient reports under .ci-reports/;
+  never replace the original verification records or reseal changed evidence.
 - Run tests, source-preservation checks and a fresh-clone reproduction before
   claiming a release is verified. Record unverified layers honestly.

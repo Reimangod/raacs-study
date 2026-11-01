@@ -9,23 +9,35 @@ tables or a claim of exact reproduction of each paper's highest-budget setup.
    [author implementation](https://github.com/mafaldaramoa/ceo-adapt-vqe).
    The delivered local vendor bytes and Apache-2.0 notice identify the actual
    circuit implementation used; current upstream main is not substituted.
-2. **Chemistry Beyond the Scale of Exact Diagonalization on a Quantum-Centric
-   Supercomputer.** [Paper](https://arxiv.org/abs/2405.05068),
+2. **Chemistry beyond the scale of exact diagonalization on a quantum-centric
+   supercomputer.** Science Advances 11, eadu9991 (2025).
+   [Published paper](https://doi.org/10.1126/sciadv.adu9991),
    [data repository](https://github.com/jrm874/sqd_data_repository),
    [archived data](https://doi.org/10.5281/zenodo.15324153).
    Context for sample-based quantum diagonalization and data organization.
 3. **Improved parameter initialization for the (local) unitary cluster Jastrow
-   ansatz.** [Paper v1](https://arxiv.org/abs/2511.22476v1),
+   ansatz.** [Recorded arXiv preprint v1](https://arxiv.org/abs/2511.22476v1),
    [source project](https://github.com/kevinsung/lucj).
    Captured C1 source metadata identifies commit
    `b52bca05650e60d890b06ac0a3b6d167303d0a90`; different registered LUCJ controls
    and initialization/readout conditions remain distinct.
 4. **Quantum chemistry with provable convergence via randomized sample-based
-   Krylov quantum diagonalization.** [SqDRIFT paper v3](https://arxiv.org/abs/2508.02578v3),
+   Krylov quantum diagonalization.** [Recorded SqDRIFT arXiv version v3](https://arxiv.org/abs/2508.02578v3),
    [qiskit-fermions implementation project](https://github.com/Qiskit/qiskit-fermions).
    N=5/20/50 controls follow their own recorded SDK, randomization and budget
    settings; this reference is not a claim to duplicate all paper experiments.
+5. **Quantum-selected configuration interaction: Classical diagonalization of
+   Hamiltonians in subspaces selected by quantum computers.** Physical Review
+   Research 8, 023268 (2026).
+   [Published paper](https://doi.org/10.1103/dmn4-snfx).
+   The foundational separation of quantum configuration sampling and classical
+   selected-space diagonalization. This is not a publication of RAACS itself.
 
 Precise code/input lineage is in the original protocols, source manifests,
 configuration inventory and protocol-binding audit. General repository-design
 sources are listed separately in REPOSITORY_DESIGN.md.
+
+Links to the recorded arXiv versions identify the literature versions used by
+the historical study; they are not labelled as peer-reviewed publications.
+Software documentation and source repositories establish implementation lineage,
+not publication of our numerical results.
