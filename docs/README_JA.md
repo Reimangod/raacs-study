@@ -1,34 +1,5 @@
-# RAACS研究データの読み方
+# Study overview
 
-このリポジトリは、既存のRAACS研究を第三者が調べるための入口です。
-新しい性能実験はしていません。旧データの`B4`は保存したまま、表示名をRAACSとしています。
-ACTIVEや過去の別policyを同じものにまとめてはいません。
-
-## 最初に見る順番
-
-1. `data/coverage.json`：何条件・何行あるか。行数は独立実験数ではありません。
-2. `data/catalog.csv`：分子、手法、Shot、R/D、Energy、Recovery、CNOT、Depth。
-3. `data/missing-sources.csv`：計算できなかった条件。0のエネルギーではありません。
-4. `configs/policy-registry.json`：現在の名前と実装・設定の対応。
-5. `docs/METHOD.md`：残差から量子回路を選ぶ処理。
-6. `docs/REPRODUCTION.md`：保存データから表・図・小さなCIを再計算する方法。
-
-## まず押さえること
-
-- 対象はLiH、BeH2、H6の6条件と、ナフタレン、N2、Fe2S2の4条件です。
-- 小分子、旧大分子、追加ナフタレンは、Shot数とCI処理が違う別の実験群です。
-- Shotは無雑音シミュレーションの測定サンプル数です。実量子機のShotは0です。
-- 表のEnergyは、量子回路で得たサンプルを使い、古典計算でCIを解いた後の値です。
-- Recoveryは「電子相関エネルギーをどれだけ回収したか」で、ノイズ修復率ではありません。
-- CNOTやDepthは、サンプルを得るために使った回路の資源です。
-- 同じShot・同じDでも、構築費用、初期化費用、スピン処理、CPU費用は同じとは限りません。
-- 失敗、未到達、過去の訂正も残します。成功した行だけで全体の優位性を判断しません。
-
-## 保存場所
-
-GitHubには説明、policy、再集計コード、一覧を置きます。
-大きな元データはPrivateのGitHub Release添付ファイルに保存します。
-長期保存のZenodo DOIは、まだ取得していません。DOI取得済み・公開済みとは扱いません。
-
-元データをまとめる際は、同じ内容を一度だけ圧縮保存し、元の全パスとの対応を残します。
-これは保存の重複排除であって、同じ回路の実際の繰り返し測定を費用から消す操作ではありません。
+The current English guide is [OVERVIEW.md](OVERVIEW.md).
+This legacy path is retained so existing links continue to work.
+Original-language evidence remains unchanged in the fixed data archive.

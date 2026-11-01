@@ -1,66 +1,134 @@
-# RAACS research archive
+# RAACS
 
-This repository packages **existing** RAACS policy implementations and simulation
-evidence, with LUCJ and SqDRIFT controls. It does not report a new experiment.
-The historical method ID **B4** is retained in raw records; **RAACS** is its
-current display name, not a rename of ACTIVE or every earlier policy.
+**Resource-aware adaptive sampling for quantum-selected configuration interaction.**
 
-**Status:** private research-archive preparation; no Zenodo DOI is assigned.
-See [Japanese guide](docs/README_JA.md), [scope](docs/SCOPE.md),
-[method](docs/METHOD.md), [data definitions](docs/DATA_DICTIONARY.md),
-[reproduction](docs/REPRODUCTION.md), and [limitations](docs/LIMITATIONS.md).
-The [figure guide](results/README.md) lists all ten physical conditions without
-selecting only favorable examples.
-Method/source citations are listed in [references](docs/REFERENCES.md).
-See [delivery status](docs/STATUS_JA.md) for the completed private archive and the
-remaining public/Zenodo publication boundary.
+[![Verification](https://github.com/Reimangod/raacs-study/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/Reimangod/raacs-study/actions/workflows/test.yml)
+[![Code license: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
+[![Original data: CC BY 4.0](https://img.shields.io/badge/original_data-CC_BY_4.0-blue.svg)](LICENSE-DATA.md)
 
-## Start here
+RAACS builds a small bank of quantum sampling circuits. A classical selected-CI
+calculation identifies useful electronic configurations; a resource-aware rule
+uses that information to propose the next circuit operations. The final samples
+are evaluated by classical configuration interaction (CI).
 
-1. `data/catalog.csv`: normalized endpoint index, retaining original IDs/values.
-2. `data/cases.json`: physical conditions and their source metadata.
-3. `configs/policy-registry.json`: policy names and exact source/config bindings.
-4. `data/archive-manifest.json`: archive locations, hashes, and scope.
-5. `results/`: portable tables and SVG figures generated from saved records.
-6. `data/coverage.json`: coverage, missingness and distinct counting units.
+This repository provides the **recorded policy, simulation data, and reproducible
+tables and figures**, including comparisons with LUCJ and SqDRIFT. It is a private
+research archive, not a new experiment or a claim of universal superiority.
+The fixed data release is [data-v0.1.0](https://github.com/Reimangod/raacs-study/releases/tag/data-v0.1.0).
+No publication DOI has been assigned.
 
-## CPU-only quick reproduction
+## How it works
+
+![RAACS workflow: molecular inputs feed a classical proposal step, candidate circuits are sampled, a classical CI selects a circuit bank, and reserved final samples produce the final CI readout. The selected bank feeds back into the proposal step. Quantum steps in this archive were simulated.](docs/figures/raacs-workflow.svg)
+
+1. **Start from the physical problem.** Use molecular integrals, electron counts,
+   the Hartree-Fock reference, and a fixed sampling budget.
+2. **Propose useful exchanges.** A small classical CI supplies a residual-based
+   priority. The registered rule also penalizes additional CNOT count and depth.
+3. **Test actual circuits.** Sample candidate exchange circuits at fixed angles,
+   then select a bank of at most four using classical CI scores.
+4. **Evaluate with fresh final samples.** Spend the reserved final budget on the
+   selected bank and report the post-CI energy and sampling-circuit resources.
+
+The implementation was historically called **B4**. Only that registered policy
+is displayed as **RAACS**; ACTIVE and other exploratory policies are different
+methods. See the [algorithm and source map](docs/METHOD.md).
+
+## Choose a starting point
+
+| You want to… | Open |
+|---|---|
+| Understand the study without reading code | [Study overview](docs/OVERVIEW.md) |
+| Inspect results for a particular molecule | [All-condition figure guide](results/README.md) |
+| Read individual numerical records | [Endpoint catalog](data/catalog.csv) and [field definitions](docs/DATA_DICTIONARY.md) |
+| Check the physical inputs and method identity | [Cases](data/cases.json) and [policy registry](configs/policy-registry.json) |
+| Rebuild the saved tables and plots | [Reproduction guide](docs/REPRODUCTION.md) |
+| Understand what is and is not verified | [Verification guide](docs/VERIFICATION.md) and [limitations](docs/LIMITATIONS.md) |
+
+## Reproduce in four commands
+
+Use Python 3.11 or newer and [uv](https://docs.astral.sh/uv/getting-started/installation/).
+Run these commands from a clone of this repository:
 
 ```sh
-uv sync --extra test --locked
-uv run raacs-study verify --repo .
-uv run raacs-study reproduce --repo . --output reproduced
-uv run pytest -q
+uv sync --locked --extra test
+uv run --no-sync raacs-study verify --repo .
+uv run --no-sync raacs-study reproduce --repo . --output reproduced
+uv run --no-sync pytest -q
 ```
 
-This layer does **not** resample circuits, solve new molecular ground states,
-submit jobs, contact a QPU, or use A100s. The source numerical columns remain
-strings in the faithful catalog; additional labels are separate fields.
+The generated summary is `reproduced/endpoint-summary.csv`; the plots are in
+`reproduced/figures/`. **No GPU, QPU, raw-data download, or new molecular sampling
+is needed.** The optional [saved-basis CI check](docs/REPRODUCTION.md#2-small-independent-saved-basis-ci-check)
+recomputes two small existing LiH bases, not an entire molecular study.
 
-See `docs/REPRODUCTION.md` for raw-archive download/verification and a separate
-small saved-basis CI check. Archived historical runners can contain absolute
-paths and side effects: do not invoke them as the portable API.
+## What is included
 
-## Scientific interpretation
+There are **10 distinct physical conditions** and **6,261 saved endpoint rows**.
+An endpoint row is a readout at a particular Shot/CI setting, **not an independent
+experiment**. Naphthalene appears in two separate acquisition cohorts.
 
-- All included study shots are noiseless **model samples**; actual QPU shots are
-  zero. Finite-shot randomness is not a hardware-noise simulation.
-- Energy is the physical-H expectation **after classical CI**, not necessarily
-  the energy expectation of the sampling circuit alone.
-- Recovery is correlation-energy recovery, not configuration-recovery success.
-- Small-molecule exact-singlet readout and larger-case spin-penalty readout are
-  separate cohorts. Equal raw determinant D does not imply equal CPU work.
-- Resources describe sampling circuits. Ensemble means are shot weighted where
-  registered; they are not a circuit preparing the final CI eigenvector.
-- Missing/unreached/capped runs remain visible. Unknown independent parameter
-  counts and incompletely validated references are not replaced by zero.
-- Original source status and final readout status are separate: a historical
-  `*_PENDING` source label is not evidence that completed readout is still live.
+| Molecule | Recorded geometry | Qubits | Cohort |
+|---|---|---:|---|
+| LiH | 1.5 and 3.0 Å | 10 | Small molecules |
+| BeH2 | 1.3 and 2.5 Å | 12 | Small molecules |
+| Linear H6 | 1.4 and 2.2 Å | 12 | Small molecules |
+| Naphthalene | Recorded block-Boys setup | 20 | Earlier large and additional naphthalene |
+| N2 | 1.2 and 2.4 Å | 32 | Earlier large |
+| Fe2S2 | Recorded cluster geometry | 40 | Earlier large |
 
-Original-data hash checks establish integrity, not scientific correctness or
-independent peer review. See the machine-readable verification reports for the
-layers actually exercised by this release.
+The catalog contains RAACS, registered LUCJ initializations/layer counts, and
+SqDRIFT5/20; SqDRIFT50 is available only in the additional naphthalene cohort.
+Coverage is not a full cross-product of every method and condition.
+See [coverage](data/coverage.json) and [missing sources](data/missing-sources.csv).
 
-Recorded cohort code/input bindings were checked: 451/451 match captured bytes.
-The separately cloned saved-result package passes 20 tests and two tiny saved-
-basis CI checks. These checks do not certify full fresh molecular regeneration.
+## Read the comparisons correctly
+
+| Quantity | What it means here |
+|---|---|
+| Energy | Physical-Hamiltonian energy **after classical CI**, not necessarily the sampling circuit's expectation value |
+| Recovery | Percentage of the reference correlation energy recovered; **not** a noise-repair success rate |
+| Shot count | Noiseless model samples; actual hardware/QPU shots are **zero** |
+| R and actual D | Spin-string cap and obtained determinant-space dimension; a requested D can be unreached |
+| CNOT and depth | Resources of the **sampling circuits**, using the registered decomposition and ensemble weighting |
+| Cost | Initialization, construction/pilot sampling, final sampling, and classical CI work are distinct components |
+
+Compare methods within the same cohort and readout setting. Matching final shots
+and actual D does **not** equalize total work, spin treatment, or initialization.
+Small-molecule exact-singlet and larger-case spin-penalty readouts remain separate.
+Missing values are not zero, and failed or D-unreached records are not discarded.
+Reference-certification gaps, including Fe2S2, are documented in
+[limitations](docs/LIMITATIONS.md).
+
+## What GitHub Actions verifies
+
+- **Core checks:** tests and archive integrity on Python 3.11, 3.12, and 3.13.
+- **Saved-result parity:** regenerate every portable table/plot product and check
+  it byte-for-byte against the committed products.
+- **Numerical check:** two saved LiH selected-CI bases, with one CPU thread.
+- **Documentation and packaging:** local links, English-language documentation,
+  safe SVGs, and an installed-wheel CLI smoke test.
+
+Each run retains small verification reports. Passing these checks establishes
+the stated software/data checks, **not** independent scientific review, full
+fresh molecular regeneration, or experimental quantum advantage.
+See [checks, commands, and boundaries](docs/VERIFICATION.md).
+
+## Data access and reuse
+
+The Git repository contains the lightweight catalog, policy snapshots, inputs
+for the tiny CI check, and plots. Approximately **4.4 GiB** of raw evidence is
+stored separately in private release assets; it is not needed for the quick start.
+See [archive access](docs/REPRODUCTION.md#3-original-data-archives),
+[archive manifest](data/archive-manifest.json), and [delivery status](docs/STATUS.md).
+
+New packaging code is [MIT licensed](LICENSE). Independently owned data is
+[CC BY 4.0](LICENSE-DATA.md); [third-party materials](THIRD_PARTY.md) retain their
+own terms. The broader archive has unresolved public-redistribution items and
+must remain private pending [rights review](docs/RIGHTS_AND_PUBLICATION.md).
+
+For attribution, use [CITATION.cff](CITATION.cff) and identify the exact data
+release. [Method references](docs/REFERENCES.md) distinguish publications,
+preprints, and implementation sources. Contributions should follow the
+[contributing guide](CONTRIBUTING.md); historical evidence and release tags must
+not be overwritten.
