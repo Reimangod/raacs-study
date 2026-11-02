@@ -29,8 +29,9 @@ def anchors(markdown: str) -> set[str]:
 
 def documentation_files(repo: Path) -> list[Path]:
     # Exclude captured research snapshots and fixed data by design.
+    guides = [repo / folder / "README.md" for folder in ("results", "data", "reference")]
     return sorted({*repo.glob("*.md"), *(repo / "docs").rglob("*.md"),
-                   *([repo / "results/README.md"] if (repo / "results/README.md").exists() else [])})
+                   *(path for path in guides if path.exists())})
 
 
 def check_documentation(repo: Path) -> dict:
@@ -84,7 +85,7 @@ def check_documentation(repo: Path) -> dict:
     return {"passed": not errors, "markdown_files_checked": len(files),
             "local_links_checked": links_checked, "documentation_svgs_checked": len(svg_files),
             "external_links_fetched": 0, "errors": errors,
-            "scope": "maintained documentation only; historical evidence is excluded"}
+            "scope": "maintained documentation only; original source code and scientific evidence are excluded"}
 
 
 def write_report(repo: Path, output: Path | None, report: dict) -> None:

@@ -98,8 +98,13 @@ def safe_member_name(name):
 
 
 def verify_repository(repo: Path):
-    checks = json.loads((repo / "data/derived-manifest.json").read_text())
+    checks = json.loads((repo / "data/manifest.json").read_text())
+    if checks.get("schema") != "research-distribution-1":
+        raise ValueError("Unsupported research-data manifest")
     errors = []
+    names = [entry["path"] for entry in checks["files"]]
+    if len(names) != len(set(names)):
+        errors.append("duplicate manifest paths")
     for entry in checks["files"]:
         name = entry["path"]
         if not safe_member_name(name):

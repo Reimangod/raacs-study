@@ -7,7 +7,7 @@ tables or a claim of exact reproduction of each paper's highest-budget setup.
 1. **Reducing the resources required by ADAPT-VQE using coupled exchange operators
    and improved subroutines.** [Published paper](https://www.nature.com/articles/s41534-025-01039-4),
    [author implementation](https://github.com/mafaldaramoa/ceo-adapt-vqe).
-   The delivered local vendor bytes and Apache-2.0 notice identify the actual
+   The retained local vendor bytes and Apache-2.0 notice identify the actual
    circuit implementation used; current upstream main is not substituted.
 2. **Chemistry beyond the scale of exact diagonalization on a quantum-centric
    supercomputer.** Science Advances 11, eadu9991 (2025).
@@ -33,9 +33,10 @@ tables or a claim of exact reproduction of each paper's highest-budget setup.
    The foundational separation of quantum configuration sampling and classical
    selected-space diagonalization. This is not a publication of RAACS itself.
 
-Precise code/input lineage is in the original protocols, source manifests,
-configuration inventory and protocol-binding audit. General repository-design
-sources are listed separately in REPOSITORY_DESIGN.md.
+Precise code/input lineage is in the original protocols,
+[source index](../data/source-files.json),
+[configuration inventory](../data/policy-records.csv), and
+[scientific-file checksums](../data/manifest.json).
 
 Links to the recorded arXiv versions identify the literature versions used by
 the historical study; they are not labelled as peer-reviewed publications.

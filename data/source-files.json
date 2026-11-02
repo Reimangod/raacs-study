@@ -1,0 +1,840 @@
+{
+  "schema": "reference-sources-1",
+  "selection": "registered RAACS policy, comparator implementations and static local dependency closure",
+  "archive_release": "data-v0.1.0",
+  "import_roots": [
+    "frontierloop.spin_beam",
+    "frontierloop.journal",
+    "frontierloop.bank",
+    "frontierloop.singlet_cache",
+    "benchmark.lucj",
+    "benchmark.sqdrift_ensemble",
+    "paperstudy.lucj",
+    "paperstudy.author_compressed",
+    "paperstudy.sqdrift_execution",
+    "paperstudy.sqdrift_native_worker",
+    "paperstudy.tn_final_readout"
+  ],
+  "scope": "Byte-identical reference code, not a portable molecular execution service. Static import closure does not certify runtime file or external-library availability.",
+  "files": [
+    {
+      "bytes": 215,
+      "destination": "reference/vendor/ceo/adaptvqe/__init__.py",
+      "kind": "byte-identical original",
+      "sha256": "f758807ac5237d835b7fdc53305a8a7a9a028b108b1a87296a4ef5ebe450497d",
+      "source_relative_path": "ceo-sampler-benchmark/vendor/ceo/adaptvqe/__init__.py",
+      "module": "adaptvqe",
+      "local_imports": [
+        "adaptvqe",
+        "adaptvqe.algorithms.adapt_vqe",
+        "adaptvqe.hamiltonians",
+        "adaptvqe.molecules",
+        "adaptvqe.pools"
+      ]
+    },
+    {
+      "bytes": 88,
+      "destination": "reference/vendor/ceo/adaptvqe/algorithms/__init__.py",
+      "kind": "byte-identical original",
+      "sha256": "36dcbfe9b09e14f20e61b6255ea69a00806d61f4cd99c937e85b2a93dd15b517",
+      "source_relative_path": "ceo-sampler-benchmark/vendor/ceo/adaptvqe/algorithms/__init__.py",
+      "module": "adaptvqe.algorithms",
+      "local_imports": [
+        "adaptvqe"
+      ]
+    },
+    {
+      "bytes": 35031,
+      "destination": "reference/vendor/ceo/adaptvqe/algorithms/adapt_data.py",
+      "kind": "byte-identical original",
+      "sha256": "89cbedb3cbcc9e06807b645fbdcd8575741aca8d540c0da6af16590fcd877629",
+      "source_relative_path": "ceo-sampler-benchmark/vendor/ceo/adaptvqe/algorithms/adapt_data.py",
+      "module": "adaptvqe.algorithms.adapt_data",
+      "local_imports": [
+        "adaptvqe.algorithms",
+        "adaptvqe.circuits",
+        "adaptvqe.op_conv"
+      ]
+    },
+    {
+      "bytes": 167130,
+      "destination": "reference/vendor/ceo/adaptvqe/algorithms/adapt_vqe.py",
+      "kind": "byte-identical original",
+      "sha256": "a2db9aa5a49e655862093d7c8843b3df9419b2017fd01277b23de0ae89e103fd",
+      "source_relative_path": "ceo-sampler-benchmark/vendor/ceo/adaptvqe/algorithms/adapt_vqe.py",
+      "module": "adaptvqe.algorithms.adapt_vqe",
+      "local_imports": [
+        "adaptvqe.algorithms",
+        "adaptvqe.algorithms.adapt_data",
+        "adaptvqe.chemistry",
+        "adaptvqe.circuits",
+        "adaptvqe.matrix_tools",
+        "adaptvqe.minimize",
+        "adaptvqe.op_conv",
+        "adaptvqe.pools",
+        "adaptvqe.tensor_helpers",
+        "adaptvqe.utils"
+      ]
+    },
+    {
+      "bytes": 5042,
+      "destination": "reference/vendor/ceo/adaptvqe/chemistry.py",
+      "kind": "byte-identical original",
+      "sha256": "ffec3b57a956209b9d95cbe5509e2afe3f3fb02f130500ce6acfdff87aea90a2",
+      "source_relative_path": "ceo-sampler-benchmark/vendor/ceo/adaptvqe/chemistry.py",
+      "module": "adaptvqe.chemistry",
+      "local_imports": [
+        "adaptvqe"
+      ]
+    },
+    {
+      "bytes": 49798,
+      "destination": "reference/vendor/ceo/adaptvqe/circuits.py",
+      "kind": "byte-identical original",
+      "sha256": "adc205b9c84cf4aa2ed42faecfd62279007bc37d4eafc33b9b6d353ae407cc18",
+      "source_relative_path": "ceo-sampler-benchmark/vendor/ceo/adaptvqe/circuits.py",
+      "module": "adaptvqe.circuits",
+      "local_imports": [
+        "adaptvqe",
+        "adaptvqe.op_conv",
+        "adaptvqe.utils"
+      ]
+    },
+    {
+      "bytes": 13678,
+      "destination": "reference/vendor/ceo/adaptvqe/hamiltonians.py",
+      "kind": "byte-identical original",
+      "sha256": "c39ce372be352f8800a1aac6a8746122be0b48907a92ca04ab55a9bfb4ac6a74",
+      "source_relative_path": "ceo-sampler-benchmark/vendor/ceo/adaptvqe/hamiltonians.py",
+      "module": "adaptvqe.hamiltonians",
+      "local_imports": [
+        "adaptvqe",
+        "adaptvqe.chemistry",
+        "adaptvqe.matrix_tools",
+        "adaptvqe.tensor_helpers"
+      ]
+    },
+    {
+      "bytes": 9760,
+      "destination": "reference/vendor/ceo/adaptvqe/matrix_tools.py",
+      "kind": "byte-identical original",
+      "sha256": "db3ce9a22649ac4f6cea39f952a6f7c9485a22881d8cfad4d75e7b0f5598a9c0",
+      "source_relative_path": "ceo-sampler-benchmark/vendor/ceo/adaptvqe/matrix_tools.py",
+      "module": "adaptvqe.matrix_tools",
+      "local_imports": [
+        "adaptvqe"
+      ]
+    },
+    {
+      "bytes": 10343,
+      "destination": "reference/vendor/ceo/adaptvqe/minimize.py",
+      "kind": "byte-identical original",
+      "sha256": "3aa929156a8432e83a432fd192a41ec2d59eaa7a0465a9d8108788d01740d2c4",
+      "source_relative_path": "ceo-sampler-benchmark/vendor/ceo/adaptvqe/minimize.py",
+      "module": "adaptvqe.minimize",
+      "local_imports": [
+        "adaptvqe"
+      ]
+    },
+    {
+      "bytes": 6489,
+      "destination": "reference/vendor/ceo/adaptvqe/molecules.py",
+      "kind": "byte-identical original",
+      "sha256": "b04224f7e8346e899a353f3b739b010ab23b1625121f499645681911e792ee05",
+      "source_relative_path": "ceo-sampler-benchmark/vendor/ceo/adaptvqe/molecules.py",
+      "module": "adaptvqe.molecules",
+      "local_imports": [
+        "adaptvqe"
+      ]
+    },
+    {
+      "bytes": 19811,
+      "destination": "reference/vendor/ceo/adaptvqe/op_conv.py",
+      "kind": "byte-identical original",
+      "sha256": "09c28532dceec5e046d4f6fc6e34f3be13da9d19bc7766ac7f8f70449a6736e2",
+      "source_relative_path": "ceo-sampler-benchmark/vendor/ceo/adaptvqe/op_conv.py",
+      "module": "adaptvqe.op_conv",
+      "local_imports": [
+        "adaptvqe",
+        "adaptvqe.matrix_tools"
+      ]
+    },
+    {
+      "bytes": 116497,
+      "destination": "reference/vendor/ceo/adaptvqe/pools.py",
+      "kind": "byte-identical original",
+      "sha256": "9ed927cc6bc2c270caeb7a4a2d734333a33f40d1d24bb7a9e72e39c73754f984",
+      "source_relative_path": "ceo-sampler-benchmark/vendor/ceo/adaptvqe/pools.py",
+      "module": "adaptvqe.pools",
+      "local_imports": [
+        "adaptvqe",
+        "adaptvqe.chemistry",
+        "adaptvqe.circuits",
+        "adaptvqe.op_conv",
+        "adaptvqe.tensor_helpers",
+        "adaptvqe.utils"
+      ]
+    },
+    {
+      "bytes": 4566,
+      "destination": "reference/vendor/ceo/adaptvqe/tensor_helpers.py",
+      "kind": "byte-identical original",
+      "sha256": "d1850ae459e7a56966b77e9d42f6143e228e7b9e82d28c98fe4261d82efc441d",
+      "source_relative_path": "ceo-sampler-benchmark/vendor/ceo/adaptvqe/tensor_helpers.py",
+      "module": "adaptvqe.tensor_helpers",
+      "local_imports": [
+        "adaptvqe"
+      ]
+    },
+    {
+      "bytes": 16814,
+      "destination": "reference/vendor/ceo/adaptvqe/utils.py",
+      "kind": "byte-identical original",
+      "sha256": "9a37cc1a7349956c3b957ed0d30b0565759e88b668af46e99c4d1eeb69e093d5",
+      "source_relative_path": "ceo-sampler-benchmark/vendor/ceo/adaptvqe/utils.py",
+      "module": "adaptvqe.utils",
+      "local_imports": [
+        "adaptvqe",
+        "adaptvqe.op_conv"
+      ]
+    },
+    {
+      "bytes": 117,
+      "destination": "reference/benchmark/__init__.py",
+      "kind": "byte-identical original",
+      "sha256": "1f31dd4c769758aa64a861f99b5062b0c34c571917972906777ea9c3ff318dcd",
+      "source_relative_path": "ceo-sampler-benchmark/benchmark/__init__.py",
+      "module": "benchmark",
+      "local_imports": []
+    },
+    {
+      "bytes": 6835,
+      "destination": "reference/benchmark/ansatz.py",
+      "kind": "byte-identical original",
+      "sha256": "a0b91f8fad8af9bb3968272435aee71a66832cab1dda3a5cffadacc0dc7cfdb6",
+      "source_relative_path": "ceo-sampler-benchmark/benchmark/ansatz.py",
+      "module": "benchmark.ansatz",
+      "local_imports": [
+        "adaptvqe",
+        "adaptvqe.pools",
+        "benchmark",
+        "benchmark.common"
+      ]
+    },
+    {
+      "bytes": 6505,
+      "destination": "reference/benchmark/chemistry.py",
+      "kind": "byte-identical original",
+      "sha256": "bd0a4f069f3a573b835d0abed813e2e4c766cce55d29f33f83a292a7f84c110d",
+      "source_relative_path": "ceo-sampler-benchmark/benchmark/chemistry.py",
+      "module": "benchmark.chemistry",
+      "local_imports": [
+        "benchmark",
+        "benchmark.common"
+      ]
+    },
+    {
+      "bytes": 5430,
+      "destination": "reference/benchmark/circuit_sampling_runtime.py",
+      "kind": "byte-identical original",
+      "sha256": "8315d488aacfc2c6f605708ab6f06d14e1653493c187eb18c8227665233c6918",
+      "source_relative_path": "ceo-sampler-benchmark/benchmark/circuit_sampling_runtime.py",
+      "module": "benchmark.circuit_sampling_runtime",
+      "local_imports": [
+        "benchmark",
+        "benchmark.ansatz",
+        "benchmark.common",
+        "benchmark.mps_sampling",
+        "benchmark.study.core"
+      ]
+    },
+    {
+      "bytes": 3489,
+      "destination": "reference/benchmark/common.py",
+      "kind": "byte-identical original",
+      "sha256": "7567077f4cab361789f1104224312412146723b0df94c3d48e7df1b6087913cc",
+      "source_relative_path": "ceo-sampler-benchmark/benchmark/common.py",
+      "module": "benchmark.common",
+      "local_imports": [
+        "benchmark"
+      ]
+    },
+    {
+      "bytes": 5159,
+      "destination": "reference/benchmark/gpu_remote.py",
+      "kind": "byte-identical original",
+      "sha256": "8d9b2a22fb3ab0e84dc482972dbdb4117313a9c00e95d0c14a2bd644c31e6479",
+      "source_relative_path": "ceo-sampler-benchmark/benchmark/gpu_remote.py",
+      "module": "benchmark.gpu_remote",
+      "local_imports": [
+        "benchmark",
+        "benchmark.common"
+      ]
+    },
+    {
+      "bytes": 5925,
+      "destination": "reference/benchmark/integral_connections.py",
+      "kind": "byte-identical original",
+      "sha256": "d2cea7af28a6892125e8286cfb4d25ce34de062d6e0dea358cc83e1033411f2b",
+      "source_relative_path": "ceo-sampler-benchmark/benchmark/integral_connections.py",
+      "module": "benchmark.integral_connections",
+      "local_imports": [
+        "benchmark",
+        "benchmark.integral_hamiltonian"
+      ]
+    },
+    {
+      "bytes": 4594,
+      "destination": "reference/benchmark/integral_hamiltonian.py",
+      "kind": "byte-identical original",
+      "sha256": "387938ebc0bf6705504f0ce8b5bcd2554cdcc08194aae5d3a4ea716a7c96dc66",
+      "source_relative_path": "ceo-sampler-benchmark/benchmark/integral_hamiltonian.py",
+      "module": "benchmark.integral_hamiltonian",
+      "local_imports": [
+        "benchmark"
+      ]
+    },
+    {
+      "bytes": 11865,
+      "destination": "reference/benchmark/local_sampler_primitives.py",
+      "kind": "byte-identical original",
+      "sha256": "8ac676fd06aa916ea96b04f3306c88263173a29f076ab94678c27092fd518288",
+      "source_relative_path": "ceo-sampler-benchmark/benchmark/local_sampler_primitives.py",
+      "module": "benchmark.local_sampler_primitives",
+      "local_imports": [
+        "adaptvqe.circuits",
+        "benchmark",
+        "benchmark.ansatz",
+        "benchmark.common"
+      ]
+    },
+    {
+      "bytes": 9270,
+      "destination": "reference/benchmark/lucj.py",
+      "kind": "byte-identical original",
+      "sha256": "241d5879a322c5311e82a4ef2d7fb79377c05d559f5f2bc4df9ffef3eafd14a6",
+      "source_relative_path": "ceo-sampler-benchmark/benchmark/lucj.py",
+      "module": "benchmark.lucj",
+      "local_imports": [
+        "benchmark",
+        "benchmark.ansatz",
+        "benchmark.chemistry",
+        "benchmark.common",
+        "benchmark.metrics"
+      ]
+    },
+    {
+      "bytes": 1996,
+      "destination": "reference/benchmark/metrics.py",
+      "kind": "byte-identical original",
+      "sha256": "1c3ea6f954a721237a18a21311e94c86b9145dde8a636ad74dee840af2637834",
+      "source_relative_path": "ceo-sampler-benchmark/benchmark/metrics.py",
+      "module": "benchmark.metrics",
+      "local_imports": [
+        "benchmark"
+      ]
+    },
+    {
+      "bytes": 3737,
+      "destination": "reference/benchmark/mps_sampling.py",
+      "kind": "byte-identical original",
+      "sha256": "2cd4fe594df2a7460dbbd9f213da53344d1b4a41e2ff5d812ffea50f997ffe9d",
+      "source_relative_path": "ceo-sampler-benchmark/benchmark/mps_sampling.py",
+      "module": "benchmark.mps_sampling",
+      "local_imports": [
+        "benchmark",
+        "benchmark.study.core"
+      ]
+    },
+    {
+      "bytes": 17351,
+      "destination": "reference/benchmark/resource_adaptive_sampler.py",
+      "kind": "byte-identical original",
+      "sha256": "7395ea00b8139e7a140974f917f5fdcdca399755ee9f41442e201761d9b5e468",
+      "source_relative_path": "ceo-sampler-benchmark/benchmark/resource_adaptive_sampler.py",
+      "module": "benchmark.resource_adaptive_sampler",
+      "local_imports": [
+        "benchmark",
+        "benchmark.ansatz",
+        "benchmark.circuit_sampling_runtime",
+        "benchmark.common",
+        "benchmark.integral_connections",
+        "benchmark.integral_hamiltonian",
+        "benchmark.local_sampler_primitives"
+      ]
+    },
+    {
+      "bytes": 15014,
+      "destination": "reference/benchmark/sqdrift_ensemble.py",
+      "kind": "byte-identical original",
+      "sha256": "2f5c2cd0a6d1b527fc427d2b6ae75ddce2c39d994ffc6bc46d949abf1db86c87",
+      "source_relative_path": "ceo-sampler-benchmark/benchmark/sqdrift_ensemble.py",
+      "module": "benchmark.sqdrift_ensemble",
+      "local_imports": [
+        "benchmark",
+        "benchmark.ansatz",
+        "benchmark.chemistry",
+        "benchmark.common",
+        "benchmark.sqdrift_qualify",
+        "benchmark.sqdrift_sdk_session",
+        "benchmark.study.core",
+        "benchmark.time_evolution_primitives"
+      ]
+    },
+    {
+      "bytes": 6087,
+      "destination": "reference/benchmark/sqdrift_qualify.py",
+      "kind": "byte-identical original",
+      "sha256": "9d541bb5880be87e716334b2ca5fe674af8f48927289c284b9017bf3b0459aaf",
+      "source_relative_path": "ceo-sampler-benchmark/benchmark/sqdrift_qualify.py",
+      "module": "benchmark.sqdrift_qualify",
+      "local_imports": [
+        "benchmark",
+        "benchmark.ansatz",
+        "benchmark.chemistry",
+        "benchmark.common",
+        "benchmark.integral_hamiltonian",
+        "benchmark.sqdrift_sdk_export",
+        "benchmark.time_evolution_primitives"
+      ]
+    },
+    {
+      "bytes": 7968,
+      "destination": "reference/benchmark/sqdrift_sdk_export.py",
+      "kind": "byte-identical original",
+      "sha256": "2ab2aa0cee06e62085e770cc227bb0f71b3c5d3e0e5a5dfc6f1d2d776415d661",
+      "source_relative_path": "ceo-sampler-benchmark/benchmark/sqdrift_sdk_export.py",
+      "module": "benchmark.sqdrift_sdk_export",
+      "local_imports": [
+        "benchmark"
+      ]
+    },
+    {
+      "bytes": 2800,
+      "destination": "reference/benchmark/sqdrift_sdk_session.py",
+      "kind": "byte-identical original",
+      "sha256": "d788b779a602740dec0402de69f6c242721be209c86cd9226baa2f22014fe2b2",
+      "source_relative_path": "ceo-sampler-benchmark/benchmark/sqdrift_sdk_session.py",
+      "module": "benchmark.sqdrift_sdk_session",
+      "local_imports": [
+        "benchmark",
+        "benchmark.common",
+        "benchmark.sqdrift_sdk_export"
+      ]
+    },
+    {
+      "bytes": 82,
+      "destination": "reference/benchmark/study/__init__.py",
+      "kind": "byte-identical original",
+      "sha256": "7f8c0f855c5cb560d80ff2f020e9283f15e12945507b9058d363e76e033a3995",
+      "source_relative_path": "ceo-sampler-benchmark/benchmark/study/__init__.py",
+      "module": "benchmark.study",
+      "local_imports": [
+        "benchmark"
+      ]
+    },
+    {
+      "bytes": 8678,
+      "destination": "reference/benchmark/study/core.py",
+      "kind": "byte-identical original",
+      "sha256": "61ca37b4c7f4774e5790258ab71d14540240196cfc8ed658be6029a2eff3a97d",
+      "source_relative_path": "ceo-sampler-benchmark/benchmark/study/core.py",
+      "module": "benchmark.study.core",
+      "local_imports": [
+        "benchmark.common",
+        "benchmark.metrics",
+        "benchmark.study"
+      ]
+    },
+    {
+      "bytes": 3185,
+      "destination": "reference/benchmark/time_evolution_primitives.py",
+      "kind": "byte-identical original",
+      "sha256": "f317d4de626c349e0666bbe9d3724653e96b4ad14b69e03df67c6a0756a337c0",
+      "source_relative_path": "ceo-sampler-benchmark/benchmark/time_evolution_primitives.py",
+      "module": "benchmark.time_evolution_primitives",
+      "local_imports": [
+        "benchmark",
+        "benchmark.integral_hamiltonian"
+      ]
+    },
+    {
+      "bytes": 24,
+      "destination": "reference/frontierloop/__init__.py",
+      "kind": "byte-identical original",
+      "sha256": "4941f13d1d22bb80b01e48c8a17b006297dc51485c4e777bbf2037b39dc729f7",
+      "source_relative_path": "outputs/raacs-frontier-research-loop-2026-10-25/frontierloop/__init__.py",
+      "module": "frontierloop",
+      "local_imports": [
+        "frontierloop.paths"
+      ]
+    },
+    {
+      "bytes": 6158,
+      "destination": "reference/frontierloop/bank.py",
+      "kind": "byte-identical original",
+      "sha256": "3feb49ff00cae00f7da04c21b6fe9e1ea38e318356895a5a1340dcb0d385d1a1",
+      "source_relative_path": "outputs/raacs-frontier-research-loop-2026-10-25/frontierloop/bank.py",
+      "module": "frontierloop.bank",
+      "local_imports": [
+        "frontierloop",
+        "frontierloop.io",
+        "frontierloop.journal",
+        "raacsnext.policy"
+      ]
+    },
+    {
+      "bytes": 7852,
+      "destination": "reference/frontierloop/beam.py",
+      "kind": "byte-identical original",
+      "sha256": "08574d5c7b057df7c6ce365cd91fc411330c63b0650b473a1e24b3bd6515417b",
+      "source_relative_path": "outputs/raacs-frontier-research-loop-2026-10-25/frontierloop/beam.py",
+      "module": "frontierloop.beam",
+      "local_imports": [
+        "benchmark.ansatz",
+        "benchmark.local_sampler_primitives",
+        "frontierloop",
+        "frontierloop.bank",
+        "frontierloop.io",
+        "frontierloop.journal",
+        "paperstudy.ci",
+        "raacsnext.policy",
+        "raacsnext.sampler"
+      ]
+    },
+    {
+      "bytes": 787,
+      "destination": "reference/frontierloop/io.py",
+      "kind": "byte-identical original",
+      "sha256": "3f31e25a58469a645de985f25cf033f16c7c1b1b5698db02d85d3ac7b5d238b7",
+      "source_relative_path": "outputs/raacs-frontier-research-loop-2026-10-25/frontierloop/io.py",
+      "module": "frontierloop.io",
+      "local_imports": [
+        "frontierloop",
+        "frontierloop.paths",
+        "paperstudy.io"
+      ]
+    },
+    {
+      "bytes": 3843,
+      "destination": "reference/frontierloop/journal.py",
+      "kind": "byte-identical original",
+      "sha256": "50901b23d0a6ac46523be5158e03a828adc37bf8c7b7f242bb787762a569e94b",
+      "source_relative_path": "outputs/raacs-frontier-research-loop-2026-10-25/frontierloop/journal.py",
+      "module": "frontierloop.journal",
+      "local_imports": [
+        "frontierloop",
+        "frontierloop.io",
+        "frontierloop.paths",
+        "paperstudy.budget",
+        "raacsnext.sampler"
+      ]
+    },
+    {
+      "bytes": 364,
+      "destination": "reference/frontierloop/paths.py",
+      "kind": "byte-identical original",
+      "sha256": "54904122edd356bdf399db101b93c36ebd3a8b5ea19316f78940d811efe9b13d",
+      "source_relative_path": "outputs/raacs-frontier-research-loop-2026-10-25/frontierloop/paths.py",
+      "module": "frontierloop.paths",
+      "local_imports": [
+        "frontierloop"
+      ]
+    },
+    {
+      "bytes": 7848,
+      "destination": "reference/frontierloop/singlet.py",
+      "kind": "byte-identical original",
+      "sha256": "e7726fde1a5a907e15c15ee4192133eade3a6c71902009e0c7b6954ad5dda8a2",
+      "source_relative_path": "outputs/raacs-frontier-research-loop-2026-10-25/frontierloop/singlet.py",
+      "module": "frontierloop.singlet",
+      "local_imports": [
+        "frontierloop",
+        "paperstudy.ci"
+      ]
+    },
+    {
+      "bytes": 1456,
+      "destination": "reference/frontierloop/singlet_cache.py",
+      "kind": "byte-identical original",
+      "sha256": "164048df73ebc96b1ee697e6bb0d447d2350b446f921e08b3c9971553010c0a7",
+      "source_relative_path": "outputs/raacs-frontier-research-loop-2026-10-25/frontierloop/singlet_cache.py",
+      "module": "frontierloop.singlet_cache",
+      "local_imports": [
+        "frontierloop",
+        "frontierloop.singlet",
+        "paperstudy.ci"
+      ]
+    },
+    {
+      "bytes": 2021,
+      "destination": "reference/frontierloop/spin_beam.py",
+      "kind": "byte-identical original",
+      "sha256": "88ae24648b5302e15b62303579bf96a17f6fca4e12a5b22e5b21cf2f65ef4d04",
+      "source_relative_path": "outputs/raacs-frontier-research-loop-2026-10-25/frontierloop/spin_beam.py",
+      "module": "frontierloop.spin_beam",
+      "local_imports": [
+        "frontierloop",
+        "frontierloop.beam",
+        "frontierloop.io",
+        "frontierloop.singlet_cache",
+        "raacsnext.policy",
+        "raacsnext.sampler"
+      ]
+    },
+    {
+      "bytes": 84,
+      "destination": "reference/paperstudy/__init__.py",
+      "kind": "byte-identical original",
+      "sha256": "2fb6f581cf0b8337bad23a34c6b8a133b2e46b55ebb0f7db986b7f1ae9a02346",
+      "source_relative_path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/paperstudy/__init__.py",
+      "module": "paperstudy",
+      "local_imports": []
+    },
+    {
+      "bytes": 8503,
+      "destination": "reference/paperstudy/author_compressed.py",
+      "kind": "byte-identical original",
+      "sha256": "9fbc9c0c0a3a03064510cd25aa06f1b7a8493b50f922991a482a4d5ab11b9d1b",
+      "source_relative_path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/paperstudy/author_compressed.py",
+      "module": "paperstudy.author_compressed",
+      "local_imports": [
+        "paperstudy",
+        "paperstudy.input_adapter",
+        "paperstudy.io",
+        "paperstudy.lucj"
+      ]
+    },
+    {
+      "bytes": 5104,
+      "destination": "reference/paperstudy/budget.py",
+      "kind": "byte-identical original",
+      "sha256": "e92096e4b9207d006a30fa62ec79921d472f983f26e792b11f2ffb4283fcc5f5",
+      "source_relative_path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/paperstudy/budget.py",
+      "module": "paperstudy.budget",
+      "local_imports": [
+        "paperstudy"
+      ]
+    },
+    {
+      "bytes": 4838,
+      "destination": "reference/paperstudy/ci.py",
+      "kind": "byte-identical original",
+      "sha256": "54ddd42b11f64e5b48adf8670ab99e714c222762f29f468f47fc6ce72c551b52",
+      "source_relative_path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/paperstudy/ci.py",
+      "module": "paperstudy.ci",
+      "local_imports": [
+        "paperstudy"
+      ]
+    },
+    {
+      "bytes": 20147,
+      "destination": "reference/paperstudy/common_execution.py",
+      "kind": "byte-identical original",
+      "sha256": "c031e4364d229f86f06a4b52b5f45cb4fda4936a33ea756ac0ba2ccce11bcc76",
+      "source_relative_path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/paperstudy/common_execution.py",
+      "module": "paperstudy.common_execution",
+      "local_imports": [
+        "benchmark",
+        "benchmark.circuit_sampling_runtime",
+        "benchmark.local_sampler_primitives",
+        "benchmark.resource_adaptive_sampler",
+        "paperstudy",
+        "paperstudy.budget",
+        "paperstudy.ci",
+        "paperstudy.input_adapter",
+        "paperstudy.io",
+        "paperstudy.lucj",
+        "paperstudy.sparse_raacs"
+      ]
+    },
+    {
+      "bytes": 4907,
+      "destination": "reference/paperstudy/gpu_qualification.py",
+      "kind": "byte-identical original",
+      "sha256": "2ab8a1f7c84e5af972a5a236af748a00055314219fa299bda39a78019a91a23c",
+      "source_relative_path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/paperstudy/gpu_qualification.py",
+      "module": "paperstudy.gpu_qualification",
+      "local_imports": [
+        "benchmark.gpu_remote",
+        "paperstudy",
+        "paperstudy.input_adapter",
+        "paperstudy.io",
+        "paperstudy.lucj"
+      ]
+    },
+    {
+      "bytes": 8965,
+      "destination": "reference/paperstudy/input_adapter.py",
+      "kind": "byte-identical original",
+      "sha256": "027155bd1d6f2fd9e612c09268b8a736b3247252932ef8d99d4a576d81ed6851",
+      "source_relative_path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/paperstudy/input_adapter.py",
+      "module": "paperstudy.input_adapter",
+      "local_imports": [
+        "paperstudy",
+        "paperstudy.io"
+      ]
+    },
+    {
+      "bytes": 1577,
+      "destination": "reference/paperstudy/io.py",
+      "kind": "byte-identical original",
+      "sha256": "7d99d6c1d1ece79f333d059a1a884cf0dfc6e834072e9c6e7048054030551a83",
+      "source_relative_path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/paperstudy/io.py",
+      "module": "paperstudy.io",
+      "local_imports": [
+        "paperstudy"
+      ]
+    },
+    {
+      "bytes": 8971,
+      "destination": "reference/paperstudy/lucj.py",
+      "kind": "byte-identical original",
+      "sha256": "8e6c9c9a4b1d19e0e493cad899a33a1d4c74ea3819a05d5788aae98a88607c53",
+      "source_relative_path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/paperstudy/lucj.py",
+      "module": "paperstudy.lucj",
+      "local_imports": [
+        "paperstudy",
+        "paperstudy.input_adapter",
+        "paperstudy.io"
+      ]
+    },
+    {
+      "bytes": 8040,
+      "destination": "reference/paperstudy/sparse_raacs.py",
+      "kind": "byte-identical original",
+      "sha256": "8b6b5b464bb314f21bf2e2e0a40fc267c2cbe4754ff33174964f40e3d3f2b1f5",
+      "source_relative_path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/paperstudy/sparse_raacs.py",
+      "module": "paperstudy.sparse_raacs",
+      "local_imports": [
+        "adaptvqe.circuits",
+        "benchmark",
+        "benchmark.ansatz",
+        "benchmark.circuit_sampling_runtime",
+        "benchmark.common",
+        "benchmark.local_sampler_primitives",
+        "benchmark.resource_adaptive_sampler",
+        "benchmark.study.core",
+        "paperstudy",
+        "paperstudy.io"
+      ]
+    },
+    {
+      "bytes": 15864,
+      "destination": "reference/paperstudy/sqdrift_execution.py",
+      "kind": "byte-identical original",
+      "sha256": "2e3c5a03fbfb079b7d51372d915db30622540b5182ef20e87dd62e7cbb42e10f",
+      "source_relative_path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/paperstudy/sqdrift_execution.py",
+      "module": "paperstudy.sqdrift_execution",
+      "local_imports": [
+        "paperstudy",
+        "paperstudy.budget",
+        "paperstudy.ci",
+        "paperstudy.common_execution",
+        "paperstudy.input_adapter",
+        "paperstudy.io",
+        "paperstudy.lucj",
+        "paperstudy.sqdrift_native_worker"
+      ]
+    },
+    {
+      "bytes": 11286,
+      "destination": "reference/paperstudy/sqdrift_native_worker.py",
+      "kind": "byte-identical original",
+      "sha256": "ee9a19c4b01d322057bfbc4ef929044fada01f470f8f816e617f3f7367fd529b",
+      "source_relative_path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/paperstudy/sqdrift_native_worker.py",
+      "module": "paperstudy.sqdrift_native_worker",
+      "local_imports": [
+        "paperstudy",
+        "paperstudy.io"
+      ]
+    },
+    {
+      "bytes": 12230,
+      "destination": "reference/paperstudy/tn_final_readout.py",
+      "kind": "byte-identical original",
+      "sha256": "06b30d908575bd50d28b01f4ca1612e106397c888d221af464fe86d572fb25b5",
+      "source_relative_path": "outputs/raacs-lucj-sqdrift-paper-aligned-plan-2026-10-25/execution-v1/paperstudy/tn_final_readout.py",
+      "module": "paperstudy.tn_final_readout",
+      "local_imports": [
+        "benchmark.gpu_remote",
+        "paperstudy",
+        "paperstudy.budget",
+        "paperstudy.common_execution",
+        "paperstudy.gpu_qualification",
+        "paperstudy.input_adapter",
+        "paperstudy.io",
+        "paperstudy.lucj"
+      ]
+    },
+    {
+      "bytes": 82,
+      "destination": "reference/raacsnext/__init__.py",
+      "kind": "byte-identical original",
+      "sha256": "741602a2089be8c6440aaac09791c05ec5d53ab208836e75dcf3721b7a6f5df7",
+      "source_relative_path": "outputs/raacs-practical-frontier-v2-2026-10-25/raacsnext/__init__.py",
+      "module": "raacsnext",
+      "local_imports": [
+        "raacsnext.paths"
+      ]
+    },
+    {
+      "bytes": 2744,
+      "destination": "reference/raacsnext/io.py",
+      "kind": "byte-identical original",
+      "sha256": "a6cc2811c31bfc69eb1d5efc3538a80e8c75b80cef3a99d972ace1f63c9dbea3",
+      "source_relative_path": "outputs/raacs-practical-frontier-v2-2026-10-25/raacsnext/io.py",
+      "module": "raacsnext.io",
+      "local_imports": [
+        "paperstudy.io",
+        "raacsnext",
+        "raacsnext.paths"
+      ]
+    },
+    {
+      "bytes": 348,
+      "destination": "reference/raacsnext/paths.py",
+      "kind": "byte-identical original",
+      "sha256": "46d449e87457c6e2eeb1a0a2a1da0dc4f145bb64c237254799dcc917974afa7d",
+      "source_relative_path": "outputs/raacs-practical-frontier-v2-2026-10-25/raacsnext/paths.py",
+      "module": "raacsnext.paths",
+      "local_imports": [
+        "raacsnext"
+      ]
+    },
+    {
+      "bytes": 13169,
+      "destination": "reference/raacsnext/policy.py",
+      "kind": "byte-identical original",
+      "sha256": "8fa7fece5e52fe6f638119ba380a7ad400826a84d62c0a84f0c0712f3c3cb7d8",
+      "source_relative_path": "outputs/raacs-practical-frontier-v2-2026-10-25/raacsnext/policy.py",
+      "module": "raacsnext.policy",
+      "local_imports": [
+        "benchmark.ansatz",
+        "benchmark.integral_connections",
+        "benchmark.integral_hamiltonian",
+        "benchmark.local_sampler_primitives",
+        "paperstudy.ci",
+        "raacsnext",
+        "raacsnext.io",
+        "raacsnext.sampler"
+      ]
+    },
+    {
+      "bytes": 6390,
+      "destination": "reference/raacsnext/sampler.py",
+      "kind": "byte-identical original",
+      "sha256": "e93cdf17798d2f30df726bd51dc36fffdf21b87e8b8ae6f16042b7618f52f311",
+      "source_relative_path": "outputs/raacs-practical-frontier-v2-2026-10-25/raacsnext/sampler.py",
+      "module": "raacsnext.sampler",
+      "local_imports": [
+        "benchmark.circuit_sampling_runtime",
+        "benchmark.local_sampler_primitives",
+        "paperstudy.budget",
+        "paperstudy.sparse_raacs",
+        "raacsnext",
+        "raacsnext.io"
+      ]
+    }
+  ]
+}

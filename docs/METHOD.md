@@ -1,8 +1,8 @@
 # Registered RAACS policy and its exact source
 
-RAACS is the display name of the historical B4 `SpinBeamEngine` in this study.
-This is a sampler-construction policy, not the earlier CEO circuit compressor,
-not a trained Transformer, and not every historical residual-policy experiment.
+RAACS is the display name of the registered B4 `SpinBeamEngine` in this study.
+It is a sampling-circuit construction policy. Earlier exploratory policies are
+not renamed RAACS.
 
 ## Inputs and output
 
@@ -45,16 +45,18 @@ that explicitly disabled it.
 
 | Role | Byte-identical source snapshot |
 |---|---|
-| B4 singlet scoring override | historical/frontierloop/spin_beam.py |
-| Beam loop, candidate angles and bank selection | historical/frontierloop/beam.py |
-| Numerical selection, boundaries and resource keys | historical/raacsnext/policy.py |
-| Residual/local exchange proposals and actual QE | historical/benchmark/local_sampler_primitives.py |
-| Exact selected-space S=0 construction | historical/frontierloop/singlet.py |
-| Reuse only of the same classical CI basis solve | historical/frontierloop/singlet_cache.py |
-| Paid model-draw identity and persistent counts | historical/frontierloop/journal.py |
-| Physical sparse QE simulation | historical/paperstudy/sparse_raacs.py |
+| B4 singlet scoring override | reference/frontierloop/spin_beam.py |
+| Beam loop, candidate angles and bank selection | reference/frontierloop/beam.py |
+| Numerical selection, boundaries and resource keys | reference/raacsnext/policy.py |
+| Residual/local exchange proposals and actual QE | reference/benchmark/local_sampler_primitives.py |
+| Exact selected-space S=0 construction | reference/frontierloop/singlet.py |
+| Reuse only of the same classical CI basis solve | reference/frontierloop/singlet_cache.py |
+| Paid model-draw identity and persistent counts | reference/frontierloop/journal.py |
+| Physical sparse QE simulation | reference/paperstudy/sparse_raacs.py |
 
 Code snapshots and original protocols, rather than this prose, determine exact
-historical semantics. They are hash bound in data/copied-source-manifest.json.
+historical semantics. They are hash bound in data/manifest.json and indexed in
+data/source-files.json. The [source guide](../reference/README.md) maps the
+RAACS and comparator implementations.
 No new claim of mathematical necessity, universal superiority or noise-robust
 equivalence is made by packaging them.
