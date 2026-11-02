@@ -1,7 +1,7 @@
 # Research-data license
 
-By the owner's decision in this chat on 2026-10-31, independently owned research
-data and derived data tables created by Rei Watanabe in this package are licensed
+Independently owned research data and derived data tables created by Rei
+Watanabe in this package are licensed
 under **Creative Commons Attribution 4.0 International (CC BY 4.0)**:
 
 https://creativecommons.org/licenses/by/4.0/

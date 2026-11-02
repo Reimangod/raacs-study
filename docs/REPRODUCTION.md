@@ -1,86 +1,97 @@
-# Reproducing the recorded study
+# Reproducing the study
 
-## 1. Saved-result tables and figures (small CPU-only environment)
+## Saved tables and figures
+
+From the repository root, using Python 3.11 or newer:
 
 ```sh
 uv sync --locked --extra test
-uv run raacs-study verify --repo .
-uv run raacs-study reproduce --repo . --output reproduced
-uv run pytest -q
+uv run --no-sync raacs-study verify --repo .
+uv run --no-sync raacs-study reproduce --repo . --output reproduced
+uv run --no-sync pytest -q
 ```
 
-`reproduced/endpoint-summary.csv` includes all recorded groups and explicit
-completed/D-matched counts. The mean columns are named as conditional means.
-Figures require all recorded rows to match D and at least three readout labels;
-the separate missing-source table still has to be consulted. These SVG figures
-are new saved-data views, not claims to pixel-identically redraw old slides.
-No costs are summed across repeated CI endpoints.
+The summary is `reproduced/endpoint-summary.csv`; the plots are in
+`reproduced/figures/`. This operation uses the committed catalog. It requires
+neither a GPU nor a raw-data download, and makes no new model samples or CI
+solves. The generated summary records group denominators and explicitly labels
+conditional means. Failed and dimension-unreached readouts are not dropped.
 
-## 2. Small independent saved-basis CI check
+The scientific-file checksums in `data/manifest.json` retain the original
+hashes of every included scientific payload. The full numerical catalog,
+original comparison tables, three cohort protocols, saved CI inputs, and
+registered result products are unchanged. Source files were moved from
+`historical/` to `reference/` without altering their bytes. New path mappings
+are documented in `data/source-files.json` and the policy registry.
+
+## Small independent saved-basis CI check
 
 ```sh
 uv sync --locked --extra science
-uv run raacs-study ci-check --repo . --output reproduced/saved-ci-check.json
+uv run --no-sync raacs-study ci-check --repo . --output reproduced/saved-ci-check.json
 ```
 
-This verifies two saved LiH 1.5-A selected bases with at most 16 determinants,
-using the recorded Hamiltonian, exact projected S=0, and explicit orbital-order
-fermionic phases. It does not run a new FCI reference, resample circuits, or
-validate every large CI root. The report states its numerical tolerance/scope.
+This recomputes two existing LiH 1.5 Å bases with at most 16 determinants,
+using the saved Hamiltonian, exact selected-space S=0, and explicit orbital-order
+fermionic phases. It checks numerical energy/residual parity within 1e-8 Ha.
+It does not compute a new FCI reference or certify every large-system CI root.
 
-## 3. Original data archives
+## Automated software checks
 
-For the private GitHub delivery, authenticate as an authorized collaborator:
+```sh
+uv run --no-sync python scripts/check_docs.py --repo .
+uv run --no-sync python scripts/check_reproduction.py --repo .
+```
+
+[GitHub Actions](../.github/workflows/test.yml) runs tests on Python 3.11, 3.12,
+and 3.13; checks byte-identical regeneration of all 42 saved products including
+40 SVG figures; runs the two small CI checks; checks documentation links; and
+builds and installs the wheel in a clean environment. Actions have read-only
+repository permissions and do not launch molecular acquisition or GPU jobs.
+Transient reports are workflow artifacts, not files in the research data tree.
+Passing these tests is not independent scientific review or a demonstration of
+quantum advantage.
+
+## Algorithm source and full molecular regeneration
+
+```sh
+uv run --no-sync raacs-study policy --repo .
+```
+
+This displays the policy and cohort bindings. The
+[source reference](../reference/README.md) contains the registered algorithm
+implementations and their static local import dependencies. These remain
+original snapshots, not automatic production entrypoints: original physical
+inputs, some external runtimes and path handling are required for fresh
+molecular construction. Do not run their acquisition or dispatch functions
+as a quick start. Full fresh molecular regeneration has not been certified by
+the lightweight checks above.
+
+## Original raw evidence
+
+The fixed [data-v0.1.0 release](https://github.com/Reimangod/raacs-study/releases/tag/data-v0.1.0)
+preserves the complete original archive. Its tag, assets, and checksums are not
+modified by this curation. Access currently requires an authorized collaborator:
 
 ```sh
 gh release download data-v0.1.0 --repo Reimangod/raacs-study --dir data/downloads
-uv run raacs-study archives --repo . --directory data/downloads --full
+uv run --no-sync raacs-study archives --repo . --directory data/downloads --full
 ```
 
-Each content-addressed ZIP has `inventory.jsonl` mapping original workspace-
-relative paths to exact-byte blobs. `data/source-inventory.jsonl.gz` is the
-cross-archive lookup. `data/archive-manifest.json` binds ZIP sizes and SHA-256.
-Repeated equal content occupies one blob, but all original path associations
-remain. Storage deduplication does not deduplicate scientific execution costs.
-Full download is about 4.4GiB. Restoring every original file would need about
-7.1GiB more; ordinary table reproduction does not require either operation.
-Multipart verification/extraction uses virtual concatenation to avoid another
-large reconstructed ZIP. Prefer one-file extraction for routine inspection.
-
-Archive extraction must validate paths and avoid overwrites. Do not extract
-untrusted pickle objects or execute binaries. Historical absolute references
-can be resolved against the source inventory without editing original JSON.
-Archived SQLite DB/WAL evidence is preserved as captured; use a writable copy
-for forensic reconstruction, not the original source file.
-
-Locate or extract just one original file without expanding all 7+GiB:
+The download is about 4.4 GiB. Full extraction requires about 7.1 GiB more;
+ordinary table reproduction needs neither. To access a single original file:
 
 ```sh
-uv run raacs-study locate --repo . --path outputs/b4-small-molecule-comparison-2026-10-28-v1/protocol.json
-uv run raacs-study extract --repo . --directory data/downloads --path outputs/b4-small-molecule-comparison-2026-10-28-v1/protocol.json --output reproduced/original-small-protocol.json
+uv run --no-sync raacs-study locate --repo . --path outputs/b4-small-molecule-comparison-2026-10-28-v1/protocol.json
+uv run --no-sync raacs-study extract --repo . --directory data/downloads --path outputs/b4-small-molecule-comparison-2026-10-28-v1/protocol.json --output reproduced/original-small-protocol.json
 ```
 
-Extraction verifies the original blob's size/hash and refuses existing targets.
-No extracted script is executed. The source inventory supports exact original
-relative paths (and the specifically recorded original absolute-path prefix).
+The archive index maps original workspace paths to exact-byte blobs. Extraction
+checks size/hash and refuses overwrites; it does not execute extracted scripts.
+Do not load untrusted pickles or executables. The full archive also contains
+exploratory work and legacy files outside the curated code tree. Its
+[redistribution restrictions](../THIRD_PARTY.md) remain unresolved.
 
-## 4. Historical policy source, not an automatic production dispatch
-
-`uv run raacs-study policy --repo .` prints exact policy/source bindings.
-The `historical-policy` extra pins the core known scientific packages, but a
-lock file is not proof that every exploratory native backend/remote job works.
-See the import/rights audits. Full fresh molecular reruns are a separate, costly
-reproduction layer and are not invoked by CI or the packaging commands.
-
-Do not run the old dispatchers or replace local absolute paths en masse. The
-original protocols include hashes of old source files and locations. A portable
-I/O successor must preserve original algorithm semantics and record its changed
-execution identity; it must not pretend to be the original historical run.
-
-## Platform and stochastic expectations
-
-The saved-table conversion is deterministic. Small CI is compared numerically,
-not bytewise. Fresh adaptive trajectories may differ with RNG implementations,
-linear algebra libraries and CPU-boundary stopping on M4 vs A100 hosts. Retain
-the original counts/choices so users can reproduce conclusions without rerunning
-the entire costly acquisition. Every demonstrated layer is reported separately.
+Saved-table reproduction is deterministic. New adaptive trajectories can differ
+with RNG implementations, linear algebra libraries, and CPU-boundary stopping.
+They should not be presented as byte-identical repeats of the original study.

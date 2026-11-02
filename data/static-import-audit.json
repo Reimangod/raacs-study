@@ -1,4 +1,0 @@
-{
-  "scope": "top-level Python packages only; no assertion of full runtime closure or dynamic imports",
-  "unresolved_local_static_imports": []
-}

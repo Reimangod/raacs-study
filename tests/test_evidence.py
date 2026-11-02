@@ -77,7 +77,7 @@ def test_policy_sources_bound_to_recorded_protocol():
     assert registry["display_alias"]=={"B4":"RAACS"}
     freeze=json.loads((ROOT/"configs/original-B4/freeze-B4.json").read_text())
     for file in("beam.py","spin_beam.py","singlet_cache.py","singlet.py","journal.py","bank.py"):
-        assert hashlib.sha256((ROOT/"historical/frontierloop"/file).read_bytes()).hexdigest()==freeze["files"][file]
+        assert hashlib.sha256((ROOT/"reference/frontierloop"/file).read_bytes()).hexdigest()==freeze["files"][file]
 
 
 def test_reproduction_matches_committed_products(tmp_path):

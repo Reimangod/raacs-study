@@ -1,9 +1,0 @@
-{
-  "scope": "Private GitHub attachment transfer only; no research execution",
-  "incident": "The first sequential uploader reached part002 while an independently assigned uploader was still finishing it; the no-clobber check stopped the sequential uploader rather than replacing an in-progress asset.",
-  "data_loss": false,
-  "research_source_modified": false,
-  "remedy": "Confirm the parallel transfer completed, reconcile its server size/SHA-256, and resume remaining attachments with verified-asset reuse.",
-  "no_scientific_protocol_change": true,
-  "final_authority": "verification/remote-assets.json, not an uploader process exit code alone"
-}

@@ -13,3 +13,13 @@ artifacts/
 .env
 .env.*
 .ci-reports/
+
+# Local development instructions and editor state are not research artifacts.
+AGENTS.md
+Agent.md
+agent.md
+CLAUDE.md
+.agents/
+.codex/
+.claude/
+.cursor/

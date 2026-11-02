@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "This is a private preparation snapshot. Cite a specific archived release when available; no publication DOI has been assigned."
+message: "Please cite this repository with the exact code revision and dataset version. No publication DOI has been assigned."
 title: "RAACS: policy and research-data archive"
 type: software
 authors:
